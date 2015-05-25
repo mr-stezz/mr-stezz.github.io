@@ -5,11 +5,12 @@
   font-family: "Neue Haas Unica", $small-heading-font-family;
 }
 .page-subtitle {
-  font-variant: small-caps;
-  font-weight: 400;
-  font-size: $base-font-size;
+  font-size: 0.75em;
   font-family: $small-heading-font-family;
-  text-transform: lowercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+     -moz-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+          font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
   color: lighten($swatch-two, 50%);
 }
