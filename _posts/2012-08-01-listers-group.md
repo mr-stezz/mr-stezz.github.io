@@ -3,8 +3,8 @@ layout: case-study
 title: Listers new site for web
 subtitle: New and Approved Used Car and Van Dealers
 project-type: website
-poster: /assets/img/content/listers-poster.png
-poster@2x: /assets/img/content/listers-poster@2x.png
+poster: /assets/img/content/listers-app-icon.png
+poster@2x: /assets/img/content/listers-app-icon@2x.png
 call-to-action: https://listers.co.uk
 category: case-study
 ---
