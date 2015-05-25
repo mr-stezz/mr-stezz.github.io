@@ -1,0 +1,22 @@
+/**
+ * _theme.portfolio-block.scss
+ */
+ a.portfolio-block {
+
+  &,
+  &:hover {
+    background-size: 100%;
+    background-position: 50%;
+  }
+ }
+
+.portfolio-block {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding: $base-spacing-unit;
+  @include font-size($base-font-size * 0.75);
+  line-height: 1.5;
+  color: #fdfdfd;
+  background-color: #333;
+}

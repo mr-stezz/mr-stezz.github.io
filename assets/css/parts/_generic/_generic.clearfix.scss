@@ -1,0 +1,11 @@
+/**
+ * _generic.clearfix
+ */
+.cf {
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

@@ -1,0 +1,117 @@
+/**
+ * _generic.typeface.scss
+ */
+
+/**
+ * Lust
+ */
+@font-face {
+  font-family: Lust;
+  src: url(../fonts/lust/Lust-Regular.woff) format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/**
+ * Neue Haas Unica
+ */
+@font-face {
+  font-family: "Neue Haas Unica";
+  src: url(../fonts/neue-haas-unica/neue-haas-unica-light.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Haas Unica";
+  src: url(../fonts/neue-haas-unica/neue-haas-unica-light-italic.woff) format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Neue Haas Unica";
+  src: url(../fonts/neue-haas-unica/neue-haas-unica-regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Haas Unica";
+  src: url(../fonts/neue-haas-unica/neue-haas-unica-regular-italic.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Neue Haas Unica";
+  src: url(../fonts/neue-haas-unica/neue-haas-unica-medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Haas Unica";
+  src: url(../fonts/neue-haas-unica/neue-haas-unica-medium-italic.woff) format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/**
+ * icons
+ */
+@font-face {
+  font-family: "icon-font";
+  src: url(../fonts/icon/icon.eot);
+  src: url(../fonts/icon/icon.eot?#iefix) format("embedded-opentype"),
+       url(../fonts/icon/icon.woff) format("woff"),
+       url(../fonts/icon/icon.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**
+ * no white-space
+ */
+@font-face {
+  font-family: "nospace";
+  src: url(../fonts/nospace/nospace.eot);
+  src: url(../fonts/nospace/nospace.eot?#iefix) format("embedded-opentype"),
+       url(../fonts/nospace/nospace.woff) format("woff"),
+       url(../fonts/nospace/nospace.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/**
+ * custom ampersands
+ */
+@font-face {
+  font-family: Ampersand;
+  src: local(Baskerville),
+       local(Palatino),
+       local(Didot),
+       local("Hoefler Text");
+  unicode-range: U+0026;
+}
+@font-face {
+  font-family: Ampersand;
+  src: local(Palatino);
+  unicode-range: U+270C;
+}
+
+
+/**
+ * FontFaceObserve will apply a class on the html when
+ * the webfonts are ready: 
+ * http://www.filamentgroup.com/lab/font-events.html
+ */
+.fonts-loaded {
+  font-family: "Neue Haas Unica", $base-font-family;
+}
+.fonts-loaded h1,
+.fonts-loaded h2,
+.fonts-loaded h3,
+.fonts-loaded h4 {
+  font-family: Lust, $heading-font-family;
+}
+.fonts-loaded h5,
+.fonts-loaded h6 {
+  font-family: "Neue Haas Unica", $small-heading-font-family;
+}

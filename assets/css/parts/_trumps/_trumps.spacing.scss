@@ -1,0 +1,75 @@
+/**
+ * _trumps.spacing.scss
+ */
+/**
+ * These styles are intended to help spacing out elements, either
+ * through vertical rhythm using margin-bottom or paddings.
+ */
+
+// We can define spacing variables here
+$spacing:                $base-spacing-unit;
+$spacing--tiny:          round($base-spacing-unit / 4);
+$spacing--small:         round($base-spacing-unit / 2);
+$spacing--large:         round($base-spacing-unit * 2);
+$spacing--huge:          round($base-spacing-unit * 4);
+
+/**
+ * Vertical rhythm
+ */
+.u--m-bottom {
+  margin-bottom: $spacing;
+
+  &--tiny  { margin-bottom: $spacing--tiny; }
+  &--small { margin-bottom: $spacing--small; }
+  &--large { margin-bottom: $spacing--large; }
+  &--huge  { margin-bottom: $spacing--huge; }
+}
+
+
+/**
+ * Pad out elements
+ */
+.u--p-all {
+  padding: $spacing;
+
+  &--tiny  { padding: $spacing--tiny; }
+  &--small { padding: $spacing--small; }
+  &--large { padding: $spacing--large; }
+  &--huge  { padding: $spacing--huge; }
+}
+
+.u--p-top {
+  padding-top: $spacing;
+
+  &--tiny  { padding-top: $spacing--tiny; }
+  &--small { padding-top: $spacing--small; }
+  &--large { padding-top: $spacing--large; }
+  &--huge  { padding-top: $spacing--huge; }
+}
+
+.u--p-right {
+  padding-right: $spacing;
+
+  &--tiny  { padding-right: $spacing--tiny; }
+  &--small { padding-right: $spacing--small; }
+  &--large { padding-right: $spacing--large; }
+  &--huge  { padding-right: $spacing--huge; }
+}
+
+.u--p-bottom {
+  padding-bottom: $spacing;
+
+  &--tiny  { padding-bottom: $spacing--tiny; }
+  &--small { padding-bottom: $spacing--small; }
+  &--large { padding-bottom: $spacing--large; }
+  &--huge  { padding-bottom: $spacing--huge; }
+}
+
+.u--p-left {
+  padding-left: $spacing;
+
+  &--tiny  { padding-left: $spacing--tiny; }
+  &--small { padding-left: $spacing--small; }
+  &--large { padding-left: $spacing--large; }
+  &--huge  { padding-left: $spacing--huge; } 
+}

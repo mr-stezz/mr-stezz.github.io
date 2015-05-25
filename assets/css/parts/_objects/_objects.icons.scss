@@ -1,0 +1,55 @@
+/**
+ * _object.icons.scss
+ */
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: -0.0625em;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "icon-font";
+  text-align: center;
+  color: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  pointer-events: none;
+
+  &:before {
+    content: "";
+    speak: none;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+.icon--up-arrow:before    { content: "\e600" }
+.icon--unhappy:before     { content: "\e601" }
+.icon--twitter:before     { content: "\e602" }
+.icon--star:before        { content: "\e603" }
+.icon--star-hollow:before { content: "\e604" }
+.icon--smiley:before      { content: "\e605" }
+.icon--share:before       { content: "\e606" }
+.icon--rss:before         { content: "\e607" }
+.icon--right-arrow:before { content: "\e608" }
+.icon--rdio:before        { content: "\e609" }
+.icon--phone:before       { content: "\e60a" }
+.icon--offsite:before     { content: "\e60b" }
+.icon--mail:before        { content: "\e60c" }
+.icon--left-arrow:before  { content: "\e60d" }
+.icon--down-arrow:before  { content: "\e60e" }
+.icon--cross:before       { content: "\e60f" }
+.icon--camera:before      { content: "\e610" }
+.icon--dribbble:before    { content: "\e611" }
+.icon--flickr:before      { content: "\e612" }
+.icon--vsco:before        { content: "\e613" }
+
+.icon-mini     { font-size: 8px }
+.icon-small    { font-size: 12px }
+.icon--medium  { font-size: 24px }
+.icon--large   { font-size: 32px }
+.icon--huge    { font-size: 64px }
+.icon--natural { font-size: inherit }

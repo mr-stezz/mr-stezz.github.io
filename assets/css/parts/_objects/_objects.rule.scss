@@ -1,0 +1,39 @@
+/**
+ * _objects.rules.scss
+ */
+.rule {
+  margin-bottom: $base-spacing-unit - 1px;
+  margin-bottom: ( ($base-spacing-unit - 1px) / $base-font-size) * 1rem;
+  color: $swatch-three;
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  
+  &--ornament {
+    position: relative;
+  }
+  &--ornament:after {
+    content: "\00A7";
+    position: absolute;
+    top:   0;
+    right: 0;
+    left:  0;
+    line-height: 0;
+    text-align: center;
+  }
+  &--ornament[data-ornament] {
+    border-color: transparent;
+  }
+  &--ornament[data-ornament]:after {
+    content: attr(data-ornament);
+    letter-spacing: 0.75em;
+  }
+  
+  &--stump{
+    width:75%;
+    margin-right: auto;
+    margin-left:  auto;
+    color: darken($swatch-four, 30%);
+    border-bottom-width: 2px;
+  }
+}

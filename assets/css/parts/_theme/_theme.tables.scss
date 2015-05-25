@@ -1,0 +1,27 @@
+/**
+ * _theme.tables
+ */
+.table {
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: $half-spacing-unit;
+  }
+
+  td,
+  tbody th {
+    border: 0 solid #eee;
+    border-top-width: 2px;
+  }
+  td + td{
+    border-left-width: 1px;
+  }
+  tbody th {
+    border-right-width: 1px;
+  }
+}
+
+.numerical {
+  text-align: right;
+}

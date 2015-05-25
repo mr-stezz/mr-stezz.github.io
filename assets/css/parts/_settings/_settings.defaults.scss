@@ -1,0 +1,32 @@
+/**
+ * _settings.defaults.scss
+ */
+$base-font-weight:          400;
+$base-font-size:            16px;
+$base-line-height:          24px;
+$base-font-family:          "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$base-spacing-unit:         $base-line-height;
+$half-spacing-unit:         $base-spacing-unit / 2;
+
+$heading-font-family:       Georgia, Cambria, "Times New Roman", Times, serif;
+$small-heading-font-family: $base-font-family;
+$monospace-font-family:     "M+ 1m", Consolas, "Lucida Console", Courier, monospace;
+$ampersand-font-family:     Ampersand, Georgia, serif;
+
+$tera-size:                 56px;
+$giga-size:                 48px;
+$mega-size:                 40px;
+$kilo-size:                 32px;
+$alpha-size:                28px;
+$beta-size:                 24px;
+$gamma-size:                22px;
+$delta-size:                20px;
+$epsilon-size:              18px;
+$zeta-size:                 16px;
+
+$swatch-one:                #fdfdfd; // body background-colour
+$swatch-two:                #303236; // body copy colour
+$swatch-three:              #9B9B9B; // UI colour
+$swatch-four:               #4581F6; // link colour #738499
+$swatch-five:               #ECE9E0;

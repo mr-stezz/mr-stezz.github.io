@@ -1,0 +1,35 @@
+/**
+ * _generic.reset.scss
+ */
+body,h1,h2,h3,h4,h5,h6,p,blockquote,pre,dl,dd,ol,ul,form,fieldset,legend,table,th,td,caption,hr {
+  margin: 0;
+  padding: 0;
+}
+
+abbr[title],dfn[title] {
+  cursor: help;
+}
+
+u,ins {
+  text-decoration: none;
+}
+
+ins {
+  border-bottom: 1px solid;
+}
+
+img {
+  font-style: italic;
+}
+
+input,textarea,button,select,option {
+  cursor: pointer;
+}
+
+input[type="text"]:active,
+input[type="text"]:focus,
+textarea:active,
+textarea:focus {
+  cursor: text;
+  outline: none;
+}

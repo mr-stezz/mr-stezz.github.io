@@ -1,0 +1,38 @@
+<script src="/assets/js/fontfaceobserver.js"></script>
+<script>
+  (function( w ){
+    if( w.document.documentElement.className.indexOf( "fonts-loaded" ) > -1 ){
+      return;
+    }
+
+    var observerLust = new w.FontFaceObserver( "Lust", {
+      weight: 400
+    });
+    var observerNeueHaasUnicaLight = new w.FontFaceObserver( "Neue Haas Unica", {
+      weight: 300
+    });
+    var observerNeueHaasUnicaLightItalic = new w.FontFaceObserver( "Neue Haas Unica", {
+      weight: 300,
+      style: "italic"
+    });
+    var observerNeueHaasUnicaRegular = new w.FontFaceObserver( "Neue Haas Unica", {
+      weight: 400
+    });
+    var observerNeueHaasUnicaRegularItalic = new w.FontFaceObserver( "Neue Haas Unica", {
+      weight: 400,
+      style: "italic"
+    });
+    var observerNeueHaasUnicaMedium = new w.FontFaceObserver( "Neue Haas Unica", {
+      weight: 500
+    });
+    var observerNeueHaasUnicaMediumItalic = new w.FontFaceObserver( "Neue Haas Unica", {
+      weight: 500,
+      style: "italic"
+    });
+    w.Promise
+      .all([observerLust.check(), observerNeueHaasUnicaLight.check(), observerNeueHaasUnicaLightItalic.check(), observerNeueHaasUnicaRegular.check(), observerNeueHaasUnicaRegularItalic.check(), observerNeueHaasUnicaMedium.check(), observerNeueHaasUnicaMediumItalic.check()])
+      .then(function(){
+        w.document.documentElement.className += " fonts-loaded";
+      });
+  }( this ));
+</script>

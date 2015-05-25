@@ -1,0 +1,12 @@
+/**
+ * _theme.footer-links.scss
+ */
+.footer-links {
+  
+  &__link:hover {
+    @extend .bounce-and-shake;
+  }
+}
+.top-page-link:hover {
+  @extend .bounce-up;
+}

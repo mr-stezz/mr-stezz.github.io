@@ -1,0 +1,45 @@
+/**
+ * _objects.text-cols.scss
+ */
+.text-col,
+.text-col--2,
+.text-col--3,
+.text-col--4 {
+  max-width: ($base-font-size * 30);
+  margin-right: auto;
+  margin-left:  auto;
+}
+
+.text-col--2,
+.text-col--3,
+.text-col--4 {
+  margin-bottom: $base-spacing-unit;
+
+  @media screen and (min-width: 915px) {
+    max-width: none;
+    margin-right: none;
+    margin-left:  none;
+    padding-right: $base-spacing-unit * 8;
+    padding-left:  $base-spacing-unit * 8;
+    @include font-size($base-font-size * 0.875);
+    @include vendor(column-count, 2);
+    @include vendor(column-gap, $base-spacing-unit);
+  }
+}
+@media screen and (min-width: 923px) {
+  .text-col--3,
+  .text-col--4 {
+    padding-right: $base-spacing-unit * 4;
+    padding-left:  $base-spacing-unit * 4;
+    @include font-size($base-font-size * 0.8125);
+    @include vendor(column-count, 3);
+  }
+}
+@media screen and (min-width: 923px) {
+  .text-col--4 {
+    padding-right: $base-spacing-unit * 2;
+    padding-left:  $base-spacing-unit * 2;
+    @include font-size($base-font-size * 0.75);
+    @include vendor(column-count, 4);
+  }
+}

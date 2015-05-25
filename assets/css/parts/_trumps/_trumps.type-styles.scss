@@ -1,0 +1,40 @@
+/**
+ * _trumps.text-styles.scss
+ */
+
+.no-spacing { margin-bottom: 0; }
+
+.t--light {
+  font-weight: 200;
+  color: $swatch-one;
+}
+
+.t--block        { display: block; }
+.t--inline       { display: inline; }
+.t--inline-block { display: inline-block; }
+
+.t--center { text-align: center; }
+.t--right  { text-align: right; }
+.t--left   { text-align: left; }
+
+.t--lowercase { text-transform: lowercase; }
+.t--uppercase {
+  padding-left: 0.1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.t--smallcaps {
+  padding-left: 0.15em;
+  font-variant: small-caps;
+  font-weight: 600;
+  text-transform: lowercase;
+  letter-spacing: 0.15em;
+}
+
+.w--200 { font-weight: 200; }
+.w--300 { font-weight: 300; }
+.w--400 { font-weight: 400; }
+.w--800 { font-weight: 800; }
+
+.w--break { word-wrap: break-word; }
+.w--wrap  { word-wrap: normal; }
