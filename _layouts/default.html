@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html>
-
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+{% include _tools.conditional.html %}
+<head>
+  {% include _head.meta.html %}
+  {% include _head.reload.html %}
+  {% include _head.styles.html %}
+  {% include _head.type.html %}
+  {% include _head.favicon.html %}
+  {% include _head.ios.html %}
+  {% include _head.rss.html %}
+</head>
+<body>
+  {% include _structure.page-header--absolute.html %}
+  {% include _structure.page-masthead.html %}
+  <main class="page-content" role="main">
+    <div class="wrapper">
+      {{ content }}
     </div>
-
-    {% include footer.html %}
-
-  </body>
-
+  </main>
+  {% include _structure.page-footer.html %}
+  <script src="/assets/js/ideal-image-slider.min.js"></script>
+  <script src="/assets/js/moltenleading.min.js"></script>
+  <script src="/assets/js/smooth-scroll.min.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
 </html>
