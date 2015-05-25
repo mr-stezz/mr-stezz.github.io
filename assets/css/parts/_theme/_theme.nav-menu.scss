@@ -11,16 +11,13 @@
 }
   .nav-menu__link {
     font-weight: bold;
-    font-size: 0.75em;
-    line-height: 55px;
+    font-size: 0.75rem;
+    font-size: 12px;
+    line-height: 4.583em;
     font-family: $small-heading-font-family;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    letter-spacing: 0.1em
+    -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+       -moz-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+            font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
   }
-
-// .page-header--pinned {
-// 
-  // & .nav-menu__link {
-    // color: #fff;
-  // } 
-// }
