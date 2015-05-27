@@ -1,7 +1,6 @@
---- 
+---
 layout: default_page
-title: Blog
-subtitle: essays and (stupid) ideas
+title: blog
 ---
 <section class="posts" role="main">
   <ul class="nav  nav--stacked">
