@@ -1,6 +1,6 @@
 ---
 layout: default_page
-title: blog
+title: Blog
 ---
 <section class="posts" role="main">
   <ul class="nav  nav--stacked">
