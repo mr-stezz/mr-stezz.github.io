@@ -1,6 +1,7 @@
 ---
 layout: default_page
 title: Blog
+subtitle: ramblings and thoughts
 ---
 <section class="posts" role="main">
   <ul class="nav  nav--stacked">
