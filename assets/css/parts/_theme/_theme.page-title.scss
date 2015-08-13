@@ -1,7 +1,13 @@
 /**
  * _theme.page-title.scss
  */
+.fonts-loaded .page-title {
+  font-family: "Neue Haas Unica", $small-heading-font-family;
+}
 .page-title {
-  @extend .mega;
+  font-weight: 500;
+  font-size: 1.125rem;
+  font-size: 18px;
+  color: $swatch-two;
   text-align: center;
 }
