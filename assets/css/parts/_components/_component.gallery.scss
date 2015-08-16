@@ -15,7 +15,8 @@
   
 .gallery--two-up > img                     { width: 50%; }
 
-.gallery--three-up > img                   { width: 33.333%; }
+.gallery--three-up > img:first-of-type     { width: 100%; }
+.gallery--three-up > img                   { width: 50%; }
 
 .gallery--four-up > img:first-of-type      { width: 100%; }
 .gallery--four-up > img                    { width: 33.333%; }
