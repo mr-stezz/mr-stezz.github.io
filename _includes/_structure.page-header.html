@@ -4,15 +4,9 @@
       <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="{{ site.title }}" style="">
     </a>
     <ul class="nav-menu  nav">
-      <li class="nav-menu__item"><a href="/" class="nav-menu__link{% if page.url == node.url %}  nav-menu__link--active{% endif %}">Work</a></li>
-      {% assign pages_list = site.pages %}
-      {% for node in pages_list %}
-      {% if node.title != null %}
-      {% if node.layout == "default_page" %}
-      <li class="nav-menu__item"><a href="{{ node.url }}" class="nav-menu__link{% if page.url == node.url %}  nav-menu__link--active{% endif %}">{{ node.title }}</a></li>
-      {% endif %}
-      {% endif %}
-      {% endfor %}
+      <li class="nav-menu__item"><a href="/" class="nav-menu__link{% if page.url == node.url %}  nav-menu__link--active{% endif %}" title="The latest and greatest.">Work</a></li>
+      <li class="nav-menu__item"><a href="/about" class="nav-menu__link{% if page.url == node.url %}  nav-menu__link--active{% endif %}" title="So who am I anyway?">About</a></li>
+      <li class="nav-menu__item"><a href="https://medium.com/@mr_stezz" class="nav-menu__link{% if page.url == node.url %}  nav-menu__link--active{% endif %}" title="Find my ideas, musings and general fluffery over on Medium.">Blog</a></li>
     </ul>
   </nav>
 </header>
