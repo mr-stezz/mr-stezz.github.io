@@ -5,9 +5,6 @@
       return;
     }
 
-    var observerLust = new w.FontFaceObserver( "Lust", {
-      weight: 400
-    });
     var observerNeueHaasUnicaLight = new w.FontFaceObserver( "Neue Haas Unica", {
       weight: 300
     });
@@ -30,7 +27,7 @@
       style: "italic"
     });
     w.Promise
-      .all([observerLust.check(), observerNeueHaasUnicaLight.check(), observerNeueHaasUnicaLightItalic.check(), observerNeueHaasUnicaRegular.check(), observerNeueHaasUnicaRegularItalic.check(), observerNeueHaasUnicaMedium.check(), observerNeueHaasUnicaMediumItalic.check()])
+      .all([observerNeueHaasUnicaLight.check(), observerNeueHaasUnicaLightItalic.check(), observerNeueHaasUnicaRegular.check(), observerNeueHaasUnicaRegularItalic.check(), observerNeueHaasUnicaMedium.check(), observerNeueHaasUnicaMediumItalic.check()])
       .then(function(){
         w.document.documentElement.className += " fonts-loaded";
       });
