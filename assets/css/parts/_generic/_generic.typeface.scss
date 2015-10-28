@@ -1,17 +1,6 @@
 /**
  * _generic.typeface.scss
  */
-
-/**
- * Lust
- */
-@font-face {
-  font-family: Lust;
-  src: url(../fonts/lust/Lust-Regular.woff) format('woff');
-  font-style: normal;
-  font-weight: normal;
-}
-
 /**
  * Neue Haas Unica
  */
@@ -99,19 +88,28 @@
 
 /**
  * FontFaceObserve will apply a class on the html when
- * the webfonts are ready: 
+ * the webfonts are ready:
  * http://www.filamentgroup.com/lab/font-events.html
  */
 .fonts-loaded {
-  font-family: "Neue Haas Unica", $base-font-family;
+  font-family: $stylised-font-family, $base-font-family;
 }
 .fonts-loaded h1,
 .fonts-loaded h2,
 .fonts-loaded h3,
 .fonts-loaded h4 {
-  font-family: Lust, $heading-font-family;
+  font-family: $stylised-font-family, $heading-font-family;
 }
 .fonts-loaded h5,
 .fonts-loaded h6 {
-  font-family: "Neue Haas Unica", $small-heading-font-family;
+  font-family: $stylised-font-family, $small-heading-font-family;
+}
+.fonts-loaded figcaption {
+  font-family: $stylised-font-family, $small-heading-font-family;
+}
+.fonts-loaded .page-title {
+  font-family: $stylised-font-family, $small-heading-font-family;
+}
+.fonts-loaded .page-subtitle {
+  font-family: $stylised-font-family, $small-heading-font-family;
 }
