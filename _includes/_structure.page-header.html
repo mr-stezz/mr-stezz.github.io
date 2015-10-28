@@ -6,7 +6,32 @@
     <ul class="nav-menu  nav">
       <li class="nav-menu__item"><a href="/" class="nav-menu__link{% if page.url == node.url %}  nav-menu__link--active{% endif %}" title="The latest and greatest.">Work</a></li>
       <li class="nav-menu__item"><a href="/about" class="nav-menu__link{% if page.url == node.url %}  nav-menu__link--active{% endif %}" title="So who am I anyway?">About</a></li>
-      <li class="nav-menu__item"><a href="https://medium.com/@mr_stezz" class="nav-menu__link{% if page.url == node.url %}  nav-menu__link--active{% endif %}" title="Find my ideas, musings and general fluffery over on Medium.">Blog</a></li>
+      <li class="nav-menu__item">
+        <label for="toggle-checkbox" class="nav-menu__link  toggle-label">Contact</label>
+        <input type="checkbox" id="toggle-checkbox" name="toggle-checkbox" class="toggle-checkbox">
+        <form id="js-form" class="form" method="POST">
+          <input type="hidden" name="_subject" value="Contact Form" />
+          <ul class="formgroup">
+            <li class="formfield">
+              <span class="label">To:</span>
+              <span id="js-reciever" class="reciever"></span>
+            </li>
+            <li class="formfield">
+              <label class="label" for="subject">Subject:</label>
+              <input type="text" name="subject" id="subject" required/>
+            </li>
+            <li class="formfield">
+              <label class="label" for="_replyto">From:</label>
+              <input type="email" name="_replyto" id="_replyto" placeholder="your@email.address.com" required/>
+            </li>
+            <li class="formfield  formfield--full">
+              <textarea name="message" placeholder="Just sayin&lsquo; hi&hellip;"></textarea>
+              <input type="text" name="_gotcha" style="display:none"/>
+              <button type="submit" class="submit"><svg class="submit__icon" width="19px" height="14px" viewBox="0 0 19 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.0669874,0 L0,6.56981361 L0,9.42002724 L6.23198682,9.43460427 L8.72287618,13.4200272 L10.797806,13.4200272 L18.0669874,0 L18.0669874,0 Z M10.2032069,12.4216171 L9.28120432,12.426556 L6.77712382,8.42002724 L1,8.43034218 L1,7.27000283 L15.958945,1.83062451 L10.2032069,12.4216171 L10.2032069,12.4216171 Z M16.8886568,1.18276678 L16.6392285,0.74537248 L5.85140223,8.71898321 L5.6503582,8.86758097 L5.94755373,9.26966904 L6.14859777,9.12107128 L16.8886568,1.18276678 L16.8886568,1.18276678 Z M3,13.8221511 L7.76499947,10.8440264 L7.23500053,9.99602809 L4,12.0261063 L4,9.38449334 L3,9.38449334 L3,13.8221511 L3,13.8221511 Z" id="icon"></path></svg></button>
+            </li>
+          </ul>
+        </form>
+      </li>
     </ul>
   </nav>
 </header>
