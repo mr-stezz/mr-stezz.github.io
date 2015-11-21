@@ -1,10 +1,10 @@
 # Site settings
-title: Stez.me
-tagline: "Photography + Design"
-email: mstezy@gmail.com
+title: Michael Stezycki
+tagline: "Designer"
+email: ahoy@stezycki.com
 description: > # this means to ignore newlines until "baseurl:"
-  Design and photography from London based designer, @Mr_Stezz
-keywords: "design, web, html, css, interaction, photography, london, uk"
+  Apps and websites from London based designer, @Mr_Stezz
+keywords: "design, ux, ui, product, web, app, html, css, interaction, photography, london, uk"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://stez.me" # the base hostname & protocol for your site
 twitter_username: mr_stezz
