@@ -1,13 +1,13 @@
 <header id="js-top-of-page" class="page-header">
   <nav class="wrapper" role="navigation">
-    <a class="page-logo" href="/" title="Go back home.">
-      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="{{ site.title }}" style="">
+    <a class="page-logo" href="/" title="Michael Stezycki &middot; Designer.">
+      <svg class="page-logo__img" viewBox="0 0 69 31"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>
     </a>
     <ul class="nav-menu  nav">
       <li class="nav-menu__item"><a href="/" class="nav-menu__link{% if page.url == node.url %}  nav-menu__link--active{% endif %}" title="The latest and greatest.">Work</a></li>
-      <li class="nav-menu__item"><a href="/about" class="nav-menu__link{% if page.url == node.url %}  nav-menu__link--active{% endif %}" title="So who am I anyway?">About</a></li>
+      <li class="nav-menu__item"><a href="/about" class="nav-menu__link{% if page.url == node.url %}  nav-menu__link--active{% endif %}" title="So who am I, anyway?">About</a></li>
       <li class="nav-menu__item">
-        <label for="toggle-checkbox" class="nav-menu__link  toggle-label">Contact</label>
+        <label for="toggle-checkbox" class="nav-menu__link  toggle-label" title="Drop me a line.">Contact</label>
         <input type="checkbox" id="toggle-checkbox" name="toggle-checkbox" class="toggle-checkbox">
         <form id="js-form" class="form" method="POST">
           <input type="hidden" name="_subject" value="Contact Form" />
@@ -18,7 +18,7 @@
             </li>
             <li class="formfield">
               <label class="label" for="subject">Subject:</label>
-              <input type="text" name="subject" id="subject" required/>
+              <input type="text" name="subject" id="subject" placeholder="work enquiry" required/>
             </li>
             <li class="formfield">
               <label class="label" for="_replyto">From:</label>
