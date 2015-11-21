@@ -6,30 +6,12 @@ a {
   &:active {
     outline: 0;
   }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: #9FAAB8;
+  }
 }
-
-// .page-content a {
-//   text-shadow: -1px 1px 0 $swatch-one,
-//                 1px 1px 0 $swatch-one;
-//   background-image: -webkit-linear-gradient(top, #fff 50%, lighten($swatch-two, 40%) 50%);
-//   background-image:    -moz-linear-gradient(top, #fff 50%, lighten($swatch-two, 40%) 50%);
-//   background-image:      -o-linear-gradient(top, #fff 50%, lighten($swatch-two, 40%) 50%);
-//   background-image:         linear-gradient(to bottom, #fff 50%, lighten($swatch-two, 40%) 50%);
-//   background-repeat: repeat-x;
-//   background-size: 0.125em 0.125em;
-//   background-position: 0 0.875em;
-//   @include vendor(transition, background-image 0.3s ease-in-out);
-
-//   &:hover {
-//     background-image: -webkit-linear-gradient(top, #fff 50%, lighten($swatch-two, 10%) 50%);
-//     background-image:    -moz-linear-gradient(top, #fff 50%, lighten($swatch-two, 10%) 50%);
-//     background-image:      -o-linear-gradient(top, #fff 50%, lighten($swatch-two, 10%) 50%);
-//     background-image:         linear-gradient(to bottom, #fff 50%, lighten($swatch-two, 10%) 50%);
-//     @include vendor(transition, background-image 0.3s ease-in-out);
-//   }
-
-//   &::selection,
-//   a::-moz-selection {
-//     text-shadow: 0;
-//   }
-// }
