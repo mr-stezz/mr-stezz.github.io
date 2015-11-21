@@ -30,8 +30,8 @@
 
     var message = new Object();
     message.loading = 'Loading&hellip';
-    message.success = 'Please allow 48 hours for a response :)';
-    message.failure = 'Whoops! Something went wrong, please try again :(';
+    message.success = '🚀';
+    message.failure = '🚫';
 
     var statusMessage = document.createElement('div');
     statusMessage.className = 'status';
@@ -62,6 +62,7 @@
           // 200 - 299 = successful
           if (request.status == 200 && request.status < 300)
             statusMessage.innerHTML = message.success;
+            // TODO! Remove open class after timeout
           else
             contactform.insertAdjacentHTML('beforeend', message.failure);
         }
@@ -72,7 +73,7 @@
 // molten leading
 moltenLeading("h1", {
   minline: 1.2,
-  maxline: 1.8,
+  maxline: 1.4,
   minwidth: 400,
   maxwidth: 768
 });
