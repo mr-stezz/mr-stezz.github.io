@@ -2,7 +2,6 @@
 {% include _tools.conditional.html %}
 <head>
   {% include _head.meta.html %}
-  {% include _head.reload.html %}
   {% include _head.styles.html %}
   {% include _head.type.html %}
   {% include _head.favicon.html %}
@@ -10,6 +9,7 @@
   {% include _head.rss.html %}
 </head>
 <body>
+  {% include _tools.svg-symbols.html %}
   {% include _structure.page-header.html %}
   <main class="page-content" role="main">
     <div class="wrapper">
@@ -17,8 +17,6 @@
     </div>
   </main>
   {% include _structure.page-footer.html %}
-  <script src="/assets/js/moltenleading.min.js"></script>
-  <script src="/assets/js/smooth-scroll.min.js"></script>
-  <script src="/assets/js/app.js"></script>
+  {% include _tools.scripts.html %}
 </body>
 </html>
