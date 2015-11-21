@@ -10,8 +10,8 @@ $stylised-font-family:      "Neue Haas Unica";
 $base-spacing-unit:         $base-line-height;
 $half-spacing-unit:         $base-spacing-unit / 2;
 
-$heading-font-family:       Georgia, Cambria, "Times New Roman", Times, serif;
-$small-heading-font-family: $base-font-family;
+$heading-font-family:       $base-font-family;
+$small-heading-font-family: $heading-font-family;
 $monospace-font-family:     "M+ 1m", Consolas, "Lucida Console", Courier, monospace;
 $ampersand-font-family:     Ampersand, Georgia, serif;
 

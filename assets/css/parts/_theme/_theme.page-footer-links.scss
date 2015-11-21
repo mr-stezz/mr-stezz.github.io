@@ -2,11 +2,25 @@
  * _theme.footer-links.scss
  */
 .footer-links {
-  
-  &__link:hover {
-    @extend .bounce-and-shake;
+
+  &__link {
+    fill: $swatch-four;
+    transform: translateY(0) scale(1);
+    transition: .2s cubic-bezier(0.175, .885, .32, 1.275);
+
+    &:hover {
+      transform: translateY(0.12) scale(1.25);
+    }
+
+    &:visited {
+      fill: #9FAAB8;
+    }
   }
 }
-.top-page-link:hover {
-  @extend .bounce-up;
+
+.top-page-link {
+
+  &:hover {
+    @extend .slide-up;
+  }
 }

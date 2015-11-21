@@ -19,7 +19,7 @@
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
-    @include vendor(user-select, none);
+    user-select: none;
     pointer-events: none;
   }
 }
