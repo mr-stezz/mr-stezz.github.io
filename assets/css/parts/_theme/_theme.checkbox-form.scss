@@ -81,14 +81,14 @@ textarea {
   }
   &::after {
     content: '';
-    width: 1.6875em;
-    height: 1.1875em;
+    width: 1.875em;
+    height: 0.75em;
     position: absolute;
     bottom: 100%;
     //left:   50%;
     right: 2rem;
     z-index: 2;
-    background-image: url('../img/ui/popup--pointer-up.png');
+    background-image: url('../img/ui/tooth.svg');
     background-repeat: no-repeat;
     background-size: 100%;
     pointer-events: none;

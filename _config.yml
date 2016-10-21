@@ -12,7 +12,6 @@ github_username:  mr-stezz
 repo: "https://github.com/mr-stezz/mr-stezz.github.io"
 
 # Build settings
-markdown: redcarpet
-pygments: true
+markdown: kramdown
 permalink: pretty
-paginate: 1
+paginate: 0
