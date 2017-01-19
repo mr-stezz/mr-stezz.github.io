@@ -154,6 +154,8 @@ textarea {
       display: block;
       fill: $swatch-four;
     }
+
+    // overlay some content and centre content
     .status {
       position: absolute;
       top: 0;
@@ -162,11 +164,28 @@ textarea {
       left: 0;
       z-index: 1;
       font-size: 0.75rem;
-      line-height: 16.5;
       color: $swatch-three;
       text-align: center;
       background-color: #fff;
       border-radius: 0.4375em;
+
+      &__img {
+        display: block;
+        width: 4.833em;
+        height: 4.833em;
+        margin-top: 3.58em;
+        margin-right: auto;
+        margin-left:  auto;
+      }
+
+      &__title {
+        display: block;
+        font-size: 1.416em;
+      }
+
+      // &__body {
+      //
+      // }
 
       //&:empty {
       //  width: 0;

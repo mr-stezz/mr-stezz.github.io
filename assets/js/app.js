@@ -189,7 +189,7 @@ var contactform = document.getElementById("js-form"),
     email = "ahoy@stezycki.com";
 if (contactform.setAttribute("action", "//formspree.io/" + email), reciever.textContent = email, document.forms[0] && window.FormData) {
     var message = new Object;
-    message.loading = "Loading&hellip", message.success = "🚀", message.failure = "🚫";
+    message.loading = "Loading&hellip", message.success = "<svg class='status__img'><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#success'></use></svg><span class='status__title'>Email sent!</span><span class='status__body'>Please wait at least 48 hours for a response :)</span>", message.failure = "<div class='status'><svg class='status__img'><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#error'></use></svg><span class='status__title'>Email didn't send!</span><span class='status__body'>Please try again.</span></div>";
     var statusMessage = document.createElement("div");
     statusMessage.className = "status";
     var request = new XMLHttpRequest;
