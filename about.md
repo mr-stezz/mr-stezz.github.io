@@ -1,6 +1,7 @@
 ---
 layout: default_page
 title: About
+group: "navigation"
 ---
 <div class="text-col">
   <figure>
