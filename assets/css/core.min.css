@@ -1904,6 +1904,7 @@ td {
   -webkit-user-select: none;
   user-select: none; }
   .nav-menu__link--active {
+    font-weight: 500;
     color: #484b51;
     cursor: default; }
     .nav-menu__link--active:hover {
@@ -2056,11 +2057,20 @@ textarea {
   left: 0;
   z-index: 1;
   font-size: 0.75rem;
-  line-height: 16.5;
   color: #7E7E7E;
   text-align: center;
   background-color: #fff;
   border-radius: 0.4375em; }
+  .status__img {
+    display: block;
+    width: 4.833em;
+    height: 4.833em;
+    margin-top: 3.58em;
+    margin-right: auto;
+    margin-left: auto; }
+  .status__title {
+    display: block;
+    font-size: 1.416em; }
 
 /**
  * _theme.footer-links.scss
