@@ -2068,8 +2068,11 @@ textarea {
     margin-top: 3.58em;
     margin-right: auto;
     margin-left: auto; }
-  .status__title {
+  .status__title, .status__body {
     display: block;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .status__title {
     font-size: 1.416em; }
 
 /**
