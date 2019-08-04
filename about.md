@@ -5,7 +5,7 @@ group: "navigation"
 ---
 <div class="text-col">
   <figure>
-    <img src="http://stezycki.com/assets/img/content/mugshot@2x.jpg" alt="Photo taken by Michael Jones" alt="Photo taken by Michael Jones">
+    <img src="assets/img/content/mugshot@2x.jpg" alt="Photo taken by Michael Jones" alt="Photo taken by Michael Jones">
     <figcaption>Photo taken by Michael Jones.</figcaption>
   </figure>
   <p>My name is Michael Stezycki and I'm a designer interested in designing and building products and tools that leave the environment and us humans in a better state than before.</p>
