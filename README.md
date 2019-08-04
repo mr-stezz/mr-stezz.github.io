@@ -1,4 +1,4 @@
-stezycki-dot-com
+stez-dot-me
 ================
 
-A repo for stezycki.com and all it's subpages.
+A repo for stez.me and all it's subpages.
