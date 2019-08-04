@@ -1,9 +1,9 @@
 {% for node in pages_list %}
   {% if group == null or group == node.group %}
     {% if page.url == node.url %}
-      <li class="nav-menu__item"><span class="nav-menu__link  nav-menu__link--active">{{node.title}}</span></li>
+      <span class="nav-link  nav-link--active">{{node.title}}</span>
     {% else %}
-      <li class="nav-menu__item"><a href="{{node.url}}" class="nav-menu__link">{{node.title}}</a></li>
+      <a href="{{node.url}}" class="nav-link">{{node.title}}</a>
     {% endif %}
   {% endif %}
 {% endfor %}

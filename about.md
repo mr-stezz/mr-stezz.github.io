@@ -5,10 +5,10 @@ group: "navigation"
 ---
 <div class="text-col">
   <figure>
-    <img src="assets/img/content/mugshot@2x.jpg" alt="Photo taken by Michael Jones" alt="Photo taken by Michael Jones">
+    <img src="assets/img/content/mugshot.jpg" srcset="assets/img/content/mugshot.jpg 1x, assets/img/content/mugshot@2x.jpg 2x" alt="A head and shoulders shot of my face.">
     <figcaption>Photo taken by Michael Jones.</figcaption>
   </figure>
-  <p>My name is Michael Stezycki and I'm a designer interested in designing and building products and tools that leave the environment and us humans in a better state than before.</p>
-  <p>From a young age I've been fascinated about what individuals can achieve with technology and how it can empower people's lives and circumstances. I currently work in London, UK for the incubator and accelerator, Founders Factory. With a bright team of individuals, we conceptualise and tease out problems to solve with our corporate partners and ultimately bring to life industry disrupting products and services.</p>
-  <p>As well as designing digital products, I also have a shutter bug and love to take photos and travel to new and exciting places.</p>
+  <p>My name is Michael Stezycki and I’m a designer with an interest in prototyping, design systems and the intersection of business and technology.</p>
+  <p>Raised in East London and eventually the West Midlands, I studied Interactive Media at Stratford-upon-Avon College and passed with a distinction, distinction, merit. My childhood love of making crude websites and icons grew into a adulthood love of designing and building simple, well thought-out digital products for people. My fascination with technology hasn't stopped, and I’ve been fascinated by how it can change lives for the better as well as understanding its addictive effects on society.</p>
+  <p>As well as designing digital products, I also have a shutter bug and love to take photos in new and exotic places. I’m a firm believer of the fact that travel broadens the mind&mdash;Yes, I stole that from Stephen Merchant and I’m not even sorry.</p>
 </div>
