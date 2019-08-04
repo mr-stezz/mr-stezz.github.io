@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="14px" viewBox="0 0 35 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>tooth</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-Copy-9" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1079.000000, -72.000000)">
+        <g id="Homepage" transform="translate(70.000000, 50.000000)" fill-rule="nonzero">
+            <g id="Header">
+                <g id="Email:Filled" transform="translate(803.000000, 22.000000)">
+                    <g id="tooth" transform="translate(206.000000, 0.000000)">
+                        <path d="M0,13 L35,13 L35,14 L0,14 L0,13 Z M35,13 L34.37,13 C30.49,13 27.84,11.07 24.8,6.91 C24.8,6.92 22.45,3.56 21.79,2.74 C20.32,0.93 18.99,0 17.37,0 C15.75,0 14.42,0.93 12.95,2.74 C12.29,3.56 9.93,6.92 9.93,6.91 C6.9,11.07 4.24,13 0.37,13 L0,13 L0,14 L35,14 L35,13 Z" id="Shape" fill-opacity="0.4" fill="#000000"></path>
+                        <path d="M0.18,14 L0.37,14 C10.37,14 12.37,1 17.37,1 C22.37,1 24.37,14 34.37,14 L34.68,14 L0.18,14 Z" id="Shape" fill="#3C3C3C"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
