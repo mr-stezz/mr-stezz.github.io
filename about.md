@@ -5,7 +5,7 @@ group: "navigation"
 ---
 <div class="text-col">
   <figure>
-    <img src="assets/img/content/mugshot.jpg" srcset="assets/img/content/mugshot.jpg 1x, assets/img/content/mugshot@2x.jpg 2x" alt="A head and shoulders shot of my face.">
+    <img src="/assets/img/content/mugshot.jpg" srcset="/assets/img/content/mugshot.jpg 1x, /assets/img/content/mugshot@2x.jpg 2x" alt="A head and shoulders shot of my face.">
     <figcaption>Photo taken by Michael Jones.</figcaption>
   </figure>
   <p>My name is Michael Stezycki and I’m a designer with an interest in prototyping, design systems and the intersection of business and technology.</p>
