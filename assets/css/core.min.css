@@ -2060,6 +2060,11 @@ a.nav-logo {
   transform-origin: bottom center;
   transform: translateY(100vh);
   transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) 0.05s; }
+  @supports(padding: max(0px)) {
+    .form {
+      height: max(75vh, env(safe-area-inset-bottom));
+    }
+  }
   @media (min-width: 400px) {
     .form {
       width: 15em;
@@ -2156,7 +2161,11 @@ a.nav-logo {
   padding: 8px 0;
   flex-direction: column;
   align-items: flex-end }
-
+@supports(padding: max(0px)) {
+  .formfield--full {
+    height: max(calc(100% - 98px), env(safe-area-inset-bottom));
+  }
+}
 .formfield + .formfield {
   border-top-width: 1px;
 }
