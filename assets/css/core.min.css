@@ -2022,8 +2022,6 @@ a.nav-logo {
     left:   0;
   z-index:  0;
   cursor: default;
-  user-select: none;
-  pointer-events: none;
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
 }
