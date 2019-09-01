@@ -2073,7 +2073,7 @@ a.nav-logo {
   }
   @supports(padding: max(0px)) {
     .form {
-      height: max(75vh, env(safe-area-inset-bottom));
+      height: max(75vh, calc(env(safe-area-inset-bottom) + env(safe-area-inset-top)));
     }
   }
   @media (min-width: 400px) {
@@ -2178,6 +2178,7 @@ a.nav-logo {
 @supports(padding: max(0px)) {
   .formfield--full {
     height: max(calc(100% - 98px), env(safe-area-inset-bottom));
+    padding-bottom: max(8px, env(safe-area-inset-bottom));
   }
 }
 .formfield + .formfield {
