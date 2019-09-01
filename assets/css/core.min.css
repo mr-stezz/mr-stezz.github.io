@@ -5,7 +5,7 @@
 :root {
   --blue--light:      #007AFF;
   --blue--dark:       #5AC8FA;
-  --highlight--light: #D5E7FA;
+  --highlight--light: rgba(0,122,255,0.5);
   --highlight--dark:  rgba(212,242,255,0.16);
   --email-form--dark: #3C3C3C;
 }
@@ -2284,7 +2284,7 @@ a.nav-logo {
 
 .form:invalid .submit {
   cursor: not-allowed;
-  border-color: #B2D7FF }
+  border-color: var(--highlight--light) }
 @media(prefers-color-scheme: dark) {
   .form:invalid .submit {
     border-color: var(--highlight--dark);
@@ -2294,7 +2294,7 @@ a.nav-logo {
   border-color: var(--highlight--dark);
 }
 .form:invalid .submit__icon {
-  fill: #B2D7FF }
+  fill: var(--highlight--light) }
 @media(prefers-color-scheme: dark) {
   .form:invalid .submit__icon {
     fill: var(--highlight--dark);
