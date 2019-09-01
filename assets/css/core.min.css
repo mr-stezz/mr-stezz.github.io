@@ -441,6 +441,11 @@ html {
   -o-font-feature-settings: "liga","kern";
   font-feature-settings: "liga","kern";
   scroll-behavior: smooth }
+  @media screen and (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto !important
+    }
+  }
   @media screen and (min-width: 0px) and (max-width: 249px) {
     html {
       font-size: 75%; } }
@@ -2060,6 +2065,11 @@ a.nav-logo {
   transform-origin: bottom center;
   transform: translateY(100vh);
   transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) 0.05s; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .form {
+      transition: none !important
+    }
+  }
   @supports(padding: max(0px)) {
     .form {
       height: max(75vh, env(safe-area-inset-bottom));
@@ -2075,7 +2085,10 @@ a.nav-logo {
       right: 1.5em;
       transform-origin: top right;
       transform: translateY(-10px) scale(0.75);
-      transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); } }
+      transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+    @media screen and (prefers-reduced-motion: reduce) { .form { transition: none !important } }    
+  }
   .form:focus {
     outline: none; }
   .form::before {
@@ -2330,6 +2343,11 @@ a.nav-logo {
   fill: #4581F6;
   transform: translateY(0) scale(1);
   transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    .footer-links__link { transition: none !important }
+  }
+
   .footer-links__link:hover {
     transform: translateY(0.12) scale(1.25); }
   .footer-links__link:visited {
@@ -2585,6 +2603,9 @@ a.nav-logo {
   -o-transition: all 0.1s linear;
   -ms-transition: all 0.1s linear;
   transition: all 0.1s linear; }
+@media screen and (prefers-reduced-motion: reduce) {
+  .simptip-movable:before, .simptip-movable:after { transition: none !important }
+}
 
 .simptip-smooth:after {
   -webkit-border-radius: 4px;
@@ -2596,6 +2617,9 @@ a.nav-logo {
   -o-transition: opacity 0.2s linear, visibility 0.2s linear;
   -ms-transition: opacity 0.2s linear, visibility 0.2s linear;
   transition: opacity 0.2s linear, visibility 0.2s linear; }
+@media screen and (prefers-reduced-motion: reduce) {
+  .simptip-fade:before, .simptip-fade:after { transition: none !important }
+}
 
 .simptip-multiline:after {
   height: auto;
