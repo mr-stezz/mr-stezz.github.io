@@ -588,10 +588,10 @@ a {
     color: #9FAAB8; }
 @media(prefers-color-scheme: dark) {
   a {
-    color: #5AC8FA }
+    color: var(--blue--dark) }
 }
 .night a {
-  color: #5AC8FA }
+  color: var(--blue--dark) }
 
 /**
  * _base.quotes.scss
@@ -1993,9 +1993,9 @@ a.nav-logo {
     .nav-link { letter-spacing: 0.1em }
   }
 @media(prefers-color-scheme: dark) {
-  .nav-link { fill: #5AC8FA }
+  .nav-link { fill: var(--blue--dark) }
 }
-.night .nav-link { fill: #5AC8FA }
+.night .nav-link { fill: var(--blue--dark) }
 
 .nav-link:not(:first-of-type),
 .nav-link.toggle-label {
@@ -2014,10 +2014,10 @@ a.nav-logo {
   cursor: pointer; }
 @media(prefers-color-scheme: dark) {
   .toggle-label {
-    color: #5AC8FA }
+    color: var(--blue--dark) }
 }
 .night .toggle-label {
-  color: #5AC8FA }
+  color: var(--blue--dark) }
   .toggle-label:hover {
     text-decoration: underline; }
 
