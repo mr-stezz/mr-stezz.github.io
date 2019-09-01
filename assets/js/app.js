@@ -73,7 +73,7 @@
     maxwidth: 768
   }), moltenLeading(".gamma", {
     minline: 1.1,
-    maxline: 1.5,
+    maxline: 1.35,
     minwidth: 400,
     maxwidth: 768
   }), moltenLeading(".lead", {
