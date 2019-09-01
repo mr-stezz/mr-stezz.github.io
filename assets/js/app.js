@@ -1,3 +1,4 @@
+// Molten Leading
 ! function(e, t, n) {
   function s(e, n) {
     if (!e) throw Error("No selector supplied for Molten Leading");
@@ -79,6 +80,7 @@
     minwidth: 400,
     maxwidth: 768
   }),
+  // SmoothScroll
   function(e, t) {
     "function" == typeof define && define.amd ? define("smoothScroll", t(e)) : "object" == typeof exports ? module.exports = t(e) : e.smoothScroll = t(e)
   }(window || this, function(e) {
@@ -165,8 +167,10 @@
       o && (a.destroy(), t = c(i, n || {}), s = document.querySelector("[data-scroll-header]"), document.addEventListener("click", u, !1), s && e.addEventListener("resize", d, !1))
     }, a
   }), smoothScroll.init();
+// Date Class Adder
 var currentTime = (new Date).getHours();
 7 <= currentTime && currentTime < 18 ? document.body && (document.body.className = "day") : document.body && (document.body.className = "night");
+// Formspree Form
 var contactform = document.getElementById("js-form"),
   reciever = document.getElementById("js-reciever"),
   email = "ahoy@stezycki.com";
