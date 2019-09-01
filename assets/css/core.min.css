@@ -5,6 +5,8 @@
 :root {
   --blue--light:      #007AFF;
   --blue--dark:       #5AC8FA;
+  --highlight--light: #D5E7FA;
+  --highlight--dark:  rgba(212,242,255,0.16);
   --email-form--dark: #3C3C3C;
 }
 /**
@@ -2234,16 +2236,16 @@ a.nav-logo {
   margin-right: auto;
   margin-left: 0.4375em;
   padding: 0.0625rem 0.25rem 0.125rem;
-  background: #D5E7FA;
+  background: var(--highlight--light);
   color: #292929;
   border-radius: 3px; }
 @media(prefers-color-scheme: dark) {
   .reciever {
-    background: #D4F2FF;
+    background: var(--highlight--dark);
     color: var(--blue--dark) }
 }
 .night .reciever {
-  background: #D4F2FF;
+  background: var(--highlight--dark);
   color: var(--blue--dark) }
 
 /* Email Form Submit Button */
@@ -2285,21 +2287,21 @@ a.nav-logo {
   border-color: #B2D7FF }
 @media(prefers-color-scheme: dark) {
   .form:invalid .submit {
-    border-color: #D4F2FF;
+    border-color: var(--highlight--dark);
   }
 }
 .night .form:invalid .submit {
-  border-color: #D4F2FF;
+  border-color: var(--highlight--dark);
 }
 .form:invalid .submit__icon {
   fill: #B2D7FF }
 @media(prefers-color-scheme: dark) {
   .form:invalid .submit__icon {
-    fill: #D4F2FF;
+    fill: var(--highlight--dark);
   }
 }
 .night .form:invalid .submit__icon {
-  fill: #D4F2FF;
+  fill: var(--highlight--dark);
 }
 
 /* Email Form States */
