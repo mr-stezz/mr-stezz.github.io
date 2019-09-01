@@ -2157,12 +2157,19 @@ a.nav-logo {
   align-items: baseline;
   justify-content: space-between;
   margin-left: 24px;
-  padding: 7px 0 6px;
-  border: 0 solid #E6E6E6;
-  font-size: 13px;
-  line-height: 16px;
+  padding: 10px 9 11px;
+  font-size: 16px;
+  line-height: 1.5;
   text-align: left;
-  color: #7E7E7E; }
+  color: #7E7E7E;
+  border: 0 solid #E6E6E6 }
+@media (min-width: 400px) {
+  .formfield {
+    padding: 7px 0 6px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
 @media(prefers-color-scheme: dark) {
   .formfield {
     color: #999;
@@ -2173,10 +2180,16 @@ a.nav-logo {
   border-color: #656463 }
 
 .formfield--full {
-  height: calc(100% - 98px);
-  padding: 8px 0;
+  height: calc(100% - 136px);
   flex-direction: column;
-  align-items: flex-end }
+  align-items: flex-end;
+  padding: 13px 0 12px; }
+@media (min-width: 400px) {
+  .formfield--full {
+    height: calc(100% - 98px);
+    padding: 8px 0;
+  }
+}
 @supports(padding: max(0px)) {
   .formfield--full {
     height: max(calc(100% - 98px), env(safe-area-inset-bottom));
@@ -2208,49 +2221,75 @@ a.nav-logo {
 
 .formfield .label {
   flex-basis: auto;
-  padding-bottom: 3px;
+}
+@media (min-width: 400px) {
+  .formfield .label {
+    padding-bottom: 3px;
+  }
 }
 
 .formfield input {
   flex-shrink: 1;
   flex-grow: 2;
-  padding: 0 5px;
-  line-height: 16px;
+  margin-left: 4px;
+  padding-right: 12px;
   background-color: none;
+}
+@media (min-width: 400px) {
+  .formfield input {
+    margin-left: 5px;
+    padding-right: 8px;
+    line-height: 16px;
+  }
 }
 
 .formfield .textarea {
   width: 100%;
-  flex: 1 1 4.75rem;
-  margin: 8px 0;
-  font-size: 14px;
+  flex: 1 1 auto;
+  padding-right: 12px;
   border: none;
   resize: none }
 @media(min-width: 400px) {
   .formfield .textarea {
+    margin: 8px 0;
+    font-size: 14px;
     min-height: 4.75rem } }
 
 /* Email Form Reciever Block */
 .reciever {
   align-self: flex-start;
   margin-right: auto;
-  margin-left: 0.4375em;
-  padding: 0.0625rem 0.25rem 0.125rem;
-  background: var(--highlight--light);
-  color: #292929;
+  margin-left: 4px;
+  color: var(--blue--light);
   border-radius: 3px; }
-@media(prefers-color-scheme: dark) {
+@media (min-width: 400px) {
+  .reciever {
+    margin-left: 0.4375em;
+    padding: 0.0625rem 0.25rem 0.125rem;
+    background: var(--highlight--light);
+    color: #292929;
+  }
+
+  @media(prefers-color-scheme: dark) {
   .reciever {
     background: var(--highlight--dark);
     color: var(--blue--dark) }
+  }
+}
+@media(prefers-color-scheme: dark) {
+  .reciever {
+    color: var(--blue--dark) }
 }
 .night .reciever {
-  background: var(--highlight--dark);
   color: var(--blue--dark) }
-
+@media (min-width: 400px) {
+  .night .reciever {
+    background: var(--highlight--dark);
+    color: var(--blue--dark) }
+  }
 /* Email Form Submit Button */
 .submit {
-  margin: 0 8px;
+  margin: 0 12px;
   padding: 5px 11px 4px 12px;
   appearance: none;
   cursor: pointer;
@@ -2259,7 +2298,7 @@ a.nav-logo {
   border-radius: 5px }
 @media(min-width: 400px) {
   .submit {
-    margin-bottom: 8px;
+    margin: 0 8px 8px;
     position: absolute;
     right: 0;
     bottom: 0;
