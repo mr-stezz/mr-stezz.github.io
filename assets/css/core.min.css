@@ -1966,7 +1966,8 @@ td {
  * _theme.nav-logo.scss
  */
 a.nav-logo {
-  flex: 0 0 auto;
+  flex: 0 1 auto;
+  align-self: center;
   margin-right: auto;
   font-size: 15px;
   color: #292929;
