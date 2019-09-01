@@ -66,9 +66,14 @@
   }, e.moltenLeading = function(e, t) {
     new s(e, t).init()
   }
-}(window, document), moltenLeading("h1", {
+}(window, document), moltenLeading(".alpha", {
     minline: 1.2,
     maxline: 1.4,
+    minwidth: 400,
+    maxwidth: 768
+  }), moltenLeading(".gamma", {
+    minline: 1.1,
+    maxline: 1.5,
     minwidth: 400,
     maxwidth: 768
   }), moltenLeading(".lead", {
