@@ -1780,6 +1780,44 @@ td {
 .gallery--four-up > img {
   width: 50%; }
 
+
+/**
+ * _components.tabs.scss
+ */
+.tabs {  
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  position: relative;
+  text-align: left }
+.tabs > li {
+  float: left;
+  display: block }
+.tabs input[type="radio"] {
+  position: absolute;
+  top: 0;
+  left: -9999px }
+.tabs label {
+  display: block;
+  padding: 1rem 1.25rem;
+  color: #007aff;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) }
+.tab-content {
+  display: none; 
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+    left: 0;
+    z-index: 2 }
+.tabs [id^="tab"]:checked + label {
+  cursor: default;
+  color: inherit }
+.tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+  display: block }
+
+
 /**
  * _components.animation.scss
  */
