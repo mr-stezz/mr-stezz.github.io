@@ -2039,6 +2039,12 @@ a.nav-logo {
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
 }
+@media (min-width: 400px) {
+  .toggle-checkbox:checked {
+    user-select: none;
+    pointer-events: none;
+  }
+}
 
 .toggle-checkbox:checked ~ .form {
   pointer-events: auto;
