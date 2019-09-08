@@ -1756,11 +1756,17 @@ td {
  */
 .gallery {
   margin-bottom: 24px; }
-  .gallery > img {
-    display: block;
-    float: left;
-    padding-right: 0.125em;
-    margin-bottom: 0.125em; }
+
+.gallery > img {
+  display: block;
+  margin-bottom: 0.125em; }
+
+.gallery--two-up > img,
+.gallery--three-up > img,
+.gallery--four-up > img {
+  float: left;
+  padding-right: 0.125em;
+}
 
 .gallery--two-up > img {
   width: 50%; }
