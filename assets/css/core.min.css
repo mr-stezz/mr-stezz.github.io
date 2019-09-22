@@ -353,40 +353,17 @@ dt {
  * Neue Haas Unica
  */
 @font-face {
-  font-family: "Neue Haas Unica";
-  src: url(../fonts/neue-haas-unica/neue-haas-unica-light.woff) format("woff");
-  font-weight: 300;
-  font-style: normal; }
-@font-face {
+  font-display: swap;
   font-family: "Neue Haas Unica";
   src: url(../fonts/neue-haas-unica/neue-haas-unica-regular.woff) format("woff");
   font-weight: 400;
   font-style: normal; }
 @font-face {
+  font-display: swap;
   font-family: "Neue Haas Unica";
   src: url(../fonts/neue-haas-unica/neue-haas-unica-medium.woff) format("woff");
   font-weight: 500;
   font-style: normal; }
-/**
- * no white-space
- */
-@font-face {
-  font-family: "nospace";
-  src: url(../fonts/nospace/nospace.eot);
-  src: url(../fonts/nospace/nospace.eot?#iefix) format("embedded-opentype"), url(../fonts/nospace/nospace.woff) format("woff"), url(../fonts/nospace/nospace.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-/**
- * custom ampersands
- */
-@font-face {
-  font-family: Ampersand;
-  src: local(Baskerville), local(Palatino), local(Didot), local("Hoefler Text");
-  unicode-range: U+0026; }
-@font-face {
-  font-family: Ampersand;
-  src: local(Palatino);
-  unicode-range: U+270C; }
 /**
  * FontFaceObserve will apply a class on the html when
  * the webfonts are ready:
@@ -636,7 +613,7 @@ blockquote {
    * .4em is roughly equal to the width of the opening “ that we wish to hang.
    */
   text-indent: -0.41em;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center; }
   blockquote > p:last-of-type {
     margin-bottom: 0; }
@@ -1688,12 +1665,6 @@ td {
   font-weight: 600;
   text-transform: lowercase;
   letter-spacing: 0.15em; }
-
-.w--200 {
-  font-weight: 200; }
-
-.w--300 {
-  font-weight: 300; }
 
 .w--400 {
   font-weight: 400; }
