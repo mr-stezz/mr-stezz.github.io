@@ -24,3 +24,4 @@ title: Test
 	</fieldset>
   </form>
 </div>
+<script src="https://kwes.io/js/kwes.js"></script>
