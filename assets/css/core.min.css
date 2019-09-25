@@ -2433,7 +2433,7 @@ a.nav-logo {
   .reciever {
     margin-left: 0.4375em;
     padding: 0.0625rem 0.25rem 0.125rem;
-    background: var(--highlight--light);
+    background: #B2D7FF;
     color: #292929;
   }
 
