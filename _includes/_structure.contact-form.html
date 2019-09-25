@@ -1,22 +1,22 @@
 <form id="js-form" class="form" action="https://formspree.io/email@domain.tld" method="POST">
-  <input type="hidden" name="_subject" value="Contact Form">
-  <ul class="formgroup">
-    <li class="formfield">
+  <!-- <input type="hidden" name="_subject" value="Contact Form"> -->
+  <fieldset class="formgroup">
+    <div class="formfield">
       <span class="label">To:</span>
       <span id="js-reciever" class="reciever">ahoy@stezycki.com</span>
-    </li>
-    <li class="formfield">
+    </div>
+    <div class="formfield">
       <label class="label" for="_subject">Subject:</label>
       <input type="text" name="_subject" id="_subject" placeholder="What is your message about?">
-    </li>
-    <li class="formfield">
+    </div>
+    <div class="formfield">
       <label class="label" for="_replyto">From:</label>
       <input type="email" name="_replyto" id="_replyto" placeholder="your email ✱" required="">
-    </li>
-    <li class="formfield  formfield--full">
+    </div>
+    <div class="formfield  formfield--full">
       <textarea name="message" placeholder="Your message&hellip; ✱" class="textarea" required=""></textarea>
       <input type="text" name="_gotcha" style="display:none">
       <button type="submit" class="submit"><svg class="submit__icon" width="19px" height="14px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#submit"></use></svg></button>
-    </li>
-  </ul>
+    </div>
+  </fieldset>
 </form>
