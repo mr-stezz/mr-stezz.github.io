@@ -2,10 +2,8 @@
 layout: default_page
 title: Test
 ---
-<!-- <div class="kwes-form"> -->
-  <label id="contact" for="kwes-toggle-checkbox" class="nav-link  toggle-label" title="Drop me a line." aria-controls="kwes-form" role="button">Contact</label>
-  <input type="checkbox" id="kwes-toggle-checkbox" name="kwes-toggle-checkbox" class="toggle-checkbox">
-  <form id="kwes-form" class="form kwes-form" method="POST" action="https://kwes.io/api/foreign/forms/k09Qhdxl4WbBxXctMo8v" mode="test">
+<div class="kwes-form">
+  <form id="kwes-form" class="form" method="POST" action="https://kwes.io/api/foreign/forms/k09Qhdxl4WbBxXctMo8v" mode="test">
 	<fieldset class="formgroup">
 	  <div class="formfield">
 	    <span class="label">To:</span>
@@ -25,5 +23,5 @@ title: Test
 	  </div>
 	</fieldset>
   </form>
-<!-- </div> -->
+</div>
 <script src="https://kwes.io/js/kwes.js"></script>

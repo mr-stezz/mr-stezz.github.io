@@ -2609,6 +2609,28 @@ a.nav-logo {
     font-size: 1.416em;
     margin-bottom: 0.5em; }
 
+
+/**
+ * _theme.kwes-form.scss
+ */
+
+@media (min-width: 400px) {
+  .kwes-form .form {
+    width: 15em;
+    height: 13.3125em;
+    position: absolute;
+      bottom: auto;
+      top:    3.25em;
+      right:  1.5em;
+    pointer-events: auto;
+    opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    transform: translateY(0) scale(1);
+  }
+}
+
+
 /**
  * _theme.footer-links.scss
  */
