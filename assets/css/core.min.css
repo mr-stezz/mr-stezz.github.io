@@ -588,7 +588,10 @@ body {
   background-color: rgba(125, 141, 161, 0.5);
   text-shadow: none }
 :focus {
-  outline: 4px dotted currentColor }
+  outline: 4px dotted currentColor;
+  /*outline-color: rgb(153, 153, 158);
+  outline-style: auto;
+  outline-width: 5px*/ }
 
 /**
  * _base.headings.scss
