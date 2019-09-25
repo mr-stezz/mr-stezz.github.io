@@ -704,6 +704,27 @@ a {
 .night a {
   color: var(--blue--dark) }
 
+
+/**
+ * _base.abbreviations.scss
+ */
+abbr {
+  text-decoration-color: #8A8A8A;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.125em;
+  text-decoration-skip-ink: auto;
+  text-underline-position: under;
+}
+@media(prefers-color-scheme: dark) {
+  abbr {
+    text-decoration-color: #A9A9A9;
+  }
+}
+.night abbr {
+  text-decoration-color: #A9A9A9;
+}
+
+
 /**
  * _base.quotes.scss
  */
