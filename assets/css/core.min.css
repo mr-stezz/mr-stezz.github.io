@@ -2063,6 +2063,40 @@ td {
   }
 }
 
+
+/**
+ * _theme.skip-links.scss
+ */
+.skip-link:active,
+.skip-link:focus {
+  left: auto;
+  top: auto;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  padding: .5em 1em;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #F6F6F6;
+  z-index: 999;
+}
+@media(prefers-color-scheme: dark) {
+  .skip-link:active, 
+  .skip-link:focus  {
+    background-color: #484C52 }
+}
+
+.skip-link {
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
+}
+
+
 /**
  * _theme.page-header.scss
  */
