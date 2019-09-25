@@ -694,7 +694,8 @@ a {
   a:hover, a:active {
     outline: 0; }
   a:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    text-underline-position: under }
   a:visited {
     color: #9FAAB8; }
 @media(prefers-color-scheme: dark) {
@@ -2192,7 +2193,8 @@ a.nav-logo {
 .night .toggle-label {
   color: var(--blue--dark) }
   .toggle-label:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    text-underline-position: under }
 
 .toggle-checkbox {
   display: none; }
