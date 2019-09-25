@@ -2616,12 +2616,13 @@ a.nav-logo {
 
 @media (min-width: 400px) {
   .kwes-form .form {
+    display: block;
     width: 15em;
     height: 13.3125em;
-    position: absolute;
-      bottom: auto;
-      top:    3.25em;
-      right:  1.5em;
+    position: static;
+      bottom: 0;
+      top:    0;
+      right:  0;
     pointer-events: auto;
     opacity: 1;
     -webkit-filter: blur(0px);
