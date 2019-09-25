@@ -709,7 +709,8 @@ a {
 /**
  * _base.abbreviations.scss
  */
-abbr {
+abbr,
+abbr[title] {
   text-decoration-color: #8A8A8A;
   text-decoration-style: dashed;
   text-decoration-thickness: 0.125em;
