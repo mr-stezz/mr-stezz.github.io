@@ -3,7 +3,7 @@ layout: default_page
 title: Test
 ---
 <!-- <div class="kwes-form"> -->
-  <form id="js-form" class="form kwes-form" method="POST" action="https://kwes.io/api/foreign/forms/k09Qhdxl4WbBxXctMo8v">
+  <form id="js-form" class="form kwes-form" method="POST" action="https://kwes.io/api/foreign/forms/k09Qhdxl4WbBxXctMo8v" mode="test">
 	<fieldset class="formgroup">
 	  <div class="formfield">
 	    <span class="label">To:</span>
