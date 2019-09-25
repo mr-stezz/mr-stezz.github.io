@@ -694,8 +694,7 @@ a {
   a:hover, a:active {
     outline: 0; }
   a:hover {
-    text-decoration: underline;
-    text-underline-position: under }
+    text-decoration: underline }
   a:visited {
     color: #9FAAB8; }
 @media(prefers-color-scheme: dark) {
@@ -714,8 +713,7 @@ abbr[title] {
   /*text-decoration-color: #8A8A8A;
   text-decoration-style: dashed;
   text-decoration-thickness: 0.125em;
-  text-decoration-skip-ink: auto;
-  text-underline-position: under;*/
+  text-decoration-skip-ink: auto;*/
   text-decoration: none !important;
   background-image: url("../img/ui/marked.png");
   background-position: 0 calc(100% - 1.5px);
@@ -2199,8 +2197,7 @@ a.nav-logo {
 .night .toggle-label {
   color: var(--blue--dark) }
   .toggle-label:hover {
-    text-decoration: underline;
-    text-underline-position: under }
+    text-decoration: underline }
 
 .toggle-checkbox {
   display: none; }
