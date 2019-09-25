@@ -586,7 +586,9 @@ body {
 
 ::selection {
   background-color: rgba(125, 141, 161, 0.5);
-  text-shadow: none; }
+  text-shadow: none }
+:focus {
+  outline: 4px dotted currentColor }
 
 /**
  * _base.headings.scss
