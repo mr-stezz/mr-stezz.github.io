@@ -722,14 +722,14 @@ abbr[title] {
   background-size: auto 3px;
   background-repeat: repeat-x;
 }
-@media(prefers-color-scheme: dark) {
+/*@media(prefers-color-scheme: dark) {
   abbr {
     text-decoration-color: #A9A9A9;
   }
 }
 .night abbr {
   text-decoration-color: #A9A9A9;
-}
+}*/
 
 
 /**
