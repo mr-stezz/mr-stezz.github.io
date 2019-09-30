@@ -178,7 +178,7 @@ var currentTime = (new Date).getHours();
 // Formspree Form
 var contactform = document.getElementById("js-form"),
   reciever = document.getElementById("js-reciever"),
-  email = "ahoy@stezycki.com";
+  email = "email@domain.tld";
 if (contactform.setAttribute("action", "//formspree.io/" + email), reciever.textContent = email, document.forms[0] && window.FormData) {
   var message = new Object;
   message.loading = "<svg class='status__img'><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#spinner'></use></svg><span class='status__title'>Loading&hellip;</span><span class='status__body'>Reticulating splines.</span>", message.success = "<svg class='status__img'><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#success'></use></svg><span class='status__title'>Email sent!</span><span class='status__body'>Please wait at least 48 hours for a response :)</span>", message.failure = "<svg class='status__img'><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#error'></use></svg><span class='status__title'>Email didn't send!</span><span class='status__body'>Please refresh the page and try again.</span>";
