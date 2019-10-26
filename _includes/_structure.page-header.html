@@ -4,7 +4,7 @@
     {% assign pages_list = site.pages %}
     {% assign group = 'navigation' %}
     {% include _structure.page_list.html %}
-    <label id="contact" for="toggle-checkbox" class="nav-link  toggle-label" title="Drop me a line." aria-controls="js-form" role="button">Contact</label>
+    <label id="contact" for="toggle-checkbox" class="nav-link  toggle-label" title="Drop me a line." aria-controls="js-form" role="button" tabindex=0>Contact</label>
     <input type="checkbox" id="toggle-checkbox" name="toggle-checkbox" class="toggle-checkbox">
     {% include _structure.contact-form.html %}
   </nav>
