@@ -712,13 +712,17 @@ figcaption {
 /**
  * _trumps.visibility.scss
  */
-.is-hidden {
+.is-hidden,
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
   position: absolute;
-  left:     -10000px;
-  top:      auto;
-  width:    1px;
-  height:   1px;
-  overflow: hidden }
+  width: 1px;
+  white-space: nowrap }
 
 
 /**
