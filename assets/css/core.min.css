@@ -1164,17 +1164,21 @@ figcaption {
 /**
  * _theme.nav-logo.scss
  */
-a.nav-logo {
+.nav-logo {
   flex: 0 1 auto;
   align-self: center;
   margin-right: auto;
   font-size: 15px;
-  color: #292929;
   line-height: 1 }
+
+a.nav-logo        { color: #292929 }
 @media(prefers-color-scheme: dark) {
-  a.nav-logo { color: #EFEFF4 }
-}
+a.nav-logo        { color: #EFEFF4 }}
 .night a.nav-logo { color: #EFEFF4 }
+
+.nav-title {
+  font-size: inherit;
+  font-weight: normal }
 
 
 /**
