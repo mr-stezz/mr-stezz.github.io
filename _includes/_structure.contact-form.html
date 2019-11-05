@@ -1,7 +1,6 @@
 <form id="js-form" class="form" action="https://formspree.io/email@domain.tld" method="POST">
-  <!-- <input type="hidden" name="_subject" value="Contact Form"> -->
   <fieldset class="formgroup">
-    <legend class="is-hidden">Contact Details</legend>
+    <legend class="visually-hidden">Contact form</legend>
     <div class="formfield">
       <span class="label">To:</span>
       <span id="js-reciever" class="reciever">ahoy@stezycki.com</span>
@@ -11,14 +10,14 @@
       <input type="text" name="_subject" id="_subject" placeholder="What is your message about?">
     </div>
     <div class="formfield">
-      <label class="label" for="_replyto">From:</label>
+      <label class="label" for="_replyto">From<span class="visually-hidden">&nbsp;✱</span>:</label>
       <input type="email" name="_replyto" id="_replyto" placeholder="your email ✱" required="">
     </div>
     <div class="formfield  formfield--full">
+      <label class="label visually-hidden" for="_message">Your message<span class="visually-hidden">&nbsp;✱</span>:</label>
       <textarea name="message" placeholder="Your message&hellip; ✱" class="textarea" required=""></textarea>
-      <input type="text" name="_gotcha" style="display:none">
-      <button type="submit" class="submit"><span class="visually-hidden">Send email</span><svg class="submit__icon" width="19px" height="14px" aria-labelledby="SendSVGTitle" role="img">
-  <title id="SendSVGTitle">Send your email</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#submit"></use></svg></button>
+      <input type="text" name="_gotcha" style="display:none" aria-hidden="true">
+      <button type="submit" class="submit"><span class="visually-hidden">Send email</span><svg class="submit__icon" width="19px" height="14px" aria-hidden="true" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#submit"></use></svg></button>
     </div>
   </fieldset>
 </form>
