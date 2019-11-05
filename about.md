@@ -15,5 +15,5 @@ group: "navigation"
   Browse my code scratchpad on <a href="https://codepen.io/mr-stezz/" title="Have a look at my code scrapbook on Codepen.">Codepen</a>.<br><br>
   Download my photography on <a href="https://unsplash.com/@stez" title="Download my photography for free on Unsplash.">Unsplash</a>.<br><br>
   Follow me on <a href="https://twitter.com/mr_stezz" title="Follow me on Twitter, @Mr_Stezz.">Twitter</a>.<br><br>
-  Read my <a href="https://codepen.io/mr-stezz/full/PLKGEG">résumé</a>.<br><br></p>
+  Read my <a href="https://codepen.io/mr-stezz/full/PLKGEG">r&eacute;sum&eacute;</a>.<br><br></p>
 </div>
