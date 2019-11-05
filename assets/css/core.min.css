@@ -1177,6 +1177,7 @@ a.nav-logo        { color: #EFEFF4 }}
 .night a.nav-logo { color: #EFEFF4 }
 
 .nav-title {
+  margin-bottom: 0;
   font-size: inherit;
   font-weight: normal }
 
