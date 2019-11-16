@@ -1331,10 +1331,10 @@ a.nav-logo        { color: #EFEFF4 }}
   }
 }
 
+/* remove styling from Firefox */
+.formfield input:invalid { box-shadow: none }
 /* Only show invalid styles when placeholder is not shown */
-.formfield input:invalid:not(:placeholder-shown) {
-  color: #EB5757;
-  box-shadow: none }
+.formfield input:invalid:not(:placeholder-shown) { color: #EB5757 }
 
 .formfield .textarea {
   width: 100%;
