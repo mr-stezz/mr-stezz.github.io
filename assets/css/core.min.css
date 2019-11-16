@@ -1242,7 +1242,8 @@ a.nav-logo        { color: #EFEFF4 }}
   line-height: 1.5;
   text-align: left;
   color: #7E7E7E;
-  border: 0 solid #E6E6E6 }
+  border: 0 solid #E6E6E6;
+  border-top-width: 1px }
 .formfield:focus-within { border-color: #B5B5B5 }
 @media (min-width: 400px) {
   .formfield {
@@ -1266,7 +1267,8 @@ a.nav-logo        { color: #EFEFF4 }}
   height: calc(100% - 136px);
   flex-direction: column;
   align-items: flex-end;
-  padding: 13px 0 12px; }
+  padding: 13px 0 12px
+  border-bottom-width: 0 }
 @supports(padding: max(0px)) {
   .formfield--full {
     height: max(calc(100% - 136px), env(safe-area-inset-bottom));
@@ -1284,9 +1286,6 @@ a.nav-logo        { color: #EFEFF4 }}
       padding-bottom: max(8px, env(safe-area-inset-bottom));
     }
   }
-}
-.formfield + .formfield {
-  border-top-width: 1px;
 }
 
 /* Email Form Fields */
