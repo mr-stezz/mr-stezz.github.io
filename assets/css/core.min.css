@@ -683,7 +683,15 @@ figcaption {
   position: absolute;
   width: 1px;
   white-space: nowrap }
-
+@media (min-width: 400px) {
+.visually-hidden--for-mobile {
+  clip: initial;
+  margin: initial;
+  overflow: initial;
+  padding: initial;
+  position: initial;
+  width: initial;
+  white-space: initial }}
 
 /**
  * $VERTICAL-RHYTHM
