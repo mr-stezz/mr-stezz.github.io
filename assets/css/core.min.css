@@ -1243,6 +1243,7 @@ a.nav-logo        { color: #EFEFF4 }}
   text-align: left;
   color: #7E7E7E;
   border: 0 solid #E6E6E6 }
+.formfield:focus-within { border-color: #B5B5B5 }
 @media (min-width: 400px) {
   .formfield {
     padding: 7px 0 6px;
@@ -1254,10 +1255,12 @@ a.nav-logo        { color: #EFEFF4 }}
   .formfield {
     color: #999;
     border-color: #656463 }
+  .formfield:focus-within { border-color: #C6C6C6 }
 }
 .night .formfield {
   color: #999;
   border-color: #656463 }
+.night .formfield:focus-within { border-color: #C6C6C6 }
 
 .formfield--full {
   height: calc(100% - 136px);
