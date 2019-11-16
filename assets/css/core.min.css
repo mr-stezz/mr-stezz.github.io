@@ -1331,6 +1331,11 @@ a.nav-logo        { color: #EFEFF4 }}
   }
 }
 
+/* Only show invalid styles when placeholder is not shown */
+.formfield input:invalid:not(:placeholder-shown) {
+  color: #EB5757;
+  box-shadow: none }
+
 .formfield .textarea {
   width: 100%;
   flex: 1 1 auto;
