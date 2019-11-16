@@ -1243,7 +1243,7 @@ a.nav-logo        { color: #EFEFF4 }}
   text-align: left;
   color: #7E7E7E;
   border: 0 solid #E6E6E6;
-  border-top-width: 1px }
+  border-bottom-width: 1px }
 .formfield:focus-within { border-color: #B5B5B5 }
 @media (min-width: 400px) {
   .formfield {
