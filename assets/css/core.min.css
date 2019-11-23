@@ -1277,7 +1277,7 @@ a.nav-logo        { color: #EFEFF4 }}
   height: calc(100% - 136px);
   flex-direction: column;
   align-items: flex-end;
-  padding: 13px 0 12px
+  padding: 13px 0 12px;
   border-bottom-width: 0 }
 @supports(padding: max(0px)) {
   .formfield--full {
