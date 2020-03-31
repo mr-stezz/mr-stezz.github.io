@@ -5,6 +5,9 @@
  * $VARS
  */
 :root {
+  --iron:             #D7D9DD;
+  --mineshaft:        #292929;
+
   --blue--light:      #007AFF;
   --blue--dark:       #5AC8FA;
   --highlight--light: rgba(0,122,255,0.5);
@@ -343,16 +346,16 @@ html {
 html { font-size: 120% }} */
 
 body {
-  color: #292929;
+  color: var(--mineshaft);
   background-color: #F6F6F6;
   padding: constant(safe-area-inset-top) constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left) }
 @media(prefers-color-scheme: dark) {
 body {
-  color: #EFEFF4;
-  background-color: #484C52 }}
+  color: var(--iron);
+  background-color: var(--mineshaft) }}
 .night {
-  color: #EFEFF4;
-  background-color: #484C52 }
+  color: var(--iron);
+  background-color: var(--mineshaft) }
 
 ::selection {
   background-color: rgba(125, 141, 161, 0.5);
@@ -370,17 +373,17 @@ body {
   display: block;
   margin-bottom: 24px;
   font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial, sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
-  color: #303236 }
+  color: var(--mineshaft) }
 @media(prefers-color-scheme: dark) {
-.heading        { color: #fff }}
-.night .heading { color: #fff }
+.heading        { color: var(--iron) }}
+.night .heading { color: var(--iron) }
 
 .heading--light {
   font-weight: 200;
   color: #fdfdfd }
 @media(prefers-color-scheme: dark) {
-.heading--light        { color: #A9A9A9 }}
-.night .heading--light { color: #A9A9A9 }
+.heading--light        { color: var(--iron) }}
+.night .heading--light { color: var(--iron) }
 
 h5.heading,
 h6.heading { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial, sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol' }
@@ -456,7 +459,7 @@ h6 { font-style: italic }
 a {
   text-decoration: none;
   color: var(--blue--light) }
-a:hover, 
+a:hover,
 a:active { outline: 0 }
 a:hover { text-decoration: underline }
 a:visited { color: #9FAAB8 }
@@ -562,7 +565,9 @@ figcaption {
   padding-left: 24px;
   font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial, sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
   font-size: 87.5%;
-  color: #93979f }
+  color: var(--mineshaft) }
+@media(prefers-color-scheme: dark) {
+figcaption { color: var(--iron) }}
 
 
 /**
@@ -801,7 +806,7 @@ attr[title] {
 /**
  * $TABS
  */
-.tabs {  
+.tabs {
   display: flex;
   justify-content: center;
   list-style: none;
@@ -826,7 +831,7 @@ attr[title] {
   transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) }
 
 .tab-content {
-  display: none; 
+  display: none;
   overflow: hidden;
   width: 100%;
   position: absolute;
@@ -958,10 +963,10 @@ attr[title] {
   background-color: #F6F6F6;
   z-index: 999 }
 @media(prefers-color-scheme: dark) {
-.skip-link:active, 
-.skip-link:focus        { background-color: #484C52 }}
-.night .skip-link:active, 
-.night .skip-link:focus { background-color: #484C52 }
+.skip-link:active,
+.skip-link:focus        { background-color: var(--mineshaft) }}
+.night .skip-link:active,
+.night .skip-link:focus { background-color: var(--mineshaft) }
 
 .skip-link {
   left: -999px;
@@ -991,16 +996,16 @@ attr[title] {
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px) }}
 @media(prefers-color-scheme: dark) {
-.page-header        { background: #484C52 }}
-.night .page-header { background: #484C52 }
+.page-header        { background: var(--mineshaft) }}
+.night .page-header { background: var(--mineshaft) }
 @supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
 @media(prefers-color-scheme: dark) {
 .page-header {
-  background: rgba(72,76,82,0.82);
+  background: rgba(41,41,41,0.82);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
           backdrop-filter: saturate(180%) blur(20px) }}
 .night .page-header {
-  background: rgba(72,76,82,0.82);
+  background: rgba(41,41,41,0.82);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
           backdrop-filter: saturate(180%) blur(20px) }}
 
@@ -1053,10 +1058,10 @@ attr[title] {
   font-size: 15px;
   line-height: 1 }
 
-a.nav-logo        { color: #292929 }
+a.nav-logo        { color: var(mineshaft) }
 @media(prefers-color-scheme: dark) {
-a.nav-logo        { color: #EFEFF4 }}
-.night a.nav-logo { color: #EFEFF4 }
+a.nav-logo        { color: var(--iron) }}
+.night a.nav-logo { color: var(--iron) }
 
 .nav-title {
   margin-bottom: 0;
@@ -1180,7 +1185,7 @@ a.nav-logo        { color: #EFEFF4 }}
       transform: translateY(-10px) scale(0.75);
       transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 
-    @media screen and (prefers-reduced-motion: reduce) { .form { transition: none !important } }    
+    @media screen and (prefers-reduced-motion: reduce) { .form { transition: none !important } }
   }
   .form:focus {
     outline: none; }
@@ -1306,7 +1311,7 @@ a.nav-logo        { color: #EFEFF4 }}
   appearance: none;
   background: transparent;
   border: none;
-  color: #292929;
+  color: var(--mineshaft);
   outline: none; }
 @media(prefers-color-scheme: dark) {
   .form input,
@@ -1377,7 +1382,7 @@ a.nav-logo        { color: #EFEFF4 }}
     margin-left: 0.4375em;
     padding: 0.0625rem 0.25rem 0.125rem;
     background: #B2D7FF;
-    color: #292929;
+    color: var(--mineshaft);
   }
 
   @media(prefers-color-scheme: dark) {
@@ -1513,14 +1518,11 @@ a.nav-logo        { color: #EFEFF4 }}
   font-weight: 500;
   font-size: 1.125rem;
   font-size: 18px;
-  color: #303236;
+  color: var(--mineshaft);
   text-align: center; }
 @media(prefers-color-scheme: dark) {
-  .page-title {
-    color: #fff }
-}
-.night .page-title {
-  color: #fff }
+.page-title {        color: var(--iron) }}
+.night .page-title { color: var(--iron) }
 
 
 /**
@@ -1530,10 +1532,7 @@ a.nav-logo        { color: #EFEFF4 }}
   font-size: 1rem;
   font-size: 16px;
   font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial, sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
-  color: #7E7E7E; }
+  color: var(--mineshaft); }
 @media(prefers-color-scheme: dark) {
-  .page-subtitle {
-    color: #A9A9A9 }
-}
-.night .page-subtitle {
-  color: #A9A9A9 }
+.page-subtitle {        color: var(--iron) }}
+.night .page-subtitle { color: var(--iron) }
