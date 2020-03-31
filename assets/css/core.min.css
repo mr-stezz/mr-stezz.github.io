@@ -5,8 +5,11 @@
  * $VARS
  */
 :root {
+  --white:            #FFFFFF;
   --iron:             #D7D9DD;
+  --iron-30:          rgba(121, 130, 141, 0.3);
   --mineshaft:        #292929;
+  --codgray:          #1E1E1E;
 
   --blue--light:      #007AFF;
   --blue--dark:       #5AC8FA;
@@ -1198,8 +1201,10 @@ a.nav-logo        { color: var(--iron) }}
     left: 0;
     height: 100%;
     width: 100%;
-    background: #fff;
-    box-shadow: 0 0 1px 1px rgba(0,0,0,0.12), 0 3px 12px 0 rgba(0,0,0,0.30); }
+    background: var(--white);
+    border: 0.5px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.15),
+                0px 1px 2px rgba(0, 0, 0, 0.2) }
     @media(min-width: 400px) {
       .form::before {
         border-radius: 0.4375em;
@@ -1207,18 +1212,22 @@ a.nav-logo        { color: var(--iron) }}
     }
   @media(prefers-color-scheme: dark) {
     .form::before {
-      background: var(--email-form--dark);
-      box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4), 0 3px 12px 0 rgba(0, 0, 0, 0.30) }
+      background: var(--codgray);
+      border: 0.5px solid rgba(0, 0, 0, 0.05);
+      box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.15),
+                  0px 1px 2px rgba(0, 0, 0, 0.2) }
   }
   .night .form::before {
-    background: var(--email-form--dark);
-    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4), 0 3px 12px 0 rgba(0, 0, 0, 0.30) }
+    background: var(--codgray);
+    border: 0.5px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4),
+                0 3px 12px 0 rgba(0, 0, 0, 0.30) }
   .form::after {
     content: '';
-    width: 2.1875em;
-    height: 0.875em;
+    width: 2rem;
+    height: 0.875rem;
     position: absolute;
-    bottom: 100%;
+    top: -0.8125rem;
     z-index: 2;
     pointer-events: none; }
     @media (min-width: 400px) {
@@ -1257,9 +1266,9 @@ a.nav-logo        { color: var(--iron) }}
   line-height: 1.5;
   text-align: left;
   color: #7E7E7E;
-  border: 0 solid #E6E6E6;
+  border: 0 solid var(--iron-30);
   border-bottom-width: 1px }
-.formfield:focus-within { border-color: #B5B5B5 }
+.formfield:focus-within { border-color: #7E7E7E }
 @media (min-width: 400px) {
   .formfield {
     padding: 7px 0 6px;
@@ -1269,14 +1278,14 @@ a.nav-logo        { color: var(--iron) }}
 }
 @media(prefers-color-scheme: dark) {
   .formfield {
-    color: #999;
-    border-color: #656463 }
-  .formfield:focus-within { border-color: #C6C6C6 }
+    color: var(--iron);
+    border-color: var(--iron-30) }
+  .formfield:focus-within { border-color: var(--iron) }
 }
 .night .formfield {
-  color: #999;
-  border-color: #656463 }
-.night .formfield:focus-within { border-color: #C6C6C6 }
+  color: var(--iron);
+  border-color: var(--iron-30) }
+.night .formfield:focus-within { border-color: var(--iron) }
 
 .formfield--full {
   height: calc(100% - 136px);
@@ -1316,11 +1325,11 @@ a.nav-logo        { color: var(--iron) }}
 @media(prefers-color-scheme: dark) {
   .form input,
   .form textarea {
-    color: #fff }
+    color: var(--iron) }
 }
 .night .form input,
 .night .form textarea {
-  color: #fff }
+  color: var(--iron) }
 
 .formfield .label {
   flex-basis: auto;
