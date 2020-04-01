@@ -8,6 +8,7 @@
   --white:            #FFFFFF;
   --iron:             #D7D9DD;
   --iron-30:          rgba(121, 130, 141, 0.3);
+  --raven:            #79828D;
   --mineshaft:        #292929;
   --codgray:          #1E1E1E;
 
@@ -465,7 +466,7 @@ a {
 a:hover,
 a:active { outline: 0 }
 a:hover { text-decoration: underline }
-a:visited { color: #9FAAB8 }
+a:visited { color: var(--raven) }
 @media(prefers-color-scheme: dark) {
 a        { color: var(--blue--dark) }}
 .night a { color: var(--blue--dark) }
@@ -1509,7 +1510,7 @@ a.nav-logo        { color: var(--iron) }}
   .footer-links__link:hover {
     transform: translateY(0.12) scale(1.25); }
   .footer-links__link:visited {
-    fill: #9FAAB8; }
+    fill: var(--raven); }
 
 
 /**
