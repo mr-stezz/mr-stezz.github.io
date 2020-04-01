@@ -1220,10 +1220,10 @@ a:visited.nav-logo        { color: var(--iron) }}
                 0 3px 12px 0 rgba(0, 0, 0, 0.30) }
   .form::after {
     content: '';
-    width: 2rem;
-    height: 0.875rem;
+    width: 32px;
+    height: 14px;
     position: absolute;
-    top: -0.8125rem;
+    top: -13px;
     z-index: 2;
     pointer-events: none; }
     @media (min-width: 400px) {
