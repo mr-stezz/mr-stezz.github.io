@@ -1062,10 +1062,13 @@ attr[title] {
   font-size: 15px;
   line-height: 1 }
 
-a.nav-logo        { color: var(mineshaft) }
+a.nav-logo,
+a:visited.nav-logo        { color: var(--mineshaft) }
 @media(prefers-color-scheme: dark) {
-a.nav-logo        { color: var(--iron) }}
-.night a.nav-logo { color: var(--iron) }
+a.nav-logo,
+a:visited.nav-logo        { color: var(--iron) }}
+.night a.nav-logo,
+.night a:visited.nav-logo { color: var(--iron) }
 
 .nav-title {
   margin-bottom: 0;
