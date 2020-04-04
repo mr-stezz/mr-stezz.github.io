@@ -1364,12 +1364,14 @@ a:visited.nav-logo        { color: var(--iron) }}
 .formfield textarea:invalid:not(:placeholder-shown) { color: #EB5757 }
 
 /* Label */
-.formfield .label { flex-basis: auto }
+.formfield .label {
+  flex-basis: auto;
+  align-self: center;
+}
 @media (min-width: 400px) {
   .formfield .label {
     height: 21px;
     line-height: 21px;
-    align-self: center;
   }
 }
 
