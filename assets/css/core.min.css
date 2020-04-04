@@ -1368,7 +1368,8 @@ a:visited.nav-logo        { color: var(--iron) }}
 @media (min-width: 400px) {
   .formfield .label {
     height: 21px;
-    line-height: 21px
+    line-height: 21px;
+    align-self: center;
   }
 }
 
