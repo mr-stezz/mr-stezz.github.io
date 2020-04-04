@@ -1309,7 +1309,7 @@ a:visited.nav-logo        { color: var(--iron) }}
 .night .formfield:focus-within { border-color: var(--iron) }
 
 .formfield--full {
-  height: calc(100% - 136px);
+  height: calc(100% - 148px);
   flex-direction: column;
   align-items: flex-end;
   padding: 13px 0 16px;
@@ -1317,7 +1317,7 @@ a:visited.nav-logo        { color: var(--iron) }}
 }
 @supports(padding: max(0px)) {
   .formfield--full {
-    height: max(calc(100% - 136px), env(safe-area-inset-bottom));
+    height: max(calc(100% - 148px), env(safe-area-inset-bottom));
     padding-bottom: max(16px, env(safe-area-inset-bottom))
   }
 }
