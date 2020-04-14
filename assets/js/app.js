@@ -177,19 +177,19 @@ var currentTime = (new Date).getHours();
 7 <= currentTime && currentTime < 18 ? document.body && (document.body.className = "day") : document.body && (document.body.className = "night");
 // Formspree Form
 var contactform = document.getElementById("js-form"),
-  reciever = document.getElementById("js-reciever"),
-  email = "ahoy@stezycki.com";
-if (contactform.setAttribute("action", "//formspree.io/" + email), reciever.textContent = email, document.forms[0] && window.FormData) {
-  var message = new Object;
-  message.loading = "<svg class='status__img'><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#spinner'></use></svg><span class='status__title'>Loading&hellip;</span><span class='status__body'>Reticulating splines.</span>", message.success = "<svg class='status__img'><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#success'></use></svg><span class='status__title'>Email sent!</span><span class='status__body'>Please wait at least 48 hours for a response :)</span>", message.failure = "<svg class='status__img'><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#error'></use></svg><span class='status__title'>Email didn't send!</span><span class='status__body'>Please refresh the page and try again.</span>";
-  var statusMessage = document.createElement("div");
-  statusMessage.className = "status";
-  var request = new XMLHttpRequest;
-  request.open("POST", "//formspree.io/" + email, !0), request.setRequestHeader("accept", "application/json"), contactform.addEventListener("submit", function(e) {
-    e.preventDefault(), contactform.appendChild(statusMessage);
-    var t = new FormData(contactform);
-    request.send(t), request.onreadystatechange = function() {
-      4 === request.readyState && 200 == request.status && request.status < 300 ? statusMessage.innerHTML = message.success : statusMessage.innerHTML = message.failure
-    }
-  })
-}
+    reciever = document.getElementById("js-reciever"),
+    email = "ahoy@stezycki.com";
+// if (contactform.setAttribute("action", "//formspree.io/" + email), reciever.textContent = email, document.forms[0] && window.FormData) {
+//   var message = new Object;
+//   message.loading = "<svg class='status__img'><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#spinner'></use></svg><span class='status__title'>Loading&hellip;</span><span class='status__body'>Reticulating splines.</span>", message.success = "<svg class='status__img'><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#success'></use></svg><span class='status__title'>Email sent!</span><span class='status__body'>Please wait at least 48 hours for a response :)</span>", message.failure = "<svg class='status__img'><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#error'></use></svg><span class='status__title'>Email didn't send!</span><span class='status__body'>Please refresh the page and try again.</span>";
+//   var statusMessage = document.createElement("div");
+//   statusMessage.className = "status";
+//   var request = new XMLHttpRequest;
+//   request.open("POST", "//formspree.io/" + email, !0), request.setRequestHeader("accept", "application/json"), contactform.addEventListener("submit", function(e) {
+//     e.preventDefault(), contactform.appendChild(statusMessage);
+//     var t = new FormData(contactform);
+//     request.send(t), request.onreadystatechange = function() {
+//       4 === request.readyState && 200 == request.status && request.status < 300 ? statusMessage.innerHTML = message.success : statusMessage.innerHTML = message.failure
+//     }
+//   })
+// }

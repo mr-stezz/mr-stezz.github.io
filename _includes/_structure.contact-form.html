@@ -1,4 +1,4 @@
-<form id="js-form" class="form" action="https://formspree.io/email@domain.tld" method="POST">
+<form name="contact" id="js-form" class="form" data-netlify="true">
   <fieldset class="formgroup">
     <legend class="visually-hidden">Contact form</legend>
     <div class="formfield">
@@ -7,11 +7,11 @@
     </div>
     <div class="formfield">
       <label class="label" for="_subject">Subject:</label>
-      <input type="text" name="_subject" id="_subject">
+      <input type="text" name="_subject">
     </div>
     <div class="formfield">
       <label class="label" for="_replyto">From<span class="visually-hidden">&nbsp;✱</span>:</label>
-      <input type="email" name="_replyto" id="_replyto" required="">
+      <input type="email" name="_replyto" required="">
     </div>
     <div class="formfield  formfield--full">
       <label class="label visually-hidden" for="_message">Your message<span class="visually-hidden">&nbsp;✱</span>:</label>
