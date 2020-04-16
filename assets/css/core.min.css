@@ -461,11 +461,11 @@ h6 { font-style: italic }
   line-height: 1.5555555555555556 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--blue--light) }
 a:hover,
 a:active { outline: 0 }
-a:hover { text-decoration: underline }
+a:hover { text-decoration: none }
 a:visited { color: var(--raven) }
 @media(prefers-color-scheme: dark) {
 a        { color: var(--blue--dark) }}
@@ -1105,14 +1105,15 @@ a:visited.nav-logo        { color: var(--iron) }}
 /* Label */
 .toggle-label {
   color: var(--blue--light);
-  cursor: pointer
+  cursor: pointer;
+  text-decoration: underline
 }
 @media(prefers-color-scheme: dark) {
   .toggle-label { color: var(--blue--dark) }
 }
 .night .toggle-label { color: var(--blue--dark) }
 
-.toggle-label:hover { text-decoration: underline }
+.toggle-label:hover { text-decoration: none }
 
 /* Checkbox */
 .toggle-checkbox { display: none }
