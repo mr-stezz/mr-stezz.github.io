@@ -1161,7 +1161,8 @@ a:visited.nav-logo        { color: var(--iron) }}
           filter: blur(30px);
   transform-origin: bottom center;
   transform: translateY(100vh);
-  transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) 0.05s }
+  transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) 0.05s;
+  will-change: transform }
 
 .toggle-checkbox:checked ~ .form {
   pointer-events: auto;
