@@ -1341,7 +1341,7 @@ a:visited.nav-logo        { color: var(--iron) }}
  */
 .form {
   width:  100%;
-  height: 66.66vh;
+  height: 50vh;
   overflow: visible;
   position: fixed;
   bottom: 0;
