@@ -1267,7 +1267,7 @@ a:visited.nav-logo        { color: var(--iron) }}
   text-decoration: none;
   font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
   user-select: none;
-  fill: var(--blue--light) }
+  fill: var(--mineshaft) }
 @supports (font-feature-settings: "smcp" 1) {
 .nav-link { letter-spacing: 0.1em }}
 @media(prefers-color-scheme: dark) {
