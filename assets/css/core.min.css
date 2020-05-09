@@ -17,6 +17,8 @@
   --highlight--light: rgba(0,122,255,0.5);
   --highlight--dark:  rgba(212,242,255,0.16);
   --email-form--dark: #3C3C3C;
+
+  --font-stack: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial, sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
 }
 
 
@@ -264,51 +266,214 @@ dt:not([class]) {
 /**
  * _generic.typeface.scss
  */
-/* Neue Haas Unica */
+/* Inter */
 @font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 100;
   font-display: swap;
-  font-family: "Neue Haas Unica";
-  src: url(../fonts/neue-haas-unica/neue-haas-unica-light.woff) format("woff");
+  src: url("../fonts/inter/Inter-Thin.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-Thin.woff?v=3.13") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-ThinItalic.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-ThinItalic.woff?v=3.13") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-ExtraLight.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-ExtraLight.woff?v=3.13") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-ExtraLightItalic.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-ExtraLightItalic.woff?v=3.13") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
   font-weight: 300;
-  font-style: normal; }
-@font-face {
   font-display: swap;
-  font-family: "Neue Haas Unica";
-  src: url(../fonts/neue-haas-unica/neue-haas-unica-regular.woff) format("woff");
+  src: url("../fonts/inter/Inter-Light.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-Light.woff?v=3.13") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-LightItalic.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-LightItalic.woff?v=3.13") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
   font-weight: 400;
-  font-style: normal; }
-@font-face {
   font-display: swap;
-  font-family: "Neue Haas Unica";
-  src: url(../fonts/neue-haas-unica/neue-haas-unica-medium.woff) format("woff");
+  src: url("../fonts/inter/Inter-Regular.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-Regular.woff?v=3.13") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-Italic.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-Italic.woff?v=3.13") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
   font-weight: 500;
-  font-style: normal; }
+  font-display: swap;
+  src: url("../fonts/inter/Inter-Medium.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-Medium.woff?v=3.13") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-MediumItalic.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-MediumItalic.woff?v=3.13") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-SemiBold.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-SemiBold.woff?v=3.13") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-SemiBoldItalic.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-SemiBoldItalic.woff?v=3.13") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-Bold.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-Bold.woff?v=3.13") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-BoldItalic.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-BoldItalic.woff?v=3.13") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-ExtraBold.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-ExtraBold.woff?v=3.13") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-ExtraBoldItalic.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-ExtraBoldItalic.woff?v=3.13") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-Black.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-Black.woff?v=3.13") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-BlackItalic.woff2?v=3.13") format("woff2"),
+       url("../fonts/inter/Inter-BlackItalic.woff?v=3.13") format("woff");
+}
+
+/* -------------------------------------------------------
+Variable font.
+Usage:
+
+  html { font-family: 'Inter', sans-serif; }
+  @supports (font-variation-settings: normal) {
+    html { font-family: 'Inter var', sans-serif; }
+  }
+*/
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("../fonts/inter/Inter-roman.var.woff2?v=3.13") format("woff2");
+}
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url("../fonts/inter/Inter-italic.var.woff2?v=3.13") format("woff2");
+}
 /**
  * FontFaceObserve will apply a class on the html when
  * the webfonts are ready:
  * http://www.filamentgroup.com/lab/font-events.html
  */
-.fonts-loaded {
-  font-family: "Neue Haas Unica",-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial, sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'; }
-
+.fonts-loaded,
 .fonts-loaded h1,
 .fonts-loaded h2,
 .fonts-loaded h3,
-.fonts-loaded h4 {
-  font-family: "Neue Haas Unica",-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial, sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'; }
-
+.fonts-loaded h4,
 .fonts-loaded h5,
-.fonts-loaded h6 {
-  font-family: "Neue Haas Unica",-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial, sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'; }
-
-.fonts-loaded figcaption {
-  font-family: "Neue Haas Unica",-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial, sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'; }
-
-.fonts-loaded .page-title {
-  font-family: "Neue Haas Unica",-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial, sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'; }
-
+.fonts-loaded h6,
+.fonts-loaded figcaption,
+.fonts-loaded .page-title,
 .fonts-loaded .page-subtitle {
-  font-family: "Neue Haas Unica",-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial, sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'; }
+  font-family: "Inter", var(--font-stack); }
+@supports (font-variation-settings: normal) {
+  .fonts-loaded,
+  .fonts-loaded h1,
+  .fonts-loaded h2,
+  .fonts-loaded h3,
+  .fonts-loaded h4,
+  .fonts-loaded h5,
+  .fonts-loaded h6,
+  .fonts-loaded figcaption,
+  .fonts-loaded .page-title,
+  .fonts-loaded .page-subtitle {
+    font-family: "Inter var", var(--font-stack); }
+}
 
 
 /**
