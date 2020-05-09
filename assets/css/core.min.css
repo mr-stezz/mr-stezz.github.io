@@ -1233,7 +1233,8 @@ attr[title] {
   align-self: center;
   margin-right: auto;
   font-size: 15px;
-  line-height: 1 }
+  line-height: 1;
+  text-decoration: none; }
 
 a.nav-logo,
 a:visited.nav-logo        { color: var(--mineshaft) }
@@ -1246,7 +1247,7 @@ a:visited.nav-logo        { color: var(--iron) }}
 .nav-title {
   margin-bottom: 0;
   font-size: inherit;
-  font-weight: normal }
+  font-weight: bold }
 
 
 /**
@@ -1254,8 +1255,12 @@ a:visited.nav-logo        { color: var(--iron) }}
  */
 .nav-link {
   flex: 0 0 auto;
-  font-size: 15px;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 12px;
   line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
   font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
   user-select: none;
   fill: var(--blue--light) }
@@ -1279,7 +1284,7 @@ a:visited.nav-logo        { color: var(--iron) }}
 .toggle-label {
   color: var(--blue--light);
   cursor: pointer;
-  text-decoration: underline
+  text-decoration: none
 }
 @media(prefers-color-scheme: dark) {
   .toggle-label { color: var(--blue--dark) }
