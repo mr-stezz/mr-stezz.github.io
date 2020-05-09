@@ -1271,8 +1271,8 @@ a:visited.nav-logo        { color: var(--iron) }}
 @supports (font-feature-settings: "smcp" 1) {
 .nav-link { letter-spacing: 0.1em }}
 @media(prefers-color-scheme: dark) {
-.nav-link        { fill: var(--blue--dark) }}
-.night .nav-link { fill: var(--blue--dark) }
+.nav-link        { fill: var(--iron) }}
+.night .nav-link { fill: var(--iron) }
 
 .nav-link:not(:first-of-type),
 .nav-link.toggle-label { margin-left: 0.75em }
@@ -1287,14 +1287,14 @@ a:visited.nav-logo        { color: var(--iron) }}
  */
 /* Label */
 .toggle-label {
-  color: var(--blue--light);
+  color: var(--mineshaft);
   cursor: pointer;
   text-decoration: none
 }
 @media(prefers-color-scheme: dark) {
-  .toggle-label { color: var(--blue--dark) }
+  .toggle-label { color: var(--iron) }
 }
-.night .toggle-label { color: var(--blue--dark) }
+.night .toggle-label { color: var(--iron) }
 
 .toggle-label:hover { text-decoration: underline }
 
