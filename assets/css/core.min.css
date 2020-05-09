@@ -1759,18 +1759,21 @@ a:visited.nav-logo        { color: var(--iron) }}
  * _theme.footer-links.scss
  */
 .footer-links__link {
-  fill: #4581F6;
+  fill: var(--mineshaft);
   transform: translateY(0) scale(1);
   transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-
+  @media(prefers-color-scheme: dark) {
+         .footer-links__link { fill: var(--iron) }}
+  .night .footer-links__link { fill: var(--iron) }
   @media screen and (prefers-reduced-motion: reduce) {
     .footer-links__link { transition: none !important }
   }
 
-  .footer-links__link:hover {
-    transform: translateY(0.12) scale(1.25); }
-  .footer-links__link:visited {
-    fill: var(--raven); }
+  .footer-links__link:hover { transform: translateY(0.12) scale(1.25) }
+  .footer-links__link:visited { fill: var(--mineshaft); }
+  @media(prefers-color-scheme: dark) {
+  .footer-links__link:visited        { fill: var(--iron) }}
+  .night .footer-links__link:visited { fill: var(--iron) }
 
 
 /**
