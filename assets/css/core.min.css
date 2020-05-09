@@ -1342,8 +1342,8 @@ a:visited.nav-logo        { color: var(--iron) }}
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
   opacity: 0;
-  -webkit-filter: blur(30px);
-          filter: blur(30px);
+  /* -webkit-filter: blur(30px);
+          filter: blur(30px); */
   transform-origin: bottom center;
   transform: translateY(100vh);
   transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) 0.05s;
