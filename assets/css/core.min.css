@@ -549,6 +549,7 @@ body {
   outline-style: auto;
   outline-width: 5px*/ }
 
+
 /**
  * _base.headings.scss
  */
@@ -632,6 +633,7 @@ h6 {
 
 h6 { font-style: italic }
 
+
 /**
  * $PARAGRAPHS
  */
@@ -670,6 +672,14 @@ abbr[title] {
 /* @media(prefers-color-scheme: dark) {
 abbr        { text-decoration-color: #A9A9A9 }}
 .night abbr { text-decoration-color: #A9A9A9 } */
+
+
+/**
+ * $DEFINITIONS
+ */
+dfn {
+  font-style: normal;
+  cursor: help }
 
 
 /**
