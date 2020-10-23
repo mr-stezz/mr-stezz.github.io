@@ -279,7 +279,7 @@ dt:not([class]) {
  * _generic.typeface.scss
  */
 /* Inter */
-@font-face {
+/*@font-face {
   font-family: 'Inter';
   font-style:  normal;
   font-weight: 100;
@@ -430,7 +430,7 @@ dt:not([class]) {
   font-display: swap;
   src: url("../fonts/inter/Inter-BlackItalic.woff2?v=3.13") format("woff2"),
        url("../fonts/inter/Inter-BlackItalic.woff?v=3.13") format("woff");
-}
+}*/
 
 /* -------------------------------------------------------
 Variable font.
@@ -441,7 +441,7 @@ Usage:
     html { font-family: 'Inter var', sans-serif; }
   }
 */
-@font-face {
+/*@font-face {
   font-family: 'Inter var';
   font-weight: 100 900;
   font-display: swap;
@@ -456,7 +456,7 @@ Usage:
   font-style: italic;
   font-named-instance: 'Italic';
   src: url("../fonts/inter/Inter-italic.var.woff2?v=3.13") format("woff2");
-}
+}*/
 /**
  * FontFaceObserve will apply a class on the html when
  * the webfonts are ready:
@@ -475,19 +475,18 @@ Usage:
 .fonts-loaded .page-subtitle {
   font-family: "Inter", var(--font-stack); }
 @supports (font-variation-settings: normal) {
-  .fonts-loaded,
-  .fonts-loaded h1,
-  .fonts-loaded h2,
-  .fonts-loaded h3,
-  .fonts-loaded h4,
-  .fonts-loaded h5,
-  .fonts-loaded h6,
-  .fonts-loaded blockquote p,
-  .fonts-loaded figcaption,
-  .fonts-loaded .page-title,
-  .fonts-loaded .page-subtitle {
-    font-family: "Inter var", var(--font-stack); }
-}
+.fonts-loaded,
+.fonts-loaded h1,
+.fonts-loaded h2,
+.fonts-loaded h3,
+.fonts-loaded h4,
+.fonts-loaded h5,
+.fonts-loaded h6,
+.fonts-loaded blockquote p,
+.fonts-loaded figcaption,
+.fonts-loaded .page-title,
+.fonts-loaded .page-subtitle {
+  font-family: "Inter", var(--font-stack); }}
 
 
 /**
@@ -623,7 +622,7 @@ h6.heading { font-family: var(--font-stack) }
   line-height: 1.5 }
 
 .tera, .giga, .mega, .kilo, blockquote p,
-h1, h2, h3, h4, h5, h6 { font-weight: 900 }
+h1, h2, h3, h4, h5, h6 { font-weight: 700 }
 
 h5,
 h6 {
@@ -965,14 +964,14 @@ figcaption { color: var(--iron) }}
 attr[title] {
   padding-left: 0.15em;
   font-variant: small-caps;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: lowercase;
   letter-spacing: 0.15em }
 
-.w--300 { font-weight: 300 }
+/*.w--300 { font-weight: 300 }*/
 .w--400 { font-weight: 400 }
 .w--700 { font-weight: 700 }
-.w--800 { font-weight: 800 }
+/*.w--800 { font-weight: 800 }*/
 
 .w--break { word-wrap: break-word }
 .w--wrap  { word-wrap: normal }
@@ -1286,7 +1285,7 @@ a:visited.nav-logo        { color: var(--iron) }}
 .nav-title {
   margin-bottom: 0;
   font-size: inherit;
-  font-weight: bold }
+  font-weight: 700 }
 
 
 /**
@@ -1295,7 +1294,7 @@ a:visited.nav-logo        { color: var(--iron) }}
 .nav-link {
   flex: 0 0 auto;
   font-variant: small-caps;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   line-height: 1;
   text-transform: uppercase;
@@ -1553,7 +1552,7 @@ a:visited.nav-logo        { color: var(--iron) }}
 .formfield .label {
   flex-basis: auto;
   align-self: center;
-  font-weight: bold;
+  font-weight: 700;
 }
 @media (min-width: 400px) {
   .formfield .label {
@@ -1726,7 +1725,7 @@ a:visited.nav-logo        { color: var(--iron) }}
  */
 .submit__label {
   display: block;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1;
   color: var(--mineshaft) }
 @media(prefers-color-scheme: dark) {
