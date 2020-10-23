@@ -653,6 +653,19 @@ a:visited        { color: var(--iron) }}
 .night a,
 .night a:visited { color: var(--iron) }
 
+.visual-link {
+  text-decoration: underline;
+  color: var(--mineshaft) }
+.visual-link:hover,
+.visual-link:active { outline: 0 }
+.visual-link:hover { text-decoration: none }
+.visual-link:visited { color: var(--mineshaft) }
+@media(prefers-color-scheme: dark) {
+.visual-link,
+.visual-link:visited        { color: var(--iron) }}
+.night .visual-link,
+.night .visual-link:visited { color: var(--iron) }
+
 
 /**
  * $ABBREVIATIONS
