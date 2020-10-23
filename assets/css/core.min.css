@@ -1350,8 +1350,7 @@ a:visited.nav-logo        { color: var(--iron) }}
  .toggle-label {
    color: var(--mineshaft);
    cursor: pointer;
-   user-select: none;
-   text-decoration: none }
+   user-select: none }
  @media(prefers-color-scheme: dark) {
         .toggle-label { color: var(--iron) }}
  .night .toggle-label { color: var(--iron) }
