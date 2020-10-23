@@ -16,12 +16,14 @@ group: "navigation"
   Download my photography on <a href="https://unsplash.com/@stez" title="Download my photography for free on Unsplash." rel="noreferrer" target="_blank">Unsplash</a>.<br><br>
   Follow me on <a href="https://twitter.com/mr_stezz" title="Follow me on Twitter, @Mr_Stezz." rel="noreferrer" target="_blank">Twitter</a>.<br><br>
   Read my <a href="https://codepen.io/mr-stezz/full/PLKGEG" rel="noreferrer" target="_blank">r&eacute;sum&eacute;</a>.<br><br></p>
+</div>
+<section class="u--m-bottom--huge">
   <figure class="gallery">
     <img src='/assets/img/content/DeskSetup.jpg' srcset='/assets/img/content/DeskSetup.jpg 1x' alt='A photo of my current desk setup. A 3 draw wooden desk with a laptop, bluetooth speaker, coaster, trackpad, keyboard, mouse and mousemat, old android phone, magnetic cable tidy, Thunderbolt 3 dock, monitor arm holding up a 25" Ultrasharp and an iPad Pro hoisted up on a gooseneck in Sidecar mode atop.' loading='lazy'>
-    <figcaption class="text-col">My desk setup is always changing, but I think I’ve settled on this setup for a while.</figcaption>
+    <figcaption class="text-col u--m-bottom--huge">My desk setup is always changing, but I think I’ve settled on this setup for a while.</figcaption>
     <img src="/assets/img/content/MacOSDesktop.png" srcset="/assets/img/content/MacOSDesktop.png 1x" alt="A blank MacOS desktop screenshot showing the menubar at the top and the dock on the left-hand side of the screen" loading="lazy">
-    <figcaption class="text-col">Yes, I use the stickies.app and I wish it synced across iCloud to an iOS Stickies.app. Come on, Apple, make my dream come true!</figcaption>
+    <figcaption class="text-col u--m-bottom--huge">Yes, I use the stickies.app and I wish it synced across iCloud to an iOS Stickies.app. Come on, Apple, make my dream come true!</figcaption>
     <img src="/assets/img/content/iPhoneHomescreen.jpeg" srcset="/assets/img/content/iPhoneHomescreen.jpeg 1x" alt="A screenshot of my iOS Homescreen layout showcasing a grid of my most used apps." loading="lazy">
-    <figcaption class="text-col">I like to keep things simple and distraction free. Every app on my home screen isn’t a dopamine hole, it’s usually something practical. I also love Uno, the post-it widget app.</figcaption>
+    <figcaption class="text-col u--m-bottom--huge">I like to keep things simple and distraction free. Every app on my home screen isn’t a dopamine hole, it’s usually something practical. I also love Uno, the post-it widget app.</figcaption>
   </figure>
-</div>
+</section>
