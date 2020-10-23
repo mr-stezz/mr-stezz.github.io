@@ -1449,22 +1449,22 @@ a:visited.nav-logo        { color: var(--iron) }}
   left:  0;
   height: 100%;
   width:  100%;
-  background: #fff;
+  /*background: #fff;
   border: 2px solid var(--mineshaft);
-  box-shadow: 1px 1px 0px var(--mineshaft)
+  box-shadow: 1px 1px 0px var(--mineshaft)*/
 }
 @media(min-width: 400px) {
-.form::before { border-radius: 0.4375em }}
+.form::before { /*border-radius: 0.4375em*/ }}
 @media(prefers-color-scheme: dark) {
  .form::before {
-  background: var(--mineshaft);
+  /*background: var(--mineshaft);
   border: 2px solid var(--iron);
-  box-shadow: 1px 1px 0px var(--iron)
+  box-shadow: 1px 1px 0px var(--iron)*/
 }}
 .night .form::before {
-  background: var(--codgray);
+  /*background: var(--codgray);
   border: 2px solid var(--iron);
-  box-shadow: 1px 1px 0px var(--iron)
+  box-shadow: 1px 1px 0px var(--iron)*/
 }
 
 
@@ -1508,9 +1508,24 @@ a:visited.nav-logo        { color: var(--iron) }}
   cursor: default;
   user-select: none;
 /*   opacity: 0; */
+  background: #fff;
+  border: 2px solid var(--mineshaft);
+  box-shadow: 1px 1px 0px var(--mineshaft)
 }
 /* .toggle-checkbox:checked ~ .form formgroup { opacity: 1 } */
-
+@media(min-width: 400px) {
+.formgroup { border-radius: 0.4375em }}
+@media(prefers-color-scheme: dark) {
+ .formgroup {
+  background: var(--mineshaft);
+  border: 2px solid var(--iron);
+  box-shadow: 1px 1px 0px var(--iron)
+}}
+.night .formgroup {
+  background: var(--codgray);
+  border: 2px solid var(--iron);
+  box-shadow: 1px 1px 0px var(--iron)
+}
 
 /**
  * FORM FIELD WRAPPERS
@@ -1518,7 +1533,7 @@ a:visited.nav-logo        { color: var(--iron) }}
 .formfield {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   margin-left: 16px;
   padding: 10px 0 11px;
   font-size: 16px;
@@ -1656,7 +1671,7 @@ a:visited.nav-logo        { color: var(--iron) }}
  */
 .reciever {
   align-self: flex-start;
-  margin-right: auto;
+  /*margin-right: auto;*/
   margin-left: 4px;
   color: var(--bittersweet);
   border-radius: 3px; }
