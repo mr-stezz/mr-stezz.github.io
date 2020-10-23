@@ -684,7 +684,10 @@ abbr,
 abbr[title],
 dfn,
 dfn[title]  { text-decoration-color: var(--iron) }}
-.night abbr { text-decoration-color: var(--iron) } 
+.night abbr { text-decoration-color: var(--iron) }
+
+abbr[title],
+dfn[title] { cursor: help }
 
 
 /**
@@ -702,8 +705,7 @@ abbr[title] {
  * $DEFINITIONS
  */
 dfn {
-  font-style: normal;
-  cursor: help }
+  font-style: normal }
 
 
 /**
