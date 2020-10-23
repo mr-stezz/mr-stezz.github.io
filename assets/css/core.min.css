@@ -668,22 +668,34 @@ a:visited        { color: var(--iron) }}
 
 
 /**
+ * $ABBREVIATIONS & DEFINITIONS
+ */
+abbr,
+abbr[title],
+dfn,
+dfn[title] {
+  text-decoration-color: var(--mineshaft);
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.125em;
+  text-decoration-skip-ink: auto;
+}
+@media(prefers-color-scheme: dark) {
+abbr,
+abbr[title],
+dfn,
+dfn[title]  { text-decoration-color: var(--iron) }}
+.night abbr { text-decoration-color: var(--iron) } 
+
+
+/**
  * $ABBREVIATIONS
  */
 abbr,
 abbr[title] {
-  /*text-decoration-color: #8A8A8A;
-  text-decoration-style: dashed;
-  text-decoration-thickness: 0.125em;
-  text-decoration-skip-ink: auto;*/
-  text-decoration: none !important;
-  background-image: url("../img/ui/marked.png");
+  /*background-image: url("../img/ui/marked.png");
   background-position: 0 calc(100% - 1.5px);
   background-size: auto 3px;
-  background-repeat: repeat-x }
-/* @media(prefers-color-scheme: dark) {
-abbr        { text-decoration-color: #A9A9A9 }}
-.night abbr { text-decoration-color: #A9A9A9 } */
+  background-repeat: repeat-x*/ }
 
 
 /**
