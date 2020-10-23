@@ -23,7 +23,7 @@ group: "navigation"
     <figcaption class="text-col u--m-bottom--huge">My desk setup is always changing, but I think I’ve settled on this setup for a while.</figcaption>
     <img src="/assets/img/content/MacOSDesktop.png" srcset="/assets/img/content/MacOSDesktop.png 1x" alt="A blank MacOS desktop screenshot showing the menubar at the top and the dock on the left-hand side of the screen" loading="lazy" class="u--m-bottom">
     <figcaption class="text-col u--m-bottom--huge">Yes, I use the stickies.app and I wish it synced across iCloud to an iOS Stickies.app. Come on, Apple, make my dream come true!</figcaption>
-    <img src="/assets/img/content/iPhoneHomescreen.jpeg" srcset="/assets/img/content/iPhoneHomescreen.jpeg 1x" alt="A screenshot of my iOS Homescreen layout showcasing a grid of my most used apps." loading="lazy" class="u--m-bottom">
+    <img src="/assets/img/content/iPhoneHomescreen.png" srcset="/assets/img/content/iPhoneHomescreen.png 1x, /assets/img/content/iPhoneHomescreen@2x.png 2x, /assets/img/content/iPhoneHomescreen@3x.png 3x" alt="A screenshot of my iOS Homescreen layout showcasing a grid of my most used apps." loading="lazy" class="u--m-bottom">
     <figcaption class="text-col u--m-bottom--huge">I like to keep things simple and distraction free. Every app on my home screen isn’t a dopamine hole, it’s usually something practical. I also love Uno, the post-it widget app.</figcaption>
   </figure>
 </section>
