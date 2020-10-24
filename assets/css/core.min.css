@@ -1237,6 +1237,31 @@ a:visited.nav-logo        { color: var(--iron) }}
               0 3px 12px 0 rgba(0, 0, 0, 0.30)
 }
 
+/* Form Vibrancy */
+@supports (-moz-apperance: -moz-mac-vibrancy-light) {
+.form::before { -moz-apperance: -moz-mac-vibrancy-light }}
+@media(prefers-color-scheme: dark){
+  @supports (-moz-apperance: -moz-mac-vibrancy-dark) {
+  .form::before { -moz-apperance: -moz-mac-vibrancy-dark }}
+@supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
+.form::before {
+  background: rgba(248,248,248,0.82);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px) }}
+@media(prefers-color-scheme: dark) {
+.form::before        { background: var(--mineshaft) }}
+.night .form::before { background: var(--mineshaft) }
+@supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
+@media(prefers-color-scheme: dark) {
+.form::before {
+  background: rgba(41,41,41,0.82);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+          backdrop-filter: saturate(180%) blur(20px) }}
+.night .form::before {
+  background: rgba(41,41,41,0.82);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+          backdrop-filter: saturate(180%) blur(20px) }}
+
 /* Form Tooth */
 .form::after {
   content: '';
