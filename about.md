@@ -12,9 +12,9 @@ group: "navigation"
   <p>Raised in East London and later the West Midlands, I studied Interactive Media at Stratford-upon-Avon College and passed with a distinction, distinction, merit. My childhood love of making crude websites and icons grew into a adulthood love of designing and building simple, well thought-out digital products for people. My fascination with technology hasn't stopped, and I’ve been blown away by what <abbr title="Augmented Reality/Mixed Reality">AR/MR</abbr> can do and how it can change lives for the better as well as learning about tech's uglier effects on society.</p>
   <p>As well as designing digital products, I also have a shutter bug and love to take photos in new and exotic places. I’m a firm believer of the fact that travel broadens the mind—yes, I stole that from Stephen Merchant and I’m not even sorry.<br><br>
   Say hello at <label for="toggle-checkbox" class="toggle-label" title="Drop me a line.">ahoy@stezycki.com</label>.<br><br>
-  Browse my code scratchpad on <a href="https://codepen.io/mr-stezz/" title="Have a look at my code scrapbook on Codepen." rel="noreferrer" target="_blank">Codepen</a>.<br><br>
-  Download my photography on <a href="https://unsplash.com/@stez" title="Download my photography for free on Unsplash." rel="noreferrer" target="_blank">Unsplash</a>.<br><br>
-  Read my <a href="https://codepen.io/mr-stezz/full/PLKGEG" rel="noreferrer" target="_blank">r&eacute;sum&eacute;</a>.<br><br></p>
+  Browse my code scratchpad on <a href="https://codepen.io/mr-stezz/" title="Have a look at my code scrapbook on Codepen." rel="noreferrer" target="_blank">Codepen <svg class="icon" aria-hidden="true" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#open"></use></svg></a>.<br><br>
+  Download my photography on <a href="https://unsplash.com/@stez" title="Download my photography for free on Unsplash." rel="noreferrer" target="_blank">Unsplash <svg class="icon" aria-hidden="true" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#open"></use></svg></a>.<br><br>
+  Read my <a href="https://codepen.io/mr-stezz/full/PLKGEG" rel="noreferrer" target="_blank">r&eacute;sum&eacute; <svg class="icon" aria-hidden="true" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#open"></use></svg></a>.<br><br></p>
 </div>
 <section class="u--m-bottom--huge">
   <h3 class="heading page-title">What’s my workstation setup?</h3>
