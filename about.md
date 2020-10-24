@@ -14,6 +14,5 @@ group: "navigation"
   Say hello at <label for="toggle-checkbox" class="toggle-label" title="Drop me a line.">ahoy@stezycki.com</label>.<br><br>
   Browse my code scratchpad on <a href="https://codepen.io/mr-stezz/" title="Have a look at my code scrapbook on Codepen." rel="noreferrer" target="_blank">Codepen</a>.<br><br>
   Download my photography on <a href="https://unsplash.com/@stez" title="Download my photography for free on Unsplash." rel="noreferrer" target="_blank">Unsplash</a>.<br><br>
-  Follow me on <a href="https://twitter.com/mr_stezz" title="Follow me on Twitter, @Mr_Stezz." rel="noreferrer" target="_blank">Twitter</a>.<br><br>
   Read my <a href="https://codepen.io/mr-stezz/full/PLKGEG" rel="noreferrer" target="_blank">r&eacute;sum&eacute;</a>.<br><br></p>
 </div>

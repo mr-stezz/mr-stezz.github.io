@@ -473,23 +473,48 @@ a        { color: var(--blue--dark) }}
 
 
 /**
+ * $ABBREVIATIONS & DEFINITIONS
+ */
+abbr,
+abbr[title],
+dfn,
+dfn[title] {
+  text-decoration-color: #8A8A8A;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 0.125em;
+  text-decoration-skip-ink: auto;
+}
+@media(prefers-color-scheme: dark) {
+abbr,
+abbr[title],
+dfn,
+dfn[title]        { text-decoration-color: #A9A9A9 }}
+.night abbr,
+.night abbr[title],
+.night dfn,
+.night dfn[title] { text-decoration-color: #A9A9A9 }
+
+abbr[title],
+dfn[title] { cursor: help }
+
+
+/**
  * $ABBREVIATIONS
  */
 abbr,
 abbr[title] {
-  /*text-decoration-color: #8A8A8A;
-  text-decoration-style: dashed;
-  text-decoration-thickness: 0.125em;
-  text-decoration-skip-ink: auto;*/
-  text-decoration: none !important;
+  /*text-decoration: none !important;
   background-image: url("../img/ui/marked.png");
   background-position: 0 calc(100% - 1.5px);
   background-size: auto 3px;
-  background-repeat: repeat-x }
-/* @media(prefers-color-scheme: dark) {
-abbr        { text-decoration-color: #A9A9A9 }}
-.night abbr { text-decoration-color: #A9A9A9 } */
+  background-repeat: repeat-x*/ }
 
+
+/**
+ * $DEFINITIONS
+ */
+dfn,
+dfn[title] {}
 
 /**
  * $QUOTES
@@ -1090,7 +1115,10 @@ a:visited.nav-logo        { color: var(--iron) }}
   font-size: 15px;
   line-height: 1;
   font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   fill: var(--blue--light) }
 @supports (font-feature-settings: "smcp" 1) {
 .nav-link { letter-spacing: 0.1em }}
@@ -1141,7 +1169,10 @@ a:visited.nav-logo        { color: var(--iron) }}
 }
 @media (min-width: 400px) {
   .toggle-checkbox:checked {
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     pointer-events: none
   }
 }
@@ -1158,7 +1189,10 @@ a:visited.nav-logo        { color: var(--iron) }}
   /*top: 2.75rem;*/
   right: 0;
   z-index: 100;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   pointer-events: none;
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
@@ -1240,25 +1274,25 @@ a:visited.nav-logo        { color: var(--iron) }}
 /* Form Vibrancy */
 @supports (-moz-apperance: -moz-mac-vibrancy-light) {
 .form::before { -moz-apperance: -moz-mac-vibrancy-light }}
+
 @media(prefers-color-scheme: dark){
   @supports (-moz-apperance: -moz-mac-vibrancy-dark) {
   .form::before { -moz-apperance: -moz-mac-vibrancy-dark }}
+
 @supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
 .form::before {
-  background: rgba(248,248,248,0.82);
+  background: rgba(255,255,255,0.82);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px) }}
-@media(prefers-color-scheme: dark) {
-.form::before        { background: var(--mineshaft) }}
-.night .form::before { background: var(--mineshaft) }
+
 @supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
 @media(prefers-color-scheme: dark) {
 .form::before {
-  background: rgba(41,41,41,0.82);
+  background: rgba(30,30,30,0.82);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
           backdrop-filter: saturate(180%) blur(20px) }}
 .night .form::before {
-  background: rgba(41,41,41,0.82);
+  background: rgba(30,30,30,0.82);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
           backdrop-filter: saturate(180%) blur(20px) }}
 
@@ -1298,7 +1332,10 @@ a:visited.nav-logo        { color: var(--iron) }}
   left: 0;
   z-index: 1;
   cursor: default;
-  user-select: none
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 /* Form fields */
