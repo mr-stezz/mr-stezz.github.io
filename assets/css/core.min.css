@@ -480,6 +480,7 @@ abbr,
 abbr[title],
 dfn,
 dfn[title] {
+  font-style: normal;
   text-decoration-color: #8A8A8A;
   text-decoration-style: dotted;
   text-decoration-thickness: 0.125em;
