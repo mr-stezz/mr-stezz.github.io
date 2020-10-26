@@ -483,7 +483,7 @@ dfn[title] {
   font-style: normal;
   text-decoration-color: #8A8A8A;
   text-decoration-style: dotted;
-  text-decoration-thickness: 0.125em;
+  text-decoration-thickness: 0.0625em;
   text-decoration-skip-ink: auto;
 }
 @media(prefers-color-scheme: dark) {
