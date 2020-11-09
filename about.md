@@ -19,7 +19,7 @@ group: "navigation"
 <section class="u--m-bottom--huge">
   <h3 class="heading page-title">What’s my workstation setup?</h3>
   <figure class="gallery">
-    <img src="/assets/img/content/DeskSetup.jpg" srcset="/assets/img/content/DeskSetup.jpg 1x" alt="A photo of my current desk setup. A 3 draw wooden desk with a laptop, bluetooth speaker, coaster, trackpad, keyboard, mouse and mousemat, old android phone, magnetic cable tidy, Thunderbolt 3 dock, monitor arm holding up a 25&quot; Ultrasharp and an iPad Pro hoisted up on a gooseneck in Sidecar mode atop." loading="lazy" class="u--m-bottom">
+    <img src="/assets/img/content/DeskSetup.jpg" srcset="/assets/img/content/DeskSetup.jpg 1x, /assets/img/content/DeskSetup@2x.jpg 2x" alt="A photo of my current desk setup. A 3 draw wooden desk with a laptop, bluetooth speaker, coaster, trackpad, keyboard, mouse and mousemat, old android phone, magnetic cable tidy, Thunderbolt 3 dock, monitor arm holding up a 25&quot; Ultrasharp and an iPad Pro hoisted up on a gooseneck in Sidecar mode atop." loading="lazy" class="u--m-bottom">
     <figcaption class="text-col u--m-bottom--huge">My desk setup is always changing, but I think I’ve settled on this setup for a while.</figcaption>
     <img src="/assets/img/content/MacOSDesktop.png" srcset="/assets/img/content/MacOSDesktop.png 1x" alt="A blank MacOS desktop screenshot showing the menubar at the top and the dock on the left-hand side of the screen" loading="lazy" class="u--m-bottom">
     <figcaption class="text-col u--m-bottom--huge">Yes, I use the stickies.app and I wish it synced across iCloud to an iOS Stickies.app. Come on, Apple, make my dream come true!</figcaption>
