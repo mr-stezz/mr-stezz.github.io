@@ -1,10 +1,9 @@
 <svg width="32" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<style>/* <![CDATA[ */
     #fill {
-        background: rgba(30,30,30,0.82);
   		-webkit-backdrop-filter: saturate(180%) blur(20px);
         backdrop-filter: saturate(180%) blur(20px);
     }
   /* ]]> */</style>
-	<g clip-path="url(#clip0)"><path id="stroke" fill-rule="evenodd" clip-rule="evenodd" d="M32 12.5c-3.75 0-6.87-2.82-9.5-5.83-.62-.71-1.22-1.43-1.78-2.11l-.06-.08c-.58-.7-1.13-1.37-1.65-1.94a10.99 10.99 0 00-1.49-1.43A2.62 2.62 0 0016 .5c-.54 0-1.05.26-1.52.61-.48.36-.98.86-1.5 1.43-.5.57-1.06 1.24-1.64 1.94l-.06.08c-.56.68-1.16 1.4-1.78 2.11-2.63 3-5.74 5.83-9.5 5.83h32z" fill="#000" fill-opacity=".05"/><path id="fill" d="M32 13C24 13 19 1 16 1S8 13 0 13v1h32v-1z"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h32v14H0z"/></clipPath></defs>
+	<g clip-path="url(#clip0)"><path id="stroke" fill-rule="evenodd" clip-rule="evenodd" d="M32 12.5c-3.75 0-6.87-2.82-9.5-5.83-.62-.71-1.22-1.43-1.78-2.11l-.06-.08c-.58-.7-1.13-1.37-1.65-1.94a10.99 10.99 0 00-1.49-1.43A2.62 2.62 0 0016 .5c-.54 0-1.05.26-1.52.61-.48.36-.98.86-1.5 1.43-.5.57-1.06 1.24-1.64 1.94l-.06.08c-.56.68-1.16 1.4-1.78 2.11-2.63 3-5.74 5.83-9.5 5.83h32z" fill="#000" fill-opacity=".05"/><path id="fill" d="M32 13C24 13 19 1 16 1S8 13 0 13v1h32v-1z" fill="#1e1e1e" fill-opacity="0.82"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h32v14H0z"/></clipPath></defs>
 </svg>
