@@ -1310,10 +1310,21 @@ a:visited.nav-logo        { color: var(--iron) }}
     background-size: cover;
     right: 0.75rem
   }
+  @supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
+    .form::after { background-image: url("../img/ui/translucent-tooth.svg") }
+  }
   @media(prefers-color-scheme: dark) {
     .form::after { background-image: url("../img/ui/dark-tooth.svg") }
   }
+  @supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
+    @media(prefers-color-scheme: dark) {
+      .form::after { background-image: url("../img/ui/translucent-dark-tooth.svg") }
+    }
+  }
   .night .form::after { background-image: url("../img/ui/dark-tooth.svg") }
+  @supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
+    .night .form::after { background-image: url("../img/ui/translucent-dark-tooth.svg") }
+  }
 }
 
 /* Form Group */
