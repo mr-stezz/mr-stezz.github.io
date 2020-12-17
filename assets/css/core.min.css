@@ -11,6 +11,7 @@
   --raven:            #79828D;
   --mineshaft:        #292929;
   --codgray:          #1E1E1E;
+  --error:            #EB5757;
 
   --blue--light:      #007AFF;
   --blue--dark:       #5AC8FA;
@@ -1131,6 +1132,7 @@ a:visited.nav-logo        { color: var(--iron) }}
  * $NAV-LINKS
  */
 .nav-link {
+  position: relative;
   flex: 0 0 auto;
   font-size: 15px;
   line-height: 1;
@@ -1151,6 +1153,23 @@ a:visited.nav-logo        { color: var(--iron) }}
 @media (min-width: 400px) {
 .nav-link:not(:first-of-type),
 .nav-link.toggle-label { margin-left: 1.5em }}
+
+/* Adding new stuff to the header */
+.nav-link.new:after {
+    content: "New";
+    position: absolute;
+    top:      0;
+    right:    0;
+    margin-top:   -2px;
+    margin-right: -12px;
+    padding: 0px 3px 3px 3px;
+    font-size: 10px;
+    font-weight: bold;
+    color:      var(--white);
+    background: var(--error);
+    border-radius: 3px;
+    transform: rotate(4deg);
+}
 
 
 /**
@@ -1457,7 +1476,7 @@ a:visited.nav-logo        { color: var(--iron) }}
 .formfield textarea:invalid                         { box-shadow: none }
 /* Only show invalid styles when placeholder is not shown */
 .formfield input:invalid:not(:placeholder-shown),
-.formfield textarea:invalid:not(:placeholder-shown) { color: #EB5757 }
+.formfield textarea:invalid:not(:placeholder-shown) { color: var(--error) }
 
 /* Label */
 .formfield .label {
