@@ -17,7 +17,7 @@ group: "navigation"
   Read my <a href="https://codepen.io/mr-stezz/full/PLKGEG" rel="noreferrer" target="_blank">r&eacute;sum&eacute; <svg class="icon" aria-hidden="true" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#open"></use></svg></a>.<br><br></p>
 </div>
 <section>
-  <h3 class="heading page-title">What’s my workstation setup?</h3>
+  <h3 id="whats-my-workstation-setup" class="heading page-title">What’s my workstation setup?</h3>
   <figure class="gallery">
     <img src="/assets/img/content/DeskSetup.jpg" srcset="/assets/img/content/DeskSetup.jpg 1x, /assets/img/content/DeskSetup@2x.jpg 2x" alt="A photo of my current desk setup. A 3 draw wooden desk with a laptop, bluetooth speaker, coaster, trackpad, keyboard, mouse and mousemat, old android phone, magnetic cable tidy, Thunderbolt 3 dock, monitor arm holding up a 25&quot; Ultrasharp and an iPad Pro hoisted up on a gooseneck in Sidecar mode atop." loading="lazy" class="u--m-bottom">
     <figcaption class="text-col u--m-bottom--huge">My desk setup is always changing, but I think I’ve settled on this setup for a while.</figcaption>
