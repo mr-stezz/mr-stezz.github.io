@@ -720,7 +720,7 @@ figcaption { color: var(--iron) }}
   position: absolute;
   width: 1px;
   white-space: nowrap }
-@media (min-width: 400px) {
+@media (min-width: 468px) {
 .visually-hidden--for-mobile {
   border: initial;
   clip: initial;
