@@ -1029,6 +1029,18 @@ attr[title] {
 
 
 /**
+ * $SUBTITLE PERMALINKS
+ */
+.subtitle-link              { color: var(--iron) }
+.subtitle-link:hover        { color: var(--blue--light); text-decoration: none; }
+@media(prefers-color-scheme: dark) {
+.subtitle-link              { color: var(--codgray) }
+.subtitle-link:hover        { color: var(--blue--dark) }}
+.night .subtitle-link       { color: var(--codgray) }
+.night .subtitle-link:hover { color: var(--blue--dark) }
+
+
+/**
  * $HEADER
  */
 .page-header {
