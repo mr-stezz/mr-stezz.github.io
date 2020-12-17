@@ -58,7 +58,6 @@ dd {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -326,6 +325,8 @@ html,
 body { height: 100% }
 
 html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
   font-weight: 400;
   font-size: 1em;
   line-height: 1.5;
