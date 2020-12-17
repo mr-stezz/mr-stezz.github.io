@@ -1287,7 +1287,7 @@ attr[title] {
 
 .nav-link-top {
   flex: 0 0 auto;
-  margin-left: auto !important }
+  /*margin-left: auto !important*/ }
 
 
 /**
