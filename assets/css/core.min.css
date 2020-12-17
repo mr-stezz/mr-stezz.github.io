@@ -877,6 +877,24 @@ attr[title] {
 
 
 /**
+ * $WORK LIST
+ */
+.work-list {
+  list-style: none;
+}
+.work-list-item {
+  display: block;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.75em;
+}
+.work-list-link {
+  cursor: pointer;
+  user-select: none;
+}
+
+
+/**
  * $ANIMATION
  */
 .slide-up,
