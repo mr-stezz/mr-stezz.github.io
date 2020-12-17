@@ -1,3 +1,12 @@
+// Play audio snippet on hover
+const imTheBest = new Audio('../assets/sounds/im_the_best.mp3')
+document.querySelectorAll('.spotlight').forEach(link => {
+    let audioLink = link.querySelector('.js-audio-link'),
+        timer
+    audioLink.addEventListener('mouseover', e => {
+        imTheBest.play()
+    })
+})
 // Molten Leading
 ! function(e, t, n) {
   function s(e, n) {
