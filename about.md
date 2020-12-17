@@ -45,7 +45,7 @@ group: "navigation"
       <li class="work-list-item"><a href="https://zedapaz.com/" class="work-list-link">Ze Pa</a></li>
       <li class="work-list-item"><a href="#" class="work-list-link">Nicko Bennet</a></li>
       <li class="work-list-item"><a href="https://github.com/TheCoordinator" class="work-list-link">Peyman Khanjan</a></li>
-      <li class="work-list-item"><a href="#" class="work-list-link">Jacek Filipczuk</a></li>
+      <li class="work-list-item"><a href="https://www.linkedin.com/in/jacek-filipczuk-53626894/" class="work-list-link">Jacek Filipczuk</a></li>
       <li class="work-list-item"><a href="#" class="work-list-link">Andreas Gertsch Grover</a></li>
       <li class="work-list-item"><a href="https://github.com/ALucking1" class="work-list-link">Anna Lucking</a></li>
       <li class="work-list-item"><a href="https://github.com/mcdeguzman99" class="work-list-link">Michael De Guzman</a></li>
