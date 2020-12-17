@@ -16,7 +16,7 @@ group: "navigation"
   Download my photography on <a href="https://unsplash.com/@stez" title="Download my photography for free on Unsplash." rel="noreferrer" target="_blank">Unsplash</a>.<br><br>
   Read my <a href="https://codepen.io/mr-stezz/full/PLKGEG" rel="noreferrer" target="_blank">r&eacute;sum&eacute;</a>.<br><br></p>
 </div>
-<section class="u--m-bottom--huge">
+<section>
   <h2 class="heading page-title">What’s my workstation setup?</h2>
   <figure class="gallery">
     <img src='/assets/img/content/DeskSetup.jpg' srcset='/assets/img/content/DeskSetup.jpg 1x' alt='A photo of my current desk setup. A 3 draw wooden desk with a laptop, bluetooth speaker, coaster, trackpad, keyboard, mouse and mousemat, old android phone, magnetic cable tidy, Thunderbolt 3 dock, monitor arm holding up a 25" Ultrasharp and an iPad Pro hoisted up on a gooseneck in Sidecar mode atop.' loading='lazy' class='u--m-bottom'>
