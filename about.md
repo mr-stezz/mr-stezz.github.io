@@ -17,7 +17,7 @@ group: "navigation"
   Read my <a href="https://codepen.io/mr-stezz/full/PLKGEG" rel="noreferrer" target="_blank">r&eacute;sum&eacute; <svg class="icon" aria-hidden="true" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#open"></use></svg></a>.<br><br></p>
 </div>
 <section>
-  <h3 id="whats-my-workstation-setup" class="heading page-title">What’s my workstation setup?</h3>
+  <h3 id="workstation-setup" class="heading page-title">What’s my workstation setup? <a href="#workstation-setup" class="subtitle-link" title="Permalink to this headline">¶</a></h3>
   <figure class="gallery">
     <img src="/assets/img/content/DeskSetup.jpg" srcset="/assets/img/content/DeskSetup.jpg 1x, /assets/img/content/DeskSetup@2x.jpg 2x" alt="A photo of my current desk setup. A 3 draw wooden desk with a laptop, bluetooth speaker, coaster, trackpad, keyboard, mouse and mousemat, old android phone, magnetic cable tidy, Thunderbolt 3 dock, monitor arm holding up a 25&quot; Ultrasharp and an iPad Pro hoisted up on a gooseneck in Sidecar mode atop." loading="lazy" class="u--m-bottom">
     <figcaption class="text-col u--m-bottom--huge">My desk setup is always changing, but I think I’ve settled on this setup for a while.</figcaption>
@@ -29,5 +29,5 @@ group: "navigation"
 </section>
 {% include _section.people-id-work-with-again.html %}
 <section class="u--m-bottom--huge">
-  <h3 id="get-in-touch" class="heading gamma w--300 no-spacing"><label for="toggle-checkbox" class="toggle-label" title="Send me an email." role="button" tabindex="0" aria-hidden="true">Get in touch</label> if you want to work together on interaction design, icon design, user experience or product strategy.</h3>
+  <h3 id="get-in-touch" class="heading gamma w--300 no-spacing"><label for="toggle-checkbox" class="toggle-label" title="Send me an email." role="button" tabindex="0" aria-hidden="true">Get in touch</label> if you want to work together on interaction design, icon design, user experience or product strategy. <a href="#get-in-touch" class="subtitle-link" title="Permalink to this headline">¶</a></h3>
 </section>
