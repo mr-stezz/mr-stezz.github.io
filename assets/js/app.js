@@ -193,3 +193,15 @@ var contactform = document.getElementById("js-form"),
 //     }
 //   })
 // }
+// Play Audio on Hover
+const imTheBest = new Audio('https://stez.me/assets/sounds/im_the_best.mp3')
+
+document.querySelectorAll('.spotlight').forEach(link => {
+    let audioLink = link.querySelector('.js-audio-link'),
+        timer
+
+    audioLink.addEventListener('mouseover', e => {
+        imTheBest.play()
+    })
+})
+
