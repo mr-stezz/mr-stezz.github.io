@@ -29,7 +29,7 @@ group: "navigation"
 </section>
 <section class="u--m-bottom--huge">
   <div class="text-col">
-    <h3 class="heading page-title">Folks I’d love to work with again</h3>
+    <h3 id="folks-id-love-to-work-with-again" class="heading page-title">Folks I’d love to work with again</h3>
     <ul class="work-list">
       <li class="work-list-item"><a href="https://www.linkedin.com/in/james-hayes-01b37b86/" class="work-list-link"><span role="img" aria-label="Trophy" class="js-audio-link" title="I'mmm the best!">🏆</span>&nbsp;James Hayes</a></li>
       <li class="work-list-item"><a href="#" class="work-list-link">Anthony Anderson</a></li>
