@@ -31,7 +31,7 @@ group: "navigation"
   <div class="text-col">
     <h3 class="heading page-title">Folks I’d love to work with again</h3>
     <ul class="work-list">
-      <li class="work-list-item"><a href="https://www.linkedin.com/in/james-hayes-01b37b86/" class="work-list-link"><span class="js-audio-link" title="I'mmm the best!">🏆</span>&nbsp;James Hayes</a></li>
+      <li class="work-list-item"><a href="https://www.linkedin.com/in/james-hayes-01b37b86/" class="work-list-link"><span role="img" aria-label="Trophy" class="js-audio-link" title="I'mmm the best!">🏆</span>&nbsp;James Hayes</a></li>
       <li class="work-list-item"><a href="#" class="work-list-link">Anthony Anderson</a></li>
       <li class="work-list-item"><a href="https://github.com/AnjanaHewage" class="work-list-link">Anjana Hewage</a></li>
       <li class="work-list-item"><a href="https://github.com/fuxlud" class="work-list-link">Luda Fux</a></li>
