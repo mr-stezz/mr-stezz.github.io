@@ -107,5 +107,5 @@ group: "navigation"
   </div>
 </section>
 <section class="u--m-bottom--huge">
-  <h3 class="heading gamma w--300 no-spacing"><label for="toggle-checkbox" class="toggle-label" title="Send me an email." role="button" tabindex="0" aria-hidden="true">Get in touch</label> if you want to work together on interaction design, icon design, user experience or product strategy.</h3>
+  <h3 id="get-in-touch" class="heading gamma w--300 no-spacing"><label for="toggle-checkbox" class="toggle-label" title="Send me an email." role="button" tabindex="0" aria-hidden="true">Get in touch</label> if you want to work together on interaction design, icon design, user experience or product strategy.</h3>
 </section>
