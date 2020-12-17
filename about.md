@@ -27,3 +27,6 @@ group: "navigation"
     <figcaption class="text-col u--m-bottom--huge">I like to keep things simple and distraction free. Every app on my home screen isn’t a dopamine hole, it’s usually something practical. I also love Uno, the post-it widget app.</figcaption>
   </figure>
 </section>
+<section class="u--m-bottom--huge">
+  <h3 class="heading gamma w--300 no-spacing"><label for="toggle-checkbox" class="toggle-label" title="Send me an email." role="button" tabindex="0" aria-hidden="true">Get in touch</label> if you want to work together on interaction design, icon design, user experience or product strategy.</h3>
+</section>
