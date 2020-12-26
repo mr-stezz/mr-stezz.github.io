@@ -18,6 +18,9 @@
   --highlight--light: rgba(0,122,255,0.5);
   --highlight--dark:  rgba(212,242,255,0.16);
   --email-form--dark: #3C3C3C;
+
+  /* $TIMING SCALE */
+  --transition:       300ms cubic-bezier(0.270, 0.175, 0.285, 1.010);
 }
 
 
@@ -862,6 +865,8 @@ attr[title] {
   cursor: pointer;
   position: relative;
   transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) }
+@media screen and (prefers-reduced-motion: reduce) {
+  .tabs label { transition: none !important }}
 
 .tab-content {
   display: none;
@@ -1032,7 +1037,13 @@ attr[title] {
 /**
  * $SUBTITLE PERMALINKS
  */
-.subtitle-link                { opacity: 0; text-decoration: none; }
+.subtitle-link                {
+  opacity: 0;
+  text-decoration: none;
+  transition: opacity var(--transition);
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  .subtitle-link { transition: none !important }}
 .heading:hover .subtitle-link { opacity: 1 }
 
 .subtitle-link              { color: var(--iron) }
