@@ -5,22 +5,25 @@
  * $VARS
  */
 :root {
-  --white:            #FFFFFF;
-  --iron:             #D7D9DD;
-  --iron-30:          rgba(121, 130, 141, 0.3);
-  --raven:            #79828D;
-  --mineshaft:        #292929;
-  --codgray:          #1E1E1E;
-  --error:            #EB5757;
+  --white:               #FFFFFF;
+  --iron:                #D7D9DD;
+  --iron-30:             rgba(121, 130, 141, 0.3);
+  --raven:               #79828D;
+  --mineshaft:           #292929;
+  --codgray:             #1E1E1E;
+  --error:               #EB5757;
 
-  --blue--light:      #007AFF;
-  --blue--dark:       #5AC8FA;
-  --highlight--light: rgba(0,122,255,0.5);
-  --highlight--dark:  rgba(212,242,255,0.16);
-  --email-form--dark: #3C3C3C;
+  --blue--light:         #007AFF;
+  --blue--dark:          #5AC8FA;
+  --highlight--light:    rgba(0,122,255,0.5);
+  --highlight--dark:     rgba(212,242,255,0.16);
+  --email-form--dark:    #3C3C3C;
 
-  /* $TIMING SCALE */
-  --transition:       300ms cubic-bezier(0.270, 0.175, 0.285, 1.010);
+  /* $TIMING SCALES */
+  --transition:          300ms cubic-bezier(0.270, 0.175, 0.285, 1.010);
+  --pop-transition:      0.3s cubic-bezier(0.25, 0.1, 0.25, 1) 0.05s;
+  --slide-up-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --tabs-transition:     0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 
@@ -864,7 +867,7 @@ attr[title] {
   color: var(--blue--light);
   cursor: pointer;
   position: relative;
-  transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) }
+  transition: var(--tabs-transition) }
 @media screen and (prefers-reduced-motion: reduce) {
   .tabs label { transition: none !important }}
 
@@ -1267,7 +1270,7 @@ a:visited.nav-logo        { color: var(--iron) }}
           filter: blur(30px);
   transform-origin: bottom center;
   transform: translateY(100vh);
-  transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) 0.05s;
+  transition: var(--pop-transition);
   will-change: transform }
 
 .toggle-checkbox:checked ~ .form {
@@ -1295,7 +1298,7 @@ a:visited.nav-logo        { color: var(--iron) }}
   right:  1.5em;
   transform-origin: top right;
   transform: translateY(-10px) scale(0.75);
-  transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) }
+  transition: var(--slide-up-transition) }
 @media screen and (prefers-reduced-motion: reduce) {
 .form { transition: none !important }}}
 
