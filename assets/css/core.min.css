@@ -680,6 +680,8 @@ figcaption { color: var(--iron) }}
 .icon--huge    { font-size: 4em }
 .icon--natural { font-size: inherit }
 
+.icon-fill--natural { fill: currentColor }
+
 
 /**
  * $HORIZONTAL-RULES
