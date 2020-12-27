@@ -89,7 +89,7 @@
 var currentTime = (new Date).getHours();
 7 <= currentTime && currentTime < 18 ? document.body && (document.body.className = "day") : document.body && (document.body.className = "night");
 // Open contact form on enter keyup on .toggle-label
-document.querySelector(".toggle-label").addEventListener("keyup", (e) => {
+document.querySelectorAll(".toggle-label").addEventListener("keyup", (e) => {
   e.preventDefault();
   if (event.keyCode === 13) {
     document.querySelector(".toggle-checkbox").click();
