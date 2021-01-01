@@ -1076,9 +1076,9 @@ attr[title] {
 .page-header { -moz-apperance: -moz-mac-vibrancy-light }}
 @media(prefers-color-scheme: dark){
   @supports (-moz-apperance: -moz-mac-vibrancy-dark) {
-  .page-header { -moz-apperance: -moz-mac-vibrancy-dark }}
-}*/
-@supports (backdrop-filter: saturate(180%) blur(20px)) {
+  .page-header { -moz-apperance: -moz-mac-vibrancy-dark }}*/
+}
+@supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) and (backdrop-filter: saturate(180%) blur(20px)) {
 .page-header {
   background: rgba(248,248,248,0.82);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -1086,7 +1086,7 @@ attr[title] {
 @media(prefers-color-scheme: dark) {
 .page-header        { background: var(--mineshaft) }}
 .night .page-header { background: var(--mineshaft) }
-@supports (backdrop-filter: saturate(180%) blur(20px)) {
+@supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) and (backdrop-filter: saturate(180%) blur(20px)) {
 @media(prefers-color-scheme: dark) {
 .page-header {
   background: rgba(41,41,41,0.82);
@@ -1345,13 +1345,13 @@ a:visited.nav-logo        { color: var(--iron) }}
 @supports (-moz-apperance: -moz-mac-vibrancy-dark) {
 .form::before { -moz-apperance: -moz-mac-vibrancy-dark }}}*/
 
-@supports (backdrop-filter: saturate(180%) blur(20px)) {
+@supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
 .form::before {
   background: rgba(255,255,255,0.82);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
-          backdrop-filter: saturate(180%) blur(20px) }}
+  backdrop-filter: saturate(180%) blur(20px) }}
 
-@supports (backdrop-filter: saturate(180%) blur(20px)) {
+@supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
 @media(prefers-color-scheme: dark) {
 .form::before {
   background: rgba(30,30,30,0.82);
@@ -1379,19 +1379,19 @@ a:visited.nav-logo        { color: var(--iron) }}
     background-size: cover;
     right: 0.75rem
   }
-  @supports (backdrop-filter: saturate(180%) blur(20px)) {
+  @supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
     .form::after { background-image: url("../img/ui/translucent-tooth.svg") }
   }
   @media(prefers-color-scheme: dark) {
     .form::after { background-image: url("../img/ui/dark-tooth.svg") }
   }
-  @supports (backdrop-filter: saturate(180%) blur(20px)) {
+  @supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
     @media(prefers-color-scheme: dark) {
       .form::after { background-image: url("../img/ui/translucent-dark-tooth.svg") }
     }
   }
   .night .form::after { background-image: url("../img/ui/dark-tooth.svg") }
-  @supports (backdrop-filter: saturate(180%) blur(20px)) {
+  @supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
     .night .form::after { background-image: url("../img/ui/translucent-dark-tooth.svg") }
   }
 }
