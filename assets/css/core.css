@@ -1078,15 +1078,15 @@ attr[title] {
   @supports (-moz-apperance: -moz-mac-vibrancy-dark) {
   .page-header { -moz-apperance: -moz-mac-vibrancy-dark }}*/
 }
-@supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) and (backdrop-filter: saturate(180%) blur(20px)) {
+@supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
 .page-header {
   background: rgba(248,248,248,0.82);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
-          backdrop-filter: saturate(180%) blur(20px) }}
+  backdrop-filter: saturate(180%) blur(20px) }}
 @media(prefers-color-scheme: dark) {
 .page-header        { background: var(--mineshaft) }}
 .night .page-header { background: var(--mineshaft) }
-@supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) and (backdrop-filter: saturate(180%) blur(20px)) {
+@supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
 @media(prefers-color-scheme: dark) {
 .page-header {
   background: rgba(41,41,41,0.82);
