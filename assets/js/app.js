@@ -95,3 +95,14 @@ document.querySelector(".toggle-label").addEventListener("keyup", (e) => {
     document.querySelector(".toggle-checkbox").click();
   }
 });
+// Play Toad's 'I'm the besssst' audio snippet when hovering over link
+const imTheBest = new Audio('../sounds/im_the_best.mp3')
+
+document.querySelectorAll('.work-list').forEach(link => {
+    let audioLink = link.querySelector('.js-audio-clip'),
+        timer
+
+    audioLink.addEventListener('mouseover', e => {
+        imTheBest.play()
+    })
+})
