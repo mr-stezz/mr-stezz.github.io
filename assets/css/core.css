@@ -1205,7 +1205,7 @@ a:visited.nav-logo        { color: var(--iron) }}
 
 
 /**
- * _theme.checkbox-form
+ * $CHECKBOX-FORM
  */
 /* Label */
 .toggle-label {
@@ -1718,7 +1718,7 @@ a:visited.nav-logo        { color: var(--iron) }}
 
 
 /**
- * _theme.footer-links.scss
+ * $FOOTER-LINKS
  */
 .footer-links__link {
   fill: #4581F6;
@@ -1736,7 +1736,7 @@ a:visited.nav-logo        { color: var(--iron) }}
 
 
 /**
- * _theme.page-title.scss
+ * $PAGE-TITLE
  */
 .page-title {
   font-weight: 500;
@@ -1750,7 +1750,7 @@ a:visited.nav-logo        { color: var(--iron) }}
 
 
 /**
- * _theme.page-subtitle.scss
+ * $PAGE-SUBTITLE
  */
 .page-subtitle {
   font-size: 1rem;
@@ -1760,3 +1760,14 @@ a:visited.nav-logo        { color: var(--iron) }}
 @media(prefers-color-scheme: dark) {
 .page-subtitle {        color: var(--iron) }}
 .night .page-subtitle { color: var(--iron) }
+
+/**
+ * $EMOJI-CURSORS
+ */
+.emoji-cursor-hi            { cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👋</text></svg>") 16 0,auto; }
+.emoji-cursor-house         { cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🏡</text></svg>") 16 0,auto; }
+.emoji-cursor-union-jack    { cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🇬🇧</text></svg>") 16 0,auto; }
+.emoji-cursor-credit-card   { cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>💳</text></svg>") 16 0,auto; }
+.emoji-cursor-pointing-up   { cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👆</text></svg>") 16 0,auto; }
+.emoji-cursor-eyes          { cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👀</text></svg>") 16 0,auto; }
+.emoji-cursor-pointing-down { cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👇</text></svg>") 16 0,auto; }
