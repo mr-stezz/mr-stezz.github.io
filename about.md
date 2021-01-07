@@ -21,9 +21,15 @@ group: "navigation"
   <figure class="gallery">
     <img src="/assets/img/content/DeskSetup.jpg" srcset="/assets/img/content/DeskSetup.jpg 1x, /assets/img/content/DeskSetup@2x.jpg 2x" alt="A photo of my current desk setup. A 3 draw wooden desk with a laptop, bluetooth speaker, coaster, trackpad, keyboard, mouse and mousemat, old android phone, magnetic cable tidy, Thunderbolt 3 dock, monitor arm holding up a 25&quot; Ultrasharp and an iPad Pro hoisted up on a gooseneck in Sidecar mode atop." loading="lazy" class="u--m-bottom">
     <figcaption class="text-col u--m-bottom--huge">My desk setup is always changing, but I think I’ve settled on this setup for a while.</figcaption>
-    <img src="/assets/img/content/MacOSDesktop.png" srcset="/assets/img/content/MacOSDesktop.png 1x" alt="A blank MacOS desktop screenshot showing the menubar at the top and the dock on the left-hand side of the screen" loading="lazy" class="u--m-bottom">
+    <picture loading="lazy" class="u--m-bottom">
+      <source srcset="/assets/img/content/MacOSDesktop~light.png 1x" media="(prefers-color-scheme: light) or (prefers-color-scheme: no-preference)" alt="A blank MacOS desktop screenshot showing the menubar at the top and the dock on the left-hand side of the screen" loading="lazy">
+      <source srcset="/assets/img/content/MacOSDesktop~dark.png 1x" media="(prefers-color-scheme: dark)" alt="A blank MacOS desktop screenshot showing the menubar at the top and the dock on the left-hand side of the screen" loading="lazy">
+    </picture>
     <figcaption class="text-col u--m-bottom--huge">Yes, I use the stickies.app and I wish it synced across iCloud to an iOS Stickies.app. Come on, Apple, make my dream come true!</figcaption>
-    <img src="/assets/img/content/iPhoneHomescreen.png" srcset="/assets/img/content/iPhoneHomescreen.png 1x, /assets/img/content/iPhoneHomescreen@2x.png 2x, /assets/img/content/iPhoneHomescreen@3x.png 3x" alt="A screenshot of my iOS Homescreen layout showcasing a grid of my most used apps." loading="lazy" class="u--m-bottom">
+    <picture loading="lazy" class="u--m-bottom">
+      <source srcset="/assets/img/content/iPhoneHomeScreen~light.png 1x, /assets/img/content/iPhoneHomeScreen~light@2x.png 2x, /assets/img/content/iPhoneHomeScreen~light@3x.png 3x" media="(prefers-color-scheme: light) or (prefers-color-scheme: no-preference)" alt="A screenshot of my iOS Homescreen layout showcasing a grid of my most used apps." loading="lazy">
+      <source srcset="/assets/img/content/iPhoneHomeScreen~dark.png 1x, /assets/img/content/iPhoneHomeScreen~dark@2x.png 2x, /assets/img/content/iPhoneHomeScreen~dark@3x.png 3x" media="(prefers-color-scheme: dark)" alt="A screenshot of my iOS Homescreen layout showcasing a grid of my most used apps." loading="lazy">
+    </picture>
     <figcaption class="text-col u--m-bottom--huge">I like to keep things simple and distraction free. Every app on my home screen isn’t a dopamine hole, it’s usually something practical. I also love Uno, the post-it widget app.</figcaption>
   </figure>
 </section>
