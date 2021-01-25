@@ -1077,7 +1077,6 @@ attr[title] {
 @media(prefers-color-scheme: dark){
   @supports (-moz-apperance: -moz-mac-vibrancy-dark) {
   .page-header { -moz-apperance: -moz-mac-vibrancy-dark }}*/
-}
 @supports (backdrop-filter: saturate(180%) blur(20px)) {
 .page-header {
   background: rgba(248,248,248,0.82);
