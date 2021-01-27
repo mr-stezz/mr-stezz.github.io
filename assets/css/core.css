@@ -1174,6 +1174,10 @@ a:visited.nav-logo        { color: var(--iron) }}
   font-size: inherit;
   font-weight: normal }
 
+.nav-glyph:after {
+  content: " · ";
+}
+
 
 /**
  * $NAV-LINKS
