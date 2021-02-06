@@ -469,16 +469,48 @@ h6 { font-style: italic }
   line-height: 1.5555555555555556 }
 
 a {
-  text-decoration: underline;
-  color: var(--blue--light);
-  fill: var(--blue--light) }
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--mineshaft);
+  fill: var(--mineshaft);
+}
 a:hover,
 a:active { outline: 0 }
 a:hover { text-decoration: none }
-a:visited { color: var(--raven); fill: var(--raven) }
+a:visited {
+  color: var(--raven);
+  fill: var(--raven);
+}
 @media(prefers-color-scheme: dark) {
-a        { color: var(--blue--dark); fill: var(--blue--dark) }}
-.night a { color: var(--blue--dark); fill: var(--blue--dark) }
+a        { color: var(--iron); fill: var(--iron) }}
+.night a { color: var(--iron); fill: var(--iron) }
+
+
+/* External links */
+a[href*="//"]::after {
+  content: " ↗";
+  font-weight: normal;
+  font-style: normal;
+  font-size: inherit;
+  position: relative;
+  top: 0;
+  right: 0;
+  color: var(--blue--light);
+  transition: var(--transition) }
+
+@media (prefers-color-scheme: dark) {
+a[href*="//"]::after { color: var(--blue--dark) }}
+.night a[href*="//"]::after { color: var(--blue--dark) }
+
+a:visited[href*="//"]::after {
+  color: rgba(255, 255, 255, 0.25);
+  opacity: 0.25 }
+
+a:hover[href*="//"]::after {
+  top: -0.1em;
+  right: -0.1em;
+  opacity: 0.5 }
 
 
 /**
@@ -1222,6 +1254,9 @@ a:visited.nav-logo        { color: var(--iron) }}
     transform: rotate(4deg);
 }
 
+/* Remove decoration for external links in nav */
+a.nav-link[href*="//"]:after { content: "" }
+
 
 /**
  * $CHECKBOX-FORM
@@ -1233,11 +1268,16 @@ a:visited.nav-logo        { color: var(--iron) }}
   text-decoration: underline
 }
 @media(prefers-color-scheme: dark) {
-  .toggle-label { color: var(--blue--dark) }
-}
+.toggle-label { color: var(--blue--dark) }}
 .night .toggle-label { color: var(--blue--dark) }
 
 .toggle-label:hover { text-decoration: none }
+
+.toggle-label::after {
+  content: " 💬";
+  font-weight: normal;
+  font-style: normal;
+  font-size: inherit }
 
 /* Checkbox */
 .toggle-checkbox { display: none }
