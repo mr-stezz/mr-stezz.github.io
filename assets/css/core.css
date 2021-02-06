@@ -1273,13 +1273,13 @@ a.nav-link[href*="//"]:after { content: "" }
  */
 /* Label */
 .toggle-label {
-  color: var(--blue--light);
+  /*color: var(--blue--light);*/
   cursor: pointer;
-  text-decoration: underline
+  /*text-decoration: underline*/
 }
 @media(prefers-color-scheme: dark) {
-.toggle-label { color: var(--blue--dark) }}
-.night .toggle-label { color: var(--blue--dark) }
+.toggle-label { /*color: var(--blue--dark)*/ }}
+.night .toggle-label { /*color: var(--blue--dark)*/ }
 
 .toggle-label:hover { text-decoration: none }
 
