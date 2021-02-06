@@ -504,7 +504,14 @@ a[href*="//"]::after { color: var(--blue--dark) }}
 .night a[href*="//"]::after { color: var(--blue--dark) }
 
 a:visited[href*="//"]::after {
-  color: rgba(255, 255, 255, 0.25);
+  color: var(--highlight--dark);
+  opacity: 0.25 }
+@media (prefers-color-scheme: dark) {
+a:visited[href*="//"]::after {
+  color: var(--white);
+  opacity: 0.25 }}
+.night a:visited[href*="//"]::after {
+  color: var(--white);
   opacity: 0.25 }
 
 a:hover[href*="//"]::after {
