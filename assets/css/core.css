@@ -1196,6 +1196,8 @@ attr[title] {
   font-size: 15px;
   line-height: 1 }
 
+a.nav-logo { font-style: normal }
+
 a.nav-logo,
 a:visited.nav-logo        { color: var(--mineshaft) }
 @media(prefers-color-scheme: dark) {
@@ -1258,6 +1260,11 @@ a:visited.nav-logo        { color: var(--iron) }}
 }
 
 /* Remove decoration for external links in nav */
+a.nav-link {
+  font-weight: normal;
+  font-style: normal;
+}
+
 a.nav-link[href*="//"]:after { content: "" }
 
 
