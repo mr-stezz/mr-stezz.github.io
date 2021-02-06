@@ -504,21 +504,17 @@ a[href*="//"]::after { color: var(--blue--dark) }}
 .night a[href*="//"]::after { color: var(--blue--dark) }
 
 a:visited[href*="//"]::after {
-  color: var(--highlight--dark);
-  opacity: 0.25 }
+  color: var(--iron) }
 @media (prefers-color-scheme: dark) {
 a:visited[href*="//"]::after {
-  color: var(--white);
-  opacity: 0.25 }}
+  color: var(--white) }}
 .night a:visited[href*="//"]::after {
-  color: var(--white);
-  opacity: 0.25 }
+  color: var(--white) }
 
 a:hover[href*="//"]::after {
   top: -0.1em;
   right: -0.1em;
-  opacity: 0.5 }
-
+  opacity: 0.3 }
 
 /**
  * $ABBREVIATIONS & DEFINITIONS
@@ -1117,12 +1113,12 @@ attr[title] {
   .subtitle-link { transition: none !important }}
 .heading:hover .subtitle-link { opacity: 1 }
 
-.subtitle-link              { color: var(--iron) }
+.subtitle-link              { color: var(--highlight--light) }
 .subtitle-link:hover        { color: var(--blue--light) }
 @media(prefers-color-scheme: dark) {
-.subtitle-link              { color: var(--codgray) }
+.subtitle-link              { color: var(--highlight--dark) }
 .subtitle-link:hover        { color: var(--blue--dark) }}
-.night .subtitle-link       { color: var(--codgray) }
+.night .subtitle-link       { color: var(--highlight--dark) }
 .night .subtitle-link:hover { color: var(--blue--dark) }
 
 
