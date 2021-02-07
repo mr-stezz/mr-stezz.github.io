@@ -1076,10 +1076,10 @@ a.nav-link {
   font-style: normal;
 }
 
-a.nav-link[href*="//"]:after
+/*a.nav-link[href*="//"]:after
 {
   content: "";
-}
+}*/
 
 @supports (font-feature-settings: "smcp" 1) {
   .nav-link {
