@@ -10,6 +10,7 @@
   --light-grey:          #d7d9dd;
   --dark-grey:           #7e7e7e;
   --graphite:            #79828d;
+  --graphite-50:         rgba(121, 130, 141, 0.5);
   --graphite-30:         rgba(121, 130, 141, 0.3);
   --coal:                #292929;
   --coal-82:             rgba(41, 41, 41, 0.82);
@@ -756,7 +757,7 @@ a[href*="//"]::after
 
 a:visited[href*="//"]::after
 {
-  color: var(--coal-82);
+  color: var(--dark-grey);
 }
 @media (prefers-color-scheme: dark) {
   a:visited[href*="//"]::after
@@ -917,7 +918,7 @@ body {
 }
 
 ::selection {
-  background-color: rgba(125, 141, 161, 0.5);
+  background-color: var(--graphite-50);
   text-shadow: none;
 }
 :focus {
