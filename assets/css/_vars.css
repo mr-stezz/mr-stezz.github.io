@@ -23,6 +23,13 @@
 
   --panel-shadows:       0px 2px 25px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.2);
 
+  /* $SPACING SCALE */
+  --tiny-spacing:        6px;
+  --small-spacing:       12px;
+  --base-spacing:        24px;
+  --large-spacing:       48px;
+  --huge-spacing:        96px;
+
   /* $TIMING SCALES */
   --transition:          300ms cubic-bezier(0.27, 0.175, 0.285, 1.01);
   --pop-transition:      0.3s cubic-bezier(0.25, 0.1, 0.25, 1) 0.05s;
