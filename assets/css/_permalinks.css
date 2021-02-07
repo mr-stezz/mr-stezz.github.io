@@ -6,6 +6,12 @@
   text-decoration: none;
   transition: opacity var(--transition);
 }
+
+a.subtitle-link {
+  font-style: normal;
+  font-weight: normal;
+}
+
 @media screen and (prefers-reduced-motion: reduce) {
   .subtitle-link { transition: none !important }
 }
