@@ -756,7 +756,7 @@ a[href*="//"]::after
 
 a:visited[href*="//"]::after
 {
-  color: var(--light-grey);
+  color: var(--coal);
 }
 @media (prefers-color-scheme: dark) {
   a:visited[href*="//"]::after
