@@ -1856,7 +1856,7 @@ figcaption {
   /*inset: 0;*/
   height: 100%;
   width:  100%;
-  background: var(--off-white);
+  background: var(--white);
   box-shadow: var(--panel-shadows);
 }
 
@@ -1868,17 +1868,17 @@ figcaption {
 
 @media (prefers-color-scheme: dark) {
   .form::before {
-    background: var(--coal);
+    background: var(--oil);
     box-shadow: var(--panel-shadows);
   }
 }
 
 .night .form::before {
-  background: var(--coal);
+  background: var(--oil);
   box-shadow: var(--panel-shadows);
 }
 
-/* Form Vibrancy */
+/* Form Vibrancy
 @supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
   .form::before {
     background: var(--off-white-82);
@@ -1900,7 +1900,7 @@ figcaption {
     -webkit-backdrop-filter: saturate(180%) blur(20px);
             backdrop-filter: saturate(180%) blur(20px);
   }
-}
+}*/
 
 /* Form Tooth */
 .form::after {
@@ -1919,31 +1919,31 @@ figcaption {
     background-size: cover;
     right: 0.75rem;
   }
-  @supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
+  /*@supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
     .form::after {
       background-image: url("../img/ui/translucent-tooth.svg");
     }
-  }
+  }*/
   @media (prefers-color-scheme: dark) {
     .form::after {
       background-image: url("../img/ui/dark-tooth.svg");
     }
   }
-  @supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
+  /*@supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
     @media (prefers-color-scheme: dark) {
       .form::after {
         background-image: url("../img/ui/translucent-dark-tooth.svg");
       }
     }
-  }
+  }*/
   .night .form::after {
     background-image: url("../img/ui/dark-tooth.svg");
   }
-  @supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
+  /*@supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
     .night .form::after {
       background-image: url("../img/ui/translucent-dark-tooth.svg");
     }
-  }
+  }*/
 }
 
 /**
