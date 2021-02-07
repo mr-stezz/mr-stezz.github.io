@@ -1,0 +1,35 @@
+/**
+ * $CHECKBOX-FORM LABEL
+ */
+/* Label */
+.toggle-label {
+  /*color: var(--azure-blue);*/
+  cursor: pointer;
+  /*text-decoration: underline*/
+}
+.toggle-label::after {
+  content: " 💬";
+  font-weight: normal;
+  font-style: normal;
+  font-size: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  .toggle-label {
+    /*color: var(--sky-blue)*/
+  }
+}
+.night .toggle-label {
+  /*color: var(--sky-blue)*/
+}
+
+.toggle-label:hover {
+  text-decoration: none;
+}
+
+.toggle-label::after {
+  content: " 💬";
+  font-weight: normal;
+  font-style: normal;
+  font-size: inherit;
+}

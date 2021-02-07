@@ -1,0 +1,42 @@
+/**
+ * $CHECKBOX-FORM STATUS
+ */
+.status {
+  padding: 0.75em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  color: var(--dark-grey);
+  text-align: center;
+  background: var(--white);
+  border-radius: 0.4375em;
+}
+@media (prefers-color-scheme: dark) {
+  .status {
+    color: var(--light-grey);
+    background: var(--coal);
+  }
+}
+.night .status {
+  color: var(--light-grey);
+  background: var(--coal);
+}
+.status__img {
+  display: block;
+  width: 4.833em;
+  height: 4.833em;
+  margin-top: 3.58em;
+  margin-right: auto;
+  margin-bottom: 1em;
+  margin-left: auto;
+}
+.status__title {
+  display: block;
+  font-size: 1.416em;
+  margin-bottom: 0.5em;
+}

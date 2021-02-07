@@ -1,0 +1,36 @@
+/**
+ * $PAGE-TITLE
+ */
+.page-title {
+  font-weight: 500;
+  font-size: 1.125rem;
+  font-size: 18px;
+  color: var(--coal);
+}
+@media (prefers-color-scheme: dark) {
+  .page-title {
+    color: var(--light-grey);
+  }
+}
+.night .page-title {
+  color: var(--light-grey);
+}
+
+/**
+ * $PAGE-SUBTITLE
+ */
+.page-subtitle {
+  font-size: 1rem;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: var(--coal);
+}
+@media (prefers-color-scheme: dark) {
+  .page-subtitle {
+    color: var(--light-grey);
+  }
+}
+.night .page-subtitle {
+  color: var(--light-grey);
+}

@@ -1,0 +1,18 @@
+/**
+ * $PAGE-FOOTER
+ */
+.page-footer {
+  padding-top:    48px;
+  padding-bottom: 48px
+}
+
+.page-footer .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.nav-link-top {
+  flex: 0 0 auto;
+  /*margin-left: auto !important*/
+}

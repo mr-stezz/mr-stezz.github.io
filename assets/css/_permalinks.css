@@ -1,0 +1,21 @@
+/**
+ * $PERMALINKS
+ */
+.subtitle-link {
+  opacity: 0;
+  text-decoration: none;
+  transition: opacity var(--transition);
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  .subtitle-link { transition: none !important }
+}
+.heading:hover .subtitle-link { opacity: 1 }
+
+.subtitle-link              { color: var(--azure-blue-30) }
+.subtitle-link:hover        { color: var(--azure-blue) }
+@media (prefers-color-scheme: dark) {
+  .subtitle-link            { color: var(--sky-blue-30) }
+  .subtitle-link:hover      { color: var(--sky-blue) }
+}
+.night .subtitle-link       { color: var(--sky-blue-30) }
+.night .subtitle-link:hover { color: var(--sky-blue) }

@@ -1,0 +1,56 @@
+/**
+ * $TEXT-COLS
+ */
+.text-col,
+.text-col--2,
+.text-col--3,
+.text-col--4 {
+  max-width: 480px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-col--2,
+.text-col--3,
+.text-col--4 {
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 915px) {
+  .text-col--2,
+  .text-col--3,
+  .text-col--4 {
+    max-width: none;
+    margin-right: none;
+    margin-left: none;
+    padding-right: 192px;
+    padding-left: 192px;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.71429;
+    column-count: 2;
+    column-gap: 24px;
+  }
+}
+
+@media screen and (min-width: 923px) {
+  .text-col--3,
+  .text-col--4 {
+    padding-right: 96px;
+    padding-left: 96px;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    line-height: 1.84615;
+    column-count: 3;
+  }
+}
+
+@media screen and (min-width: 923px) {
+  .text-col--4 {
+    padding-right: 48px;
+    padding-left: 48px;
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 2;
+    column-count: 4;
+  }
+}

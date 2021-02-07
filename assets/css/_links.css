@@ -1,0 +1,78 @@
+/**
+ * $LINKS
+ */
+a {
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--coal);
+  fill: var(--coal);
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+a:visited {
+  color: var(--graphite);
+  fill: var(--graphite);
+}
+@media (prefers-color-scheme: dark) {
+  a {
+    color: var(--light-grey);
+    fill: var(--light-grey);
+  }
+}
+.night a {
+  color: var(--light-grey);
+  fill: var(--light-grey);
+}
+
+/* External links */
+a[href*="//"]::after
+{
+  content: " ↗";
+  font-weight: normal;
+  font-style: normal;
+  font-size: inherit;
+  position: relative;
+  top: 0;
+  right: 0;
+  color: var(--azure-blue);
+  transition: var(--transition);
+}
+
+@media (prefers-color-scheme: dark) {
+  a[href*="//"]::after
+  {
+    color: var(--sky-blue);
+  }
+}
+.night a[href*="//"]::after
+{
+  color: var(--sky-blue);
+}
+
+a:visited[href*="//"]::after
+{
+  color: var(--light-grey);
+}
+@media (prefers-color-scheme: dark) {
+  a:visited[href*="//"]::after
+  {
+    color: var(--white);
+  }
+}
+.night a:visited[href*="//"]::after
+{
+  color: var(--white);
+}
+
+a:hover[href*="//"]::after
+{
+  top: -0.1em;
+  right: -0.1em;
+  opacity: 0.3;
+}

@@ -1,0 +1,39 @@
+/**
+ * $HORIZONTAL-RULES
+ */
+.rule {
+  margin-bottom: 23px;
+  margin-bottom: 1.4375rem;
+  color: var(--dark-grey);
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.rule--ornament {
+  position: relative;
+}
+.rule--ornament:after {
+  content: "\00A7";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  line-height: 0;
+  text-align: center;
+}
+.rule--ornament[data-ornament] {
+  border-color: transparent;
+}
+.rule--ornament[data-ornament]:after {
+  content: attr(data-ornament);
+  letter-spacing: 0.75em;
+}
+
+.rule--stump {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  color: #07399b;
+  border-bottom-width: 2px;
+}

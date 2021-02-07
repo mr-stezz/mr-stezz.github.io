@@ -1,0 +1,51 @@
+/**
+ * $ABBREVIATIONS & DEFINITIONS
+ */
+abbr,
+abbr[title],
+dfn,
+dfn[title] {
+  font-style: normal;
+  text-decoration-color: #8a8a8a;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 0.0625em;
+  text-decoration-skip-ink: auto;
+}
+@media (prefers-color-scheme: dark) {
+  abbr,
+  abbr[title],
+  dfn,
+  dfn[title] {
+    text-decoration-color: #a9a9a9;
+  }
+}
+.night abbr,
+.night abbr[title],
+.night dfn,
+.night dfn[title] {
+  text-decoration-color: #a9a9a9;
+}
+
+abbr[title],
+dfn[title] {
+  cursor: help;
+}
+
+/**
+ * $ABBREVIATIONS
+ */
+abbr,
+abbr[title] {
+  /*text-decoration: none !important;
+  background-image: url("../img/ui/marked.png");
+  background-position: 0 calc(100% - 1.5px);
+  background-size: auto 3px;
+  background-repeat: repeat-x*/
+}
+
+/**
+ * $DEFINITIONS
+ */
+dfn,
+dfn[title] {
+}

@@ -1,0 +1,61 @@
+/**
+ * $PAGE-HEADER
+ */
+.page-header {
+  width: 100%;
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background: var(--off-white);
+}
+
+@supports (backdrop-filter: saturate(180%) blur(20px)) {
+  .page-header {
+    background: var(--off-white-82);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .page-header {
+    background: var(--coal);
+  }
+}
+.night .page-header {
+  background: var(--coal);
+}
+@supports (backdrop-filter: saturate(180%) blur(20px)) {
+  @media (prefers-color-scheme: dark) {
+    .page-header {
+      background: var(--coal-82);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: saturate(180%) blur(20px);
+    }
+  }
+  .night .page-header {
+    background: var(--coal-82);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+}
+
+.page-header--absolute { background-color: transparent }
+.page-header--pinned   { background-color: transparent }
+@media screen and (max-width: 692px) {
+  .page-header--pinned {
+    background-color: var(--off-white-82);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+}
+
+.page-header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.4375rem;
+  height: 55px;
+}

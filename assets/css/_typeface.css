@@ -1,0 +1,69 @@
+/**
+ * $TYPEFACE
+ */
+/* Neue Haas Unica */
+@font-face {
+  font-display: swap;
+  font-family: "Neue Haas Unica";
+  src: url(../fonts/neue-haas-unica/neue-haas-unica-light.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Neue Haas Unica";
+  src: url(../fonts/neue-haas-unica/neue-haas-unica-regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Neue Haas Unica";
+  src: url(../fonts/neue-haas-unica/neue-haas-unica-medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+/**
+ * FontFaceObserve will apply a class on the html when
+ * the webfonts are ready:
+ * http://www.filamentgroup.com/lab/font-events.html
+ */
+.fonts-loaded {
+  font-family: "Neue Haas Unica", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+.fonts-loaded h1,
+.fonts-loaded h2,
+.fonts-loaded h3,
+.fonts-loaded h4 {
+  font-family: "Neue Haas Unica", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+.fonts-loaded h5,
+.fonts-loaded h6 {
+  font-family: "Neue Haas Unica", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+.fonts-loaded figcaption {
+  font-family: "Neue Haas Unica", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+.fonts-loaded .page-title {
+  font-family: "Neue Haas Unica", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+.fonts-loaded .page-subtitle {
+  font-family: "Neue Haas Unica", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}

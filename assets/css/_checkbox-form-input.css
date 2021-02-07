@@ -1,0 +1,33 @@
+/**
+ * $CHECKBOX-FORM INPUT
+ */
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-checkbox:checked {
+  display: block;
+  opacity: 0;
+  width: calc(100vw + 140px);
+  height: calc(100vh + 50px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* inset: 0; */
+  z-index: 0;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+/* If not using finger */
+@media not (pointer: coarse) {
+  .toggle-checkbox:checked {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,17 @@
+/**
+ * $WRAPPER
+ */
+.wrapper {
+  max-width: 63em;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 24px;
+  padding-left: 24px;
+  position: relative;
+}
+@supports (padding: max(0px)) {
+  .wrapper {
+    padding-right: max(24px, env(safe-area-inset-right));
+    padding-left: max(24px, env(safe-area-inset-left));
+  }
+}

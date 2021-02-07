@@ -1,0 +1,35 @@
+/**
+ * $GALLERY
+ */
+.gallery {
+  margin-bottom: 24px;
+}
+.gallery--flush {
+  margin-right: -24px;
+  margin-left: -24px;
+}
+
+.gallery > img {
+  display: block;
+  margin-bottom: 0.125em;
+}
+
+.gallery--two-up > img,
+.gallery--three-up > img,
+.gallery--four-up > img {
+  float: left;
+  padding-right: 0.125em;
+}
+
+.gallery--two-up > img {
+  width: 50%;
+}
+.gallery--three-up > img:first-of-type {
+  width: 100%;
+}
+.gallery--three-up > img {
+  width: 50%;
+}
+.gallery--four-up > img {
+  width: 50%;
+}

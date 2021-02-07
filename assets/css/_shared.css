@@ -1,0 +1,27 @@
+/**
+ * $SHARED
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+blockquote,
+p,
+address,
+table,
+fieldset,
+figure,
+pre {
+  margin-bottom: 24px;
+}
+
+ol:not([class]),
+ul:not([class]),
+dt:not([class]) {
+  margin-left: 24px;
+}

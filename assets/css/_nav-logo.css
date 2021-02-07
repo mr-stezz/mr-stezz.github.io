@@ -1,0 +1,39 @@
+/**
+ * $NAV-LOGO
+ */
+.nav-logo {
+  flex: 0 1 auto;
+  align-self: center;
+  margin-right: auto;
+  font-size: 15px;
+  line-height: 1
+}
+
+a.nav-logo {
+  font-style: normal
+}
+
+a.nav-logo,
+a:visited.nav-logo {
+  color: var(--coal)
+}
+@media(prefers-color-scheme: dark) {
+  a.nav-logo,
+  a:visited.nav-logo {
+    color: var(--light-grey);
+  }
+}
+.night a.nav-logo,
+.night a:visited.nav-logo {
+  color: var(--light-grey);
+}
+
+.nav-title {
+  margin-bottom: 0;
+  font-size: inherit;
+  font-weight: normal
+}
+
+.nav-glyph:after {
+  content: " · ";
+}

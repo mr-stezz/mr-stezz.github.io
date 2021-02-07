@@ -1,0 +1,36 @@
+/**
+ * $SKIP-LINKS
+ */
+.skip-link:active,
+.skip-link:focus {
+  left: auto;
+  top: auto;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  padding: 0.5em 1em;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: var(--off-white);
+  z-index: 999;
+}
+@media (prefers-color-scheme: dark) {
+  .skip-link:active,
+  .skip-link:focus {
+    background-color: var(--mineshaft);
+  }
+}
+.night .skip-link:active,
+.night .skip-link:focus {
+  background-color: var(--mineshaft);
+}
+
+.skip-link {
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
+}

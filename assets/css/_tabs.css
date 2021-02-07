@@ -1,0 +1,56 @@
+/**
+ * $TABS
+ */
+.tabs {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  position: relative;
+  text-align: left;
+}
+
+.tabs > li {
+  float: left;
+  display: block;
+}
+
+.tabs input[type="radio"] {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
+
+.tabs label {
+  display: block;
+  padding: 1rem 1.25rem;
+  color: var(--azure-blue);
+  cursor: pointer;
+  position: relative;
+  transition: var(--tabs-transition);
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  .tabs label {
+    transition: none !important;
+  }
+}
+.no-motion .tabs label {
+  transition: none !important;
+}
+
+.tab-content {
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+}
+
+.tabs [id^="tab"]:checked + label {
+  cursor: default;
+  color: inherit;
+}
+
+.tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+  display: block;
+}

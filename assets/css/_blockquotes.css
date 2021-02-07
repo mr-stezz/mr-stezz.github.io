@@ -1,0 +1,71 @@
+/**
+ * $QUOTES
+ */
+q {
+  quotes: "‘" "’" "\\201C""\\201D";
+}
+q:before {
+  content: "\2018";
+  content: open-quote;
+}
+q:after {
+  content: "\2019";
+  content: close-quote;
+}
+q q:before {
+  content: "\201C";
+  content: open-quote;
+}
+q q:after {
+  content: "\201D";
+  content: close-quote;
+}
+
+blockquote {
+  quotes: "\\201C""\\201D";
+}
+blockquote p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+blockquote p:before {
+  content: "\\201C";
+  content: open-quote;
+}
+blockquote p:after {
+  content: "";
+  content: no-close-quote;
+}
+blockquote p:last-of-type:after {
+  content: "\\201D";
+  content: close-quote;
+}
+blockquote q:before {
+  content: "\2018";
+  content: open-quote;
+}
+blockquote q:after {
+  content: "\2019";
+  content: close-quote;
+}
+
+blockquote {
+  /**
+   * .4em is roughly equal to the width of the opening “ that we wish to hang.
+   */
+  text-indent: -0.41em;
+  font-weight: 400;
+  text-align: center;
+}
+
+blockquote > p:last-of-type {
+  margin-bottom: 0;
+}
+
+.source {
+  display: block;
+  text-indent: 0;
+}
+.source:before {
+  content: "\2014";
+}

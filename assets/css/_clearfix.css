@@ -1,0 +1,12 @@
+/**
+ * $CLEARFIX
+ */
+.cf:after,
+.nav:after,
+.gallery:after,
+.wrapper:after,
+.page-header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
