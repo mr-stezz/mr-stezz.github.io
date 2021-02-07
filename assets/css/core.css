@@ -1106,6 +1106,8 @@ attr[title] {
  */
 .subtitle-link                {
   opacity: 0;
+  font-style: normal;
+  font-weight: normal;
   text-decoration: none;
   transition: opacity var(--transition);
 }
