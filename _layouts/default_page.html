@@ -19,7 +19,7 @@
       {% endif %}
       {% comment %} if there is no title, do not render {% endcomment %}
       {% if page.title != null %}
-      <h2 class="heading  alpha  page-title">{{ page.title }} <a href="#{{ page.title | slugify }}" class="subtitle-link" title="Permalink to this headline">¶</a></h2>
+      <h2 class="heading  page-title  t--center">{{ page.title }} <a href="#{{ page.title | slugify }}" class="subtitle-link" title="Permalink to this headline">¶</a></h2>
       {% endif %}
       {{ content }}
     </div>
