@@ -1161,6 +1161,11 @@ a.nav-link {
   }
 }
 
+.nav-link.toggle-label {
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* NEW badge */
 .nav-link.new:after {
   content: "New";
@@ -1758,6 +1763,8 @@ figcaption {
 .toggle-label {
   /*color: var(--azure-blue);*/
   cursor: pointer;
+  font-weight: bold;
+  font-style: italic;
   /*text-decoration: underline*/
 }
 .toggle-label::after {
@@ -1778,13 +1785,6 @@ figcaption {
 
 .toggle-label:hover {
   text-decoration: none;
-}
-
-.toggle-label::after {
-  content: " 💬";
-  font-weight: normal;
-  font-style: normal;
-  font-size: inherit;
 }
 
 /**
