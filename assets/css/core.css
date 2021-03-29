@@ -744,6 +744,12 @@ a[href*="//"]::after
   transition: var(--transition);
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+  a[href*="//"]::after {
+    transition-property: none;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   a[href*="//"]::after
   {
