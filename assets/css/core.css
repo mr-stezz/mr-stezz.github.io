@@ -973,7 +973,7 @@ body {
   background: var(--off-white);
 }
 
-@supports (backdrop-filter: saturate(180%) blur(20px)) {
+@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
   .page-header {
     background: var(--off-white-82);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -988,7 +988,7 @@ body {
 .night .page-header {
   background: var(--coal);
 }
-@supports (backdrop-filter: saturate(180%) blur(20px)) {
+@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
   @media (prefers-color-scheme: dark) {
     .page-header {
       background: var(--coal-82);
@@ -1940,7 +1940,7 @@ figcaption {
 }
 
 /* Form Vibrancy
-@supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
+@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
   .form::before {
     background: var(--off-white-82);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -1948,7 +1948,7 @@ figcaption {
   }
 }
 
-@supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
+@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
   @media (prefers-color-scheme: dark) {
     .form::before {
       background: var(--coal-82);
@@ -1980,7 +1980,8 @@ figcaption {
     background-size: cover;
     right: 0.75rem;
   }
-  /*@supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
+  /*
+  @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
     .form::after {
       background-image: url("../img/ui/translucent-tooth.svg");
     }
@@ -1990,7 +1991,8 @@ figcaption {
       background-image: url("../img/ui/dark-tooth.svg");
     }
   }
-  /*@supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
+  /*
+  @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
     @media (prefers-color-scheme: dark) {
       .form::after {
         background-image: url("../img/ui/translucent-dark-tooth.svg");
