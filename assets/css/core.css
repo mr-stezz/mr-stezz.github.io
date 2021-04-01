@@ -2079,22 +2079,24 @@ figcaption {
 }
 
 .formfield--full {
-  height: calc(100% - 148px);
+  height: calc(100% - 137px);
   flex-direction: column;
   align-items: flex-end;
-  padding: 13px 0 16px;
+  padding-top: 0;
+  padding-bottom: 16px;
   border-bottom-width: 0;
 }
 @supports (padding: max(0px)) {
   .formfield--full {
-    height: max(calc(100% - 148px), env(safe-area-inset-bottom));
+    height: max(calc(100% - 137px), env(safe-area-inset-bottom));
     padding-bottom: max(16px, env(safe-area-inset-bottom));
   }
 }
 @media (min-width: 400px) {
   .formfield--full {
     height: calc(100% - 99px);
-    padding: 8px 0 41px;
+    padding-bottom: 41px;
+    padding-top: 0;
   }
   @supports (padding: max(0px)) {
     .formfield--full {
@@ -2187,9 +2189,10 @@ figcaption {
   .formfield textarea {
     margin-top: 0;
     margin-bottom: 8px;
+    padding-top: 8px;
     padding-right: var(--small-spacing);
     font-size: 14px;
-    min-height: 91px;
+    min-height: 99px;
   }
 }
 
