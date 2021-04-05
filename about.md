@@ -20,11 +20,11 @@ group: "navigation"
   <h3 id="workstation-setup" class="heading page-title  t--center">What’s my workstation setup? <a href="#workstation-setup" class="subtitle-link" title="Permalink to this headline">¶</a></h3>
   <figure class="gallery">
     <img src="/assets/img/content/DeskSetup.jpg" srcset="/assets/img/content/DeskSetup.jpg 1x, /assets/img/content/DeskSetup@2x.jpg 2x" alt="A photo of my current desk setup. A 3 draw wooden desk with a laptop, bluetooth speaker, coaster, trackpad, keyboard, magnetic cable tidy, Thunderbolt 3 dock, monitor arm holding up a 25&quot; Ultrasharp and my iPhone X hoisted up on a gooseneck for webcam use." loading="lazy" class="u--m-bottom">
-    <figcaption class="text-col u--m-bottom--huge">My desk setup is always changing, but I think I’ve settled on this setup for a while.</figcaption>
+    <figcaption class="text-col u--m-bottom--huge">I'm always tinkering with my desk setup, but I think I’ve settled on this setup for a while.</figcaption>
     <img src="/assets/img/content/MacOSDesktop~dark.png" srcset="/assets/img/content/MacOSDesktop~dark.png 1x" alt="A blank MacOS desktop screenshot showing the menubar at the top and the dock on the left-hand side of the screen" loading="lazy" class="u--m-bottom">
-    <figcaption class="text-col u--m-bottom--huge">Yes, I use the stickies.app and I wish it synced across iCloud to an iOS Stickies.app. Come on, Apple, make my dream come true!</figcaption>
+    <figcaption class="text-col u--m-bottom--huge">I like to keep things simple and free from clutter and distractions when it comes to my desktop.</figcaption>
     <img src="/assets/img/content/iPhoneHomescreen~dark.png" srcset="/assets/img/content/iPhoneHomescreen~dark.png 1x, /assets/img/content/iPhoneHomescreen~dark@2x.png 2x, /assets/img/content/iPhoneHomescreen~dark@3x.png 3x" alt="A screenshot of my iOS Homescreen layout showcasing a grid of my most used apps." loading="lazy" class="u--m-bottom">
-    <figcaption class="text-col u--m-bottom--huge">I like to keep things simple and distraction free. Every app on my home screen isn’t a dopamine hole, it’s usually something practical. I also love Uno, the post-it widget app.</figcaption>
+    <figcaption class="text-col u--m-bottom--huge">Much like my desktop, my phone usually remains simple and distraction free. I try to keep dopamine holes hidden away in the app drawer.</figcaption>
   </figure>
 </section>
 {% include _section.people-id-work-with-again.html %}
