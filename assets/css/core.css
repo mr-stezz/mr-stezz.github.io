@@ -1129,7 +1129,7 @@ a:visited.nav-logo {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  fill: var(--blue--light);
+  fill: var(--azure-blue);
 }
 
 a.nav-link {
@@ -1149,11 +1149,11 @@ a.nav-link {
 }
 @media (prefers-color-scheme: dark) {
   .nav-link {
-    fill: var(--blue--dark);
+    fill: var(--sky-blue);
   }
 }
 .night .nav-link {
-  fill: var(--blue--dark);
+  fill: var(--sky-blue);
 }
 
 .nav-link:not(:first-of-type),
