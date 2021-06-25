@@ -1471,6 +1471,9 @@ figcaption {
     color: var(--light-grey);
   }
 }
+.night figcaption {
+  color: var(--light-grey);
+}
 
 /**
  * $GALLERY
