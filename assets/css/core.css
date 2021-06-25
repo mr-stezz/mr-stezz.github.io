@@ -731,19 +731,12 @@ a:visited {
 /**
  * $EXTERNAL-LINKS
  */
-a[href*="//"] {
-  position: relative;
-  padding-right: 1em;
-}
 a[href*="//"]::after
 {
   content: " ↗";
   font-weight: normal;
   font-style: normal;
   font-size: inherit;
-  position: absolute;
-  top: 0;
-  right: 0;
   color: var(--azure-blue);
   transition: var(--transition);
 }
@@ -782,8 +775,8 @@ a:visited[href*="//"]::after
 
 a:hover[href*="//"]::after
 {
-  top: -0.1em;
-  right: -0.1em;
+  /*top: -0.1em;
+  right: -0.1em;*/
   opacity: 0.3;
 }
 
