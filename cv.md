@@ -1,7 +1,6 @@
 ---
 layout: default_page
 title: CV
-group: "navigation"
 ---
 <div class="text-col">
   <dl>
