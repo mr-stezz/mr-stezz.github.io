@@ -2124,17 +2124,20 @@ figcaption {
   background: transparent;
   border: none;
   color: var(--coal);
+  caret-color: var(--coal);
   outline: none;
 }
 @media (prefers-color-scheme: dark) {
   .form input,
   .form textarea {
     color: var(--light-grey);
+    caret-color: var(--light-grey);
   }
 }
 .night .form input,
 .night .form textarea {
   color: var(--light-grey);
+  caret-color: var(--light-grey);
 }
 
 /* remove styling from Firefox */
