@@ -41,6 +41,13 @@
 }
 
 /**
+ * SET COLOR SCHEME
+ */
+ :root {
+  color-scheme: light dark;
+ }
+
+/**
  * $RESET
  */
 /* Box sizing rules */
