@@ -1409,16 +1409,13 @@ a:visited.nav-logo        { color: var(--iron) }}
     }
   }
 
-  /* Reset nav-link margins */
-  .nav-link:not(:first-of-type), .nav-link.toggle-label { margin-left: 0; }
-
   /* Style the nav-links a bit differently when the viewport is under 399px wide */
   .nav-wrap .nav-link {
     display: flex;
     flex-direction: column;
-    width: 33.33vw;
-    height: 55px;
-    line-height: 3.4375; /* 55px */
+    /*width: 33.33vw;*/
+    height: 3.4375rem; /* 55px */
+    line-height: 4.5833333333; /* 55px */
     text-align: center;
     text-decoration: none;
   }
@@ -1440,24 +1437,36 @@ a:visited.nav-logo        { color: var(--iron) }}
   flex: 0 0 auto;
   font-variant: small-caps;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1;
   text-transform: uppercase;
   text-decoration: none;
   font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
   user-select: none;
-  fill: var(--mineshaft) }
+  fill: var(--mineshaft);
+}
+/* If the browser supports small caps */
 @supports (font-feature-settings: "smcp" 1) {
-.nav-link { letter-spacing: 0.1em }}
+  .nav-link {
+    letter-spacing: 0.1em
+  }
+}
+/* If dark mode is active */
 @media(prefers-color-scheme: dark) {
-.nav-link        { fill: var(--iron) }}
+  .nav-link        { fill: var(--iron) }
+}
 .night .nav-link { fill: var(--iron) }
 
-.nav-link:not(:first-of-type),
-.nav-link.toggle-label { margin-left: 0.75em }
+/*.nav-link:not(:first-of-type),
+.nav-link.toggle-label { margin-left: 0 }*/
+
+/* If the viewport is above 400px wide */
 @media (min-width: 400px) {
-.nav-link:not(:first-of-type),
-.nav-link.toggle-label { margin-left: 1.5em }}
+  .nav-link:not(:first-of-type),
+  .nav-link.toggle-label {
+    margin-left: 1.5em
+  }
+}
 .nav-link:hover { text-decoration: underline }
 
 
