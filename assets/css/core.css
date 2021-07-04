@@ -1926,11 +1926,12 @@ figcaption {
   width:  100%;
   background: var(--white);
   box-shadow: var(--panel-shadows);
+  border-radius: 0.625rem 0.625rem 0 0;
 }
 
 @media (min-width: 400px) {
   .form::before {
-    border-radius: 0.4375em;
+    border-radius: 0.4375rem;
   }
 }
 
