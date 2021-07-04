@@ -1353,14 +1353,14 @@ a:visited.nav-logo        { color: var(--iron) }}
     left:   0;
     right:  0;
     z-index: 10;
-    background: var(--off-white);
+    background: var(--linen);
     padding-bottom: env(safe-area-inset-bottom);
   }
 
   /* If the browser supports blur */
   @supports (backdrop-filter: saturate(180%) blur(20px)) {
     .nav-wrap {
-      background: var(--off-white-82);
+      background: var(--linen-82);
       -webkit-backdrop-filter: saturate(180%) blur(20px);
               backdrop-filter: saturate(180%) blur(20px);
     }
