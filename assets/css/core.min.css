@@ -1696,14 +1696,15 @@ a:visited.nav-logo        { color: var(--iron) }}
 
 
 .formfield--full {
-  height: calc(100% - 148px);
+  /* (47 * 3 = 141) = the height of To, Subject and From inputs */
+  height: calc(100% - 141px);
   flex-direction: column;
   align-items: flex-end;
   padding: 13px 0 16px;
   border-bottom-width: 0 }
 @supports(padding: max(0px)) {
 .formfield--full {
-  height: max(calc(100% - 148px), env(safe-area-inset-bottom));
+  height: max(calc(100% - 141px), env(safe-area-inset-bottom));
   padding-bottom: max(16px, env(safe-area-inset-bottom)) }}
 @media (min-width: 400px) {
 .formfield--full {
