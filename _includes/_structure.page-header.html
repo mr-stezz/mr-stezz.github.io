@@ -4,7 +4,7 @@
     {% assign pages_list = site.pages %}
     {% assign group = 'navigation' %}
     {% include _structure.page_list.html %}
-    <a href="https://stez-photos.netlify.app/" class="nav-link" title="A photostream of stuff">Photos</a>
+    <a href="https://stez-photos.netlify.app/" class="nav-link" title="A photostream of stuff" target="_blank" aria-label="Photos (Opens in new tab)">Photos</a>
     <label for="toggle-checkbox" class="nav-link toggle-label" title="Send me an email" role="button" tabindex="0" aria-hidden="true">Contact</label>
     <input type="checkbox" id="toggle-checkbox" name="toggle-checkbox" class="toggle-checkbox" aria-hidden="true">
     {% include _structure.contact-form.html %}
