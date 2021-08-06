@@ -584,10 +584,11 @@ h6 {
  /* Read more about `content-visibility`:
   * https://web.dev/content-visibility/
   */
-/*.project {
-  content-visibility: auto;
-  contain-intrinsic-size: 1500px 1086px;
-}*/
+.project {
+  scroll-margin: 3.4375rem 0 0 0;
+  /*content-visibility: auto;
+  contain-intrinsic-size: 1500px 1086px;*/
+}
 
 
 /**
