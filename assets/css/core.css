@@ -584,10 +584,10 @@ h6 {
  /* Read more about `content-visibility`:
   * https://web.dev/content-visibility/
   */
-.project {
+/*.project {
   content-visibility: auto;
-  contain-intrinsic-size: 1500px 1086px; /* height x width */
-}
+  contain-intrinsic-size: 1500px 1086px;
+}*/
 
 
 /**
