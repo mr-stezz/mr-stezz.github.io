@@ -727,8 +727,14 @@ attr[title] {
 /**
  * $LINKS
  */
-a {
-  text-decoration: none;
+a,
+.fake-link {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 0.125em;
+  text-underline-offset: 0.0625em;
+  text-underline-position: under;
+
   font-weight: bold;
   font-style: italic;
   color: var(--coal);
@@ -738,29 +744,37 @@ a:hover,
 a:active {
   outline: 0;
 }
-a:hover {
-  text-decoration: none;
+a:hover,
+.fake-link:hover {
+  text-decoration-thickness: 0.125em;
+  text-underline-offset: 0.125em;
 }
 a:visited {
   color: var(--graphite);
   fill: var(--graphite);
 }
 @media (prefers-color-scheme: dark) {
-  a {
+  a,
+  .fake-link {
     color: var(--light-grey);
     fill: var(--light-grey);
   }
 }
-.night a {
+.night a,
+.night .fake-link {
   color: var(--light-grey);
   fill: var(--light-grey);
 }
 
+
+a.ninja-link,
+a:hover.ninja-link { text-decoration: none; }
+
+
 /**
  * $EXTERNAL-LINKS
  */
-a[href*="//"]::after
-{
+a[href*="//"]::after {
   content: " ↗";
   font-weight: normal;
   font-style: normal;
@@ -770,39 +784,21 @@ a[href*="//"]::after
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  a[href*="//"]::after {
-    transition-property: none;
-  }
+  a[href*="//"]::after { transition-property: none; }
 }
 
 @media (prefers-color-scheme: dark) {
-  a[href*="//"]::after
-  {
-    color: var(--sky-blue);
-  }
+  a[href*="//"]::after { color: var(--sky-blue); }
 }
-.night a[href*="//"]::after
-{
-  color: var(--sky-blue);
-}
+.night a[href*="//"]::after { color: var(--sky-blue); }
 
-a:visited[href*="//"]::after
-{
-  color: var(--graphite-50);
-}
+a:visited[href*="//"]::after { color: var(--graphite-50); }
 @media (prefers-color-scheme: dark) {
-  a:visited[href*="//"]::after
-  {
-    color: var(--white);
-  }
+  a:visited[href*="//"]::after { color: var(--white); }
 }
-.night a:visited[href*="//"]::after
-{
-  color: var(--white);
-}
+.night a:visited[href*="//"]::after { color: var(--white); }
 
-a:hover[href*="//"]::after
-{
+a:hover[href*="//"]::after {
   /*top: -0.1em;
   right: -0.1em;*/
   opacity: 0.3;
@@ -859,7 +855,6 @@ a:hover[href*="//"]::after
 a.subtitle-link {
   font-style: normal;
   font-weight: normal;
-  text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -1060,7 +1055,8 @@ body {
 }
 
 a.nav-logo {
-  font-style: normal
+  font-style: normal;
+  text-decoration: none;
 }
 
 a.nav-logo,
@@ -1162,6 +1158,7 @@ a:visited.nav-logo {
 a.nav-link {
   font-weight: normal;
   font-style: normal;
+  text-decoration: none;
 }
 
 /*a.nav-link[href*="//"]:after
@@ -1820,7 +1817,7 @@ figcaption {
 }
 
 .toggle-label:hover {
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 
 /**
