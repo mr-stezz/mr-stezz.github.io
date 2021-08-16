@@ -851,7 +851,6 @@ a:hover[href*="//"]::after
 @media (pointer: fine) {
   .subtitle-link {
     opacity: 0;
-    text-decoration: none;
     transition: opacity var(--transition);
   }
   .heading:hover .subtitle-link { opacity: 1 }
@@ -860,6 +859,7 @@ a:hover[href*="//"]::after
 a.subtitle-link {
   font-style: normal;
   font-weight: normal;
+  text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
