@@ -775,14 +775,16 @@ a:hover.ninja-link { text-decoration: none; }
 /**
  * $EXTERNAL-LINKS
  */
+a[href*="//"]{
+  transition: 300ms text-underline-offset cubic-bezier(.17,.89,.32,1.28);
+}
 a[href*="//"]::after {
   content: " ↗";
   font-weight: normal;
   font-style: normal;
   font-size: inherit;
   color: var(--azure-blue);
-  transition: 300ms opacity cubic-bezier(0.27, 0.175, 0.285, 1.01),
-              300ms text-underline-offset cubic-bezier(.17,.89,.32,1.28);
+  transition: 300ms opacity cubic-bezier(0.27, 0.175, 0.285, 1.01);
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
