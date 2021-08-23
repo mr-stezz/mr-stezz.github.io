@@ -21,8 +21,8 @@ group: "navigation"
         alt="A head and shoulders shot of my face."
         loading="auto"
         class="u--m-bottom"
-        width="528"
-        height="528">
+        width="480"
+        height="480">
     </picture>
     <figcaption>Portrait by <a href="https://tadam.co.uk" title="Headshots from London based Photographer, Adam Toth.">Adam Toth</a>.</figcaption>
   </figure>
