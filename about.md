@@ -19,7 +19,8 @@ group: "navigation"
         srcset="/assets/img/content/mugshot-tadam.jpg 1x,
                 /assets/img/content/mugshot-tadam@2x.jpg 2x"
         alt="A head and shoulders shot of my face."
-        loading="auto">
+        loading="auto"
+        class="u--m-bottom">
     </picture>
     <figcaption>Portrait by <a href="https://tadam.co.uk" title="Headshots from London based Photographer, Adam Toth.">Adam Toth</a>.</figcaption>
   </figure>

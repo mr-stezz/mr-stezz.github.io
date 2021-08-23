@@ -1517,28 +1517,30 @@ figcaption {
   margin-left: -var(--base-spacing);
 }
 
-.gallery > img {
+.gallery img {
   display: block;
+  margin-right: auto;
   margin-bottom: 0.125em;
+  margin-left: auto;
 }
 
-.gallery--two-up > img,
-.gallery--three-up > img,
-.gallery--four-up > img {
+.gallery--two-up img,
+.gallery--three-up img,
+.gallery--four-up img {
   float: left;
   padding-right: 0.125em;
 }
 
-.gallery--two-up > img {
+.gallery--two-up img {
   width: 50%;
 }
-.gallery--three-up > img:first-of-type {
+.gallery--three-up img:first-of-type {
   width: 100%;
 }
-.gallery--three-up > img {
+.gallery--three-up img {
   width: 50%;
 }
-.gallery--four-up > img {
+.gallery--four-up img {
   width: 50%;
 }
 
