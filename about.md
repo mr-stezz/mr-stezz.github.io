@@ -5,8 +5,8 @@ group: "navigation"
 ---
 <div class="text-col">
   <figure>
-    <img src="/assets/img/content/mugshot.jpg" srcset="/assets/img/content/mugshot.jpg 1x, /assets/img/content/mugshot@2x.jpg 2x" alt="A head and shoulders shot of my face." loading="auto">
-    <figcaption>Portrait mode on iPhone X.</figcaption>
+    <img src="/assets/img/content/mugshot-tadam.jpg" srcset="/assets/img/content/mugshot-tadam.jpg 1x, /assets/img/content/mugshot-tadam@2x.jpg 2x" alt="A head and shoulders shot of my face." loading="auto">
+    <figcaption>Portrait by <a href="https://tadam.co.uk" title="Headshots from London based Photographer, Adam Toth.">Adam Toth</a>.</figcaption>
   </figure>
   <p>My name is Michael <dfn title="[Ste-zee-key]">Ste&middot;zy&middot;cki</dfn> and I design digital product experiences with an interest in storytelling through prototyping, efficiency in design systems and the intersection of business and technology.</p>
   <p>Raised in East London and later the West Midlands, I studied Interactive Media at Stratford-upon-Avon College and passed with a distinction, distinction, merit. My childhood love of making crude websites and icons grew into a adulthood love of designing and building simple, well thought-out digital products for people. My fascination with technology hasn't stopped, and I’ve been blown away by what <abbr title="Augmented Reality/Mixed Reality">AR/MR</abbr> can do and how it can change lives for the better as well as learning about tech's uglier effects on society.</p>
