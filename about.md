@@ -4,7 +4,7 @@ title: About
 group: "navigation"
 ---
 <div class="text-col">
-  <figure>
+  <figure class="gallery">
     <picture>
       <source
         type="image/webp"
@@ -20,7 +20,9 @@ group: "navigation"
                 /assets/img/content/mugshot-tadam@2x.jpg 2x"
         alt="A head and shoulders shot of my face."
         loading="auto"
-        class="u--m-bottom">
+        class="u--m-bottom"
+        width="528"
+        height="528">
     </picture>
     <figcaption>Portrait by <a href="https://tadam.co.uk" title="Headshots from London based Photographer, Adam Toth.">Adam Toth</a>.</figcaption>
   </figure>
@@ -50,7 +52,9 @@ group: "navigation"
                 /assets/img/content/DeskSetup@2x.jpg 2x"
         alt="A photo of my current desk setup. A 3 draw wooden desk with a laptop, bluetooth speaker, coaster, trackpad, keyboard, magnetic cable tidy, Thunderbolt 3 dock, monitor arm holding up a 25&quot; Ultrasharp and my iPhone X hoisted up on a gooseneck for webcam use."
         loading="lazy"
-        class="u--m-bottom">
+        class="u--m-bottom"
+        width="1086"
+        height="724">
     </picture>
     <figcaption class="text-col u--m-bottom--huge">I'm always tinkering with my desk setup, but I think I’ve settled on this setup for a while. My iPhone is used as a webcam with the fantastic <a href="https://reincubate.com/camo/" alt="Use your phone as a webcam to look amazing on video calls.">Camo app from Reincubate</a>.</figcaption>
     <picture>
@@ -64,28 +68,29 @@ group: "navigation"
         src="/assets/img/content/MacOSDesktop~light.png"
         alt="A blank MacOS desktop screenshot showing the menubar at the top and the dock on the left-hand side of the screen"
         loading="lazy"
-        class="u--m-bottom">
+        class="u--m-bottom"
+        width="1086"
+        height="611">
     </picture>
     <figcaption class="text-col u--m-bottom--huge">Apps in my dock: Safari Tech Preview, <a href="https://mimestream.com" title="A native macOS email client for Gmail.">Mimestream</a> (awesome native Gmail client), Cal, Notes, Reminders, Stickies and the amazing music player, <a href="https://brushedtype.co" title="Brushed Type builds beautiful apps for Mac and iOS.">Doppler from Brushed Type</a>.</figcaption>
     <picture>
       <source
         type="image/webp"
         srcset="/assets/img/content/iPhoneHomescreen~dark.webp 1x,
-                /assets/img/content/iPhoneHomescreen~dark@2x.webp 2x,
-                /assets/img/content/iPhoneHomescreen~dark@3x.webp 3x">
+                /assets/img/content/iPhoneHomescreen~dark@2x.webp 2x">
       <source
         type="image/png"
         srcset="/assets/img/content/iPhoneHomescreen~dark.png 1x,
-                /assets/img/content/iPhoneHomescreen~dark@2x.png 2x,
-                /assets/img/content/iPhoneHomescreen~dark@3x.png 3x">
+                /assets/img/content/iPhoneHomescreen~dark@2x.png 2x">
       <img
         src="/assets/img/content/iPhoneHomescreen~dark.png"
         srcset="/assets/img/content/iPhoneHomescreen~dark.png 1x,
-                /assets/img/content/iPhoneHomescreen~dark@2x.png 2x,
-                /assets/img/content/iPhoneHomescreen~dark@3x.png 3x"
+                /assets/img/content/iPhoneHomescreen~dark@2x.png 2x"
         alt="A screenshot of my iOS Homescreen layout showcasing a grid of my most used apps."
         loading="lazy"
-        class="u--m-bottom">
+        class="u--m-bottom"
+        width="375"
+        height="812">
     </picture>
     <figcaption class="text-col u--m-bottom--huge">Much like my desktop, my phone usually remains simple and distraction free. I try to keep dopamine holes hidden away in the app drawer.</figcaption>
   </figure>
