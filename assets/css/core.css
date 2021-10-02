@@ -803,9 +803,17 @@ a:visited[href*="//"]::after { color: var(--graphite-50); }
 .night a:visited[href*="//"]::after { color: var(--white); }
 
 a:hover[href*="//"]::after {
-  /*top: -0.1em;
-  right: -0.1em;*/
   opacity: 0.3;
+}
+
+a[href*="//"]::after {
+  display: inline-block;
+  transform-origin: top right;
+  transition: 300ms transform cubic-bezier(.17,.89,.32,1.28);
+}
+
+a:hover[href*="//"]::after {
+  transform: scale(0.9) rotate(-6deg);
 }
 
 /**
