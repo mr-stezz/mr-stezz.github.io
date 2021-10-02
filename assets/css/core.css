@@ -1884,7 +1884,7 @@ figcaption {
           filter: blur(30px);
   transform: translateY(100vh);
   transform-origin: bottom center;
-  transition: var(--pop-transition);
+  transition: var(--slide-up-transition);
   will-change: transform;
 }
 
@@ -1930,6 +1930,18 @@ figcaption {
     transform-origin: top right;
     transform: translateY(-10px) scale(0.75);
     transition: var(--slide-up-transition);
+    -webkit-filter: drop-shadow(0 2px 12px rgba(0,0,0,0.3));
+            filter: drop-shadow(0 2px 12px rgba(0,0,0,0.3));
+  }
+  @media (prefers-color-scheme: dark) {
+    .form {
+      -webkit-filter: drop-shadow(0 2px 12px rgba(255,255,255,0.3));
+              filter: drop-shadow(0 2px 12px rgba(255,255,255,0.3));
+    }
+  }
+  .night .form {
+    -webkit-filter: drop-shadow(0 2px 12px rgba(255,255,255,0.3));
+            filter: drop-shadow(0 2px 12px rgba(255,255,255,0.3));
   }
 }
 
@@ -1943,11 +1955,7 @@ figcaption {
 .form::before {
   content: "";
   position: absolute;
-  top:    0;
-  right:  0;
-  bottom: 0;
-  left:   0;
-  /*inset: 0;*/
+  inset: 0;
   height: 100%;
   width:  100%;
   background: var(--white);
@@ -1955,9 +1963,84 @@ figcaption {
   border-radius: 0.625rem 0.625rem 0 0;
 }
 
+@media (prefers-color-scheme: dark) {
+  .form::before {
+    background: var(--oil);
+    box-shadow: var(--panel-shadows);
+  }
+}
+
+.night .form::before {
+  background: var(--oil);
+  box-shadow: var(--panel-shadows);
+}
+
 @media (min-width: 400px) {
   .form::before {
-    border-radius: 0.4375rem;
+    --tooth-w: 32px;
+    --tooth-h: 12px;
+    --radius: 10px;
+
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-mask-image: 
+      radial-gradient(#fff 9.5px, #fff0 10px),         /* top left */
+      radial-gradient(#fff 9.5px, #fff0 10px),         /* top right */
+      radial-gradient(#fff 9.5px, #fff0 10px),         /* bottom left */
+      radial-gradient(#fff 9.5px, #fff0 10px),         /* bottom right */
+      linear-gradient(#fff, #fff),                     /* horz fill */
+      linear-gradient(#fff, #fff),                     /* vert fill */
+      url('data:image/svg+xml;utf8,<svg width="32" height="12" fill="blue" xmlns="http://www.w3.org/2000/svg"><path d="M32 12C24 12 19 0 16 0S8 12 0 12h32Z"/></svg>');                      /* center top mask */
+    -webkit-mask-position: 
+      0 var(--tooth-h),                                /* top left */
+      100% var(--tooth-h),                             /* top right */
+      0 100%,                                          /* bottom left */
+      100% 100%,                                       /* bottom right */
+      0 calc(var(--tooth-h) + var(--radius)),          /* horz fill */
+      var(--radius) var(--tooth-h),                    /* vert fill */
+      90% 0%;                                          /* center top mask */
+    -webkit-mask-size: 
+      calc(var(--radius) * 2) calc(var(--radius) * 2), /* top left */
+      calc(var(--radius) * 2) calc(var(--radius) * 2), /* top right */
+      calc(var(--radius) * 2) calc(var(--radius) * 2), /* bottom left */
+      calc(var(--radius) * 2) calc(var(--radius) * 2), /* bottom right */
+      100% calc(100% - 32px),                          /* horz fill */
+      calc(100% - 20px) 100%,                          /* vert fill */
+      var(--tooth-w) var(--tooth-h);                   /* center top mask */
+    -webkit-mask-repeat: no-repeat;
+    mask-image: 
+      radial-gradient(#fff 9.5px, #fff0 10px),         /* top left */
+      radial-gradient(#fff 9.5px, #fff0 10px),         /* top right */
+      radial-gradient(#fff 9.5px, #fff0 10px),         /* bottom left */
+      radial-gradient(#fff 9.5px, #fff0 10px),         /* bottom right */
+      linear-gradient(#fff, #fff),                     /* horz fill */
+      linear-gradient(#fff, #fff),                     /* vert fill */
+      url('data:image/svg+xml;utf8,<svg width="32" height="12" fill="blue" xmlns="http://www.w3.org/2000/svg"><path d="M32 12C24 12 19 0 16   0S8 12 0 12h32Z"/></svg>');                      /* center top mask */
+    mask-position: 
+      0 var(--tooth-h),                                /* top left */
+      100% var(--tooth-h),                             /* top right */
+      0 100%,                                          /* bottom left */
+      100% 100%,                                       /* bottom right */
+      0 calc(var(--tooth-h) + var(--radius)),          /* horz fill */
+      var(--radius) var(--tooth-h),                    /* vert fill */
+      90% 0%;                                          /* center top mask */
+    mask-size: 
+      calc(var(--radius) * 2) calc(var(--radius) * 2), /* top left */
+      calc(var(--radius) * 2) calc(var(--radius) * 2), /* top right */
+      calc(var(--radius) * 2) calc(var(--radius) * 2), /* bottom left */
+      calc(var(--radius) * 2) calc(var(--radius) * 2), /* bottom right */
+      100% calc(100% - 32px),                          /* horz fill */
+      calc(100% - 20px) 100%,                          /* vert fill */
+      var(--tooth-w) var(--tooth-h);                   /* center top mask */
+    mask-repeat: no-repeat;
+  }
+  @media (prefers-color-scheme: dark) {
+    .form::before {
+      box-shadow: none;
+    }
+  }
+  .night .form::before {
+    box-shadow: none;
   }
 }
 
@@ -1973,7 +2056,7 @@ figcaption {
   box-shadow: var(--panel-shadows);
 }
 
-/* Form Vibrancy
+/* Form Vibrancy */
 @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
   .form::before {
     background: var(--off-white-82);
@@ -1995,9 +2078,9 @@ figcaption {
     -webkit-backdrop-filter: saturate(180%) blur(20px);
             backdrop-filter: saturate(180%) blur(20px);
   }
-}*/
+}
 
-/* Form Tooth */
+/* Form Tooth 
 .form::after {
   content: "";
   width:  32px;
@@ -2014,34 +2097,34 @@ figcaption {
     background-size: cover;
     right: 0.75rem;
   }
-  /*
+  
   @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
     .form::after {
       background-image: url("../img/ui/translucent-tooth.svg");
     }
-  }*/
+  }
   @media (prefers-color-scheme: dark) {
     .form::after {
       background-image: url("../img/ui/dark-tooth.svg");
     }
   }
-  /*
+  
   @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
     @media (prefers-color-scheme: dark) {
       .form::after {
         background-image: url("../img/ui/translucent-dark-tooth.svg");
       }
     }
-  }*/
+  }
   .night .form::after {
     background-image: url("../img/ui/dark-tooth.svg");
   }
-  /*@supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
+  @supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
     .night .form::after {
       background-image: url("../img/ui/translucent-dark-tooth.svg");
     }
-  }*/
-}
+  }
+}*/
 
 /**
  * $CHECKBOX-FORM GROUP
