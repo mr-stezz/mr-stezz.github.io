@@ -770,7 +770,10 @@ a:visited {
 
 a.ninja-link,
 a:hover.ninja-link { text-decoration: none; }
-
+a.ninja-link {
+  font-weight: normal;
+  font-style: normal;
+}
 
 /**
  * $EXTERNAL-LINKS
