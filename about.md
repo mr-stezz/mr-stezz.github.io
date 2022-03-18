@@ -72,7 +72,7 @@ group: "navigation"
         width="1086"
         height="611">
     </picture>
-    <figcaption class="text-col u--m-bottom--huge">Apps in my dock: Safari Tech Preview, <a href="https://mimestream.com" title="A native macOS email client for Gmail.">Mimestream</a> (awesome native Gmail client), Cal, Notes, Reminders, Stickies and the amazing music player, <a href="https://brushedtype.co" title="Brushed Type builds beautiful apps for Mac and iOS.">Doppler from Brushed Type</a>.</figcaption>
+    <figcaption class="text-col u--m-bottom--huge">I prefer to keep my desktop free from files and folders, I hide my dock and only keep open applications in it. I also use <a href="https://www.macbartender.com" title="Take control of your menu bar.">Bartender</a> to keep the right side of my menubar clean and focused.</figcaption>
     <picture>
       <source
         type="image/webp"
@@ -92,7 +92,7 @@ group: "navigation"
         width="375"
         height="812">
     </picture>
-    <figcaption class="text-col u--m-bottom--huge">Much like my desktop, my phone usually remains simple and distraction free. I try to keep dopamine holes hidden away in the app drawer.</figcaption>
+    <figcaption class="text-col u--m-bottom--huge">Much like my desktop, my phone usually remains simple and distraction free. I keep dopaminergic apps hidden away in the app drawer. Out of sight, out of mind.</figcaption>
   </figure>
 </section>
 {% include _section.people-id-work-with-again.html %}
