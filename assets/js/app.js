@@ -1,16 +1,4 @@
-// Play audio snippet on hover
-const imTheBest = new Audio('../assets/sounds/im_the_best.mp3')
-
-document.querySelectorAll('.spotlight').forEach(link => {
-    let audioLink = link.querySelector('.js-audio-link'),
-        timer
-
-    audioLink.addEventListener('mouseover', e => {
-        imTheBest.play()
-    })
-})
-
-// Molten Leading
+// Enable molten leading
 ! function(e, t, n) {
   function s(e, n) {
     if (!e) throw Error("No selector supplied for Molten Leading");
@@ -96,95 +84,28 @@ document.querySelectorAll('.spotlight').forEach(link => {
     maxline: 1.8,
     minwidth: 400,
     maxwidth: 768
-  }),
-  // SmoothScroll
-  function(e, t) {
-    "function" == typeof define && define.amd ? define("smoothScroll", t(e)) : "object" == typeof exports ? module.exports = t(e) : e.smoothScroll = t(e)
-  }(window || this, function(e) {
-    "use strict";
-    var t, n, s, a = {},
-      o = !!document.querySelector && !!e.addEventListener,
-      i = {
-        speed: 500,
-        easing: "easeInOutCubic",
-        offset: 0,
-        updateURL: !0,
-        callbackBefore: function() {},
-        callbackAfter: function() {}
-      },
-      r = function(e, t, n) {
-        if ("[object Object]" === Object.prototype.toString.call(e))
-          for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.call(n, e[s], s, e);
-        else
-          for (var a = 0, o = e.length; o > a; a++) t.call(n, e[a], a, e)
-      },
-      c = function(e, t) {
-        var n = {};
-        return r(e, function(t, s) {
-          n[s] = e[s]
-        }), r(t, function(e, s) {
-          n[s] = t[s]
-        }), n
-      },
-      l = function(e) {
-        return Math.max(e.scrollHeight, e.offsetHeight, e.clientHeight)
-      };
-    a.animateScroll = function(t, n, a) {
-      var o, r = c(r || i, a || {}),
-        u = (o = t ? t.getAttribute("data-options") : null) && "object" == typeof JSON && "function" == typeof JSON.parse ? JSON.parse(o) : {};
-      r = c(r, u);
-      var d = "#" === (n = "#" + function(e) {
-          for (var t, n = String(e), s = n.length, a = -1, o = "", i = n.charCodeAt(0); ++a < s;) {
-            if (0 === (t = n.charCodeAt(a))) throw new InvalidCharacterError("Invalid character: the input contains U+0000.");
-            o += t >= 1 && 31 >= t || 127 == t || 0 === a && t >= 48 && 57 >= t || 1 === a && t >= 48 && 57 >= t && 45 === i ? "\\" + t.toString(16) + " " : t >= 128 || 45 === t || 95 === t || t >= 48 && 57 >= t || t >= 65 && 90 >= t || t >= 97 && 122 >= t ? n.charAt(a) : "\\" + n.charAt(a)
-          }
-          return o
-        }(n.substr(1))) ? document.documentElement : document.querySelector(n),
-        f = e.pageYOffset;
-      s || (s = document.querySelector("[data-scroll-header]"));
-      var m, h, p, g, v, y = null === s ? 0 : l(s) + s.offsetTop,
-        w = function(e, t, n) {
-          var s = 0;
-          if (e.offsetParent)
-            do {
-              s += e.offsetTop, e = e.offsetParent
-            } while (e);
-          return (s = s - t - n) >= 0 ? s : 0
-        }(d, y, parseInt(r.offset, 10)),
-        b = w - f,
-        E = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight, document.body.offsetHeight, document.documentElement.offsetHeight, document.body.clientHeight, document.documentElement.clientHeight),
-        x = 0;
-      g = n, v = r.updateURL, history.pushState && (v || "true" === v) && history.pushState(null, null, [e.location.protocol, "//", e.location.host, e.location.pathname, e.location.search, g].join(""));
-      var O = function() {
-        var s, a, o, i, c, l, u;
-        h = (h = (x += 16) / parseInt(r.speed, 10)) > 1 ? 1 : h, p = f + b * (c = r.easing, l = h, "easeInQuad" === c && (u = l * l), "easeOutQuad" === c && (u = l * (2 - l)), "easeInOutQuad" === c && (u = .5 > l ? 2 * l * l : (4 - 2 * l) * l - 1), "easeInCubic" === c && (u = l * l * l), "easeOutCubic" === c && (u = --l * l * l + 1), "easeInOutCubic" === c && (u = .5 > l ? 4 * l * l * l : (l - 1) * (2 * l - 2) * (2 * l - 2) + 1), "easeInQuart" === c && (u = l * l * l * l), "easeOutQuart" === c && (u = 1 - --l * l * l * l), "easeInOutQuart" === c && (u = .5 > l ? 8 * l * l * l * l : 1 - 8 * --l * l * l * l), "easeInQuint" === c && (u = l * l * l * l * l), "easeOutQuint" === c && (u = 1 + --l * l * l * l * l), "easeInOutQuint" === c && (u = .5 > l ? 16 * l * l * l * l * l : 1 + 16 * --l * l * l * l * l), u || l), e.scrollTo(0, Math.floor(p)), s = p, a = w, o = m, i = e.pageYOffset, (s == a || i == a || e.innerHeight + i >= E) && (clearInterval(o), d.focus(), r.callbackAfter(t, n))
-      };
-      0 === e.pageYOffset && e.scrollTo(0, 0), r.callbackBefore(t, n), m = setInterval(O, 16)
-    };
-    var u = function(e) {
-        var n = function(e, t) {
-          for (var n = t.charAt(0); e && e !== document; e = e.parentNode)
-            if ("." === n) {
-              if (e.classList.contains(t.substr(1))) return e
-            } else if ("#" === n) {
-            if (e.id === t.substr(1)) return e
-          } else if ("[" === n && e.hasAttribute(t.substr(1, t.length - 2))) return e;
-          return !1
-        }(e.target, "[data-scroll]");
-        n && "a" === n.tagName.toLowerCase() && (e.preventDefault(), a.animateScroll(n, n.hash, t))
-      },
-      d = function() {
-        n || (n = setTimeout(function() {
-          n = null, headerHeight = null === s ? 0 : l(s) + s.offsetTop
-        }, 66))
-      };
-    return a.destroy = function() {
-      t && (document.removeEventListener("click", u, !1), e.removeEventListener("resize", d, !1), t = null, n = null, s = null)
-    }, a.init = function(n) {
-      o && (a.destroy(), t = c(i, n || {}), s = document.querySelector("[data-scroll-header]"), document.addEventListener("click", u, !1), s && e.addEventListener("resize", d, !1))
-    }, a
-  }), smoothScroll.init();
-// Date Class Adder
+  });
+// Add day/night class on body based on time
 var currentTime = (new Date).getHours();
 7 <= currentTime && currentTime < 18 ? document.body && (document.body.className = "day") : document.body && (document.body.className = "night");
+// Open contact form on enter keyup on .toggle-label
+document.querySelector(".toggle-label").addEventListener("keyup", (e) => {
+  e.preventDefault();
+  if (event.keyCode === 13) {
+    document.querySelector(".toggle-checkbox").click();
+  }
+});
+// Play Toad's 'I'm the besssst' audio snippet when hovering over link
+const imTheBest = new Audio('../assets/sounds/im_the_best.mp3')
 
+document.querySelectorAll('.work-list').forEach(link => {
+    let audioLink = link.querySelector('.js-audio-clip'),
+        timer
+
+    audioLink.addEventListener('mouseover', e => {
+        imTheBest.play()
+    })
+})
+// get current year
+new Date().getFullYear();
+document.getElementById("year").innerHTML = new Date().getFullYear();
