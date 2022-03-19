@@ -1740,12 +1740,17 @@ a:visited.nav-logo        { color: var(--iron) }}
 /*   opacity: 0; */
   background: #fff;
   border: 2px solid var(--mineshaft);
+  border-bottom-width: 0px;
   box-shadow: 1px 1px 0px var(--mineshaft);
   border-radius: 0.625rem 0.625rem 0 0; /* 10px 10px 0 0 */
 }
 /* .toggle-checkbox:checked ~ .form formgroup { opacity: 1 } */
 @media(min-width: 400px) {
-.formgroup { border-radius: 0.4375em }}
+  .formgroup { 
+    border-bottom-width: 2px;
+    border-radius: 0.4375em; 
+  }
+}
 @media(prefers-color-scheme: dark) {
  .formgroup {
   background: var(--mineshaft);
