@@ -1196,6 +1196,51 @@ attr[title] {
 
 
 /**
+   * $EXTERNAL-LINKS
+   */
+  a[href*="//"]{
+    transition: 300ms text-underline-offset cubic-bezier(.17,.89,.32,1.28);
+  }
+  a[href*="//"]::after {
+    content: " ↗";
+    font-weight: normal;
+    font-style: normal;
+    font-size: inherit;
+    color: var(--raven);
+    transition: 300ms opacity cubic-bezier(0.27, 0.175, 0.285, 1.01);
+  }
+  
+  @media screen and (prefers-reduced-motion: reduce) {
+    a[href*="//"]::after { transition-property: none; }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    a[href*="//"]::after { color: var(--raven); }
+  }
+  .night a[href*="//"]::after { color: var(--raven); }
+  
+  a:visited[href*="//"]::after { color: var(--iron-30); }
+  @media (prefers-color-scheme: dark) {
+    a:visited[href*="//"]::after { color: var(--white); }
+  }
+  .night a:visited[href*="//"]::after { color: var(--white); }
+  
+  a:hover[href*="//"]::after {
+    opacity: 0.3;
+  }
+  
+  a[href*="//"]::after {
+    display: inline-block;
+    transform-origin: top right;
+    transition: 300ms transform cubic-bezier(.17,.89,.32,1.28);
+  }
+  
+  a:hover[href*="//"]::after {
+    transform: scale(0.9) rotate(-6deg);
+  }
+
+
+/**
  * $SKIP-LINKS
  */
 .skip-link:active,
