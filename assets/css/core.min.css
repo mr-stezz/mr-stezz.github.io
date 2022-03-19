@@ -2060,9 +2060,11 @@ a:visited.nav-logo        { color: var(--iron) }}
 .form:invalid .submit {
   cursor: not-allowed;
   background: transparent;
-  border-color: var(--iron);
+  border-color: var(--iron); }
+.form:invalid .submit:hover {
   box-shadow: none;
-  transform: translate(0, 0); }
+  transform: translate(0, 0);
+}
 @media(prefers-color-scheme: dark) {
        .form:invalid .submit { border-color: var(--iron-30); }}
 .night .form:invalid .submit { border-color: var(--iron-30); }
