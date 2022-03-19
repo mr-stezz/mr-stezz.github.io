@@ -1618,10 +1618,20 @@ a:visited.nav-logo        { color: var(--iron) }}
    cursor: default;
    -webkit-touch-callout: none;
    -webkit-tap-highlight-color: transparent }
- @media (min-width: 400px) {
+ /* If not using finger */
+ @media not (pointer: coarse) {
+   .toggle-checkbox:checked {
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     pointer-events: none;
+   }
+ }
+ /* @media (min-width: 400px) {
  .toggle-checkbox:checked {
    user-select: none;
-   pointer-events: none }}
+   pointer-events: none }} */
 
 
 /**
