@@ -24,7 +24,7 @@ group: "navigation"
         width="480"
         height="480">
     </picture>
-    <figcaption class="t--center">Portrait by <a href="https://tadam.co.uk" title="Headshots from London based Photographer, Adam Toth.">Adam Toth</a>.</figcaption>
+    <figcaption>Portrait by <a href="https://tadam.co.uk" title="Headshots from London based Photographer, Adam Toth.">Adam Toth</a>.</figcaption>
   </figure>
   <p>
     My name is Michael <dfn title="[ste-zee-key]">St&#281;&middot;&#380;y&middot;cki</dfn> and I design digital product experiences with an interest in storytelling through prototyping, efficiency in design systems and the intersection of business and technology.
