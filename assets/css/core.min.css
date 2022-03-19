@@ -643,6 +643,10 @@ h6 { font-style: italic }
   font-size: 1.125em;
   line-height: 1.5555555555555556 }
 
+
+/**
+ * LINKS 
+ */
 a {
   text-decoration: underline;
   color: var(--mineshaft) }
@@ -656,6 +660,8 @@ a:visited        { color: var(--iron) }}
 .night a,
 .night a:visited { color: var(--iron) }
 
+
+/* Not-links that look like links */
 .visual-link {
   text-decoration: underline;
   color: var(--mineshaft) }
@@ -668,6 +674,15 @@ a:visited        { color: var(--iron) }}
 .visual-link:visited        { color: var(--iron) }}
 .night .visual-link,
 .night .visual-link:visited { color: var(--iron) }
+
+
+/* Links that don't look like links */
+a.ninja-link,
+a:hover.ninja-link { text-decoration: none; }
+a.ninja-link {
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 /**
@@ -1949,6 +1964,17 @@ a:visited.nav-logo        { color: var(--iron) }}
 .night .reciever {
   background: var(--electric-violet);
   color: var(--white) }}
+  
+.reciever a { color: var(--bittersweet) }
+@media(prefers-color-scheme: dark) {
+.reciever a { color: var(--electric-violet) }}
+@media (min-width: 400px) {
+  .reciever a { color: var(--white); }
+  @media(prefers-color-scheme: dark) {
+    .reciever a { color: var(--white); }
+  }
+  .night .reciever a { color: var(--white); }
+}
 
 
 /**
