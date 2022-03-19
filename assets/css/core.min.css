@@ -793,7 +793,6 @@ figure {
 
 figure > img {
   display: block;
-  margin: 0 auto;
   margin-bottom: 0.75em }
 
 figcaption {
@@ -1048,9 +1047,9 @@ attr[title] {
 
 .gallery img {
    display: block;
-   margin-right: auto;
+   /* margin-right: auto; */
    margin-bottom: 0.125em;
-   margin-left: auto;
+   /* margin-left: auto; */
  }
 
 .gallery--two-up > img,
