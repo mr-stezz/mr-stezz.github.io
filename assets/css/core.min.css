@@ -1420,6 +1420,11 @@ attr[title] {
   font-size: 15px;
   line-height: 1;
   text-decoration: none; }
+@media (min-width: 400px) {
+  .nav-logo {
+    margin-left: auto;
+  }
+}
 .nav-logo:hover { text-decoration: underline }
 a.nav-logo,
 a:visited.nav-logo        { color: var(--mineshaft) }
