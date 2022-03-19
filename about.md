@@ -3,7 +3,7 @@ layout: default_page
 title: About
 group: "navigation"
 ---
-<div class="text-col">
+<div class="text-col u--m-bottom--huge">
   <figure class="gallery">
     <picture>
       <source
