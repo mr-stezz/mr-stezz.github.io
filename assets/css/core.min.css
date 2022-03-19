@@ -1009,9 +1009,12 @@ attr[title] {
  */
 .gallery { margin-bottom: 24px }
 
-.gallery > img {
-  display: block;
-  margin-bottom: 0.125em }
+.gallery img {
+   display: block;
+   margin-right: auto;
+   margin-bottom: 0.125em;
+   margin-left: auto;
+ }
 
 .gallery--two-up > img,
 .gallery--three-up > img,
@@ -1019,9 +1022,9 @@ attr[title] {
   float: left;
   padding-right: 0.125em }
 
-.gallery--two-up > img                 { width: 50% }
 .gallery--three-up > img:first-of-type { width: 100% }
-.gallery--three-up > img               { width: 50% }
+.gallery--two-up > img,
+.gallery--three-up > img,
 .gallery--four-up > img                { width: 50% }
 
 
