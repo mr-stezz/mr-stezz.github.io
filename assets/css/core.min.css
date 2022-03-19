@@ -1944,6 +1944,8 @@ a:visited.nav-logo        { color: var(--iron) }}
   height: 44px;
   margin: var(--btn-margin);
   padding: var(--btn-padding);
+  color: var(--mineshaft);
+  fill: var(--mineshaft);
   background: transparent;
   border: 2px solid var(--mineshaft);
   /* box-shadow: 1px 1px 0px var(--mineshaft); */
@@ -1957,9 +1959,13 @@ a:visited.nav-logo        { color: var(--iron) }}
 }
 @media(prefers-color-scheme: dark) {
 .submit {
+  fill: var(--iron);
+  color: var(--iron);
   /* box-shadow: 1px 1px 0px var(--iron); */
   border-color: var(--iron) }}
 .night .submit {
+  fill: var(--iron);
+  color: var(--iron);
   /* box-shadow: 1px 1px 0px var(--iron); */
   border-color: var(--iron) }
 @media(min-width: 400px) {
@@ -2020,22 +2026,35 @@ a:visited.nav-logo        { color: var(--iron) }}
   /* box-shadow: 1px 1px 0px var(--iron-30) */ }
 
 
+/* INVALID FORM BUTTON */
+.form:invalid .submit {
+  fill: var(--iron-30);
+  color: var(--iron-30);
+}
+@media(prefers-color-scheme: dark) {
+  .form:invalid .submit__icon {
+    fill: var(--iron-30);
+    color: var(--iron-30);
+  }
+}
+.night .form:invalid .submit {
+  fill: var(--iron-30);
+  color: var(--iron-30);
+}
+
+
 /**
  * $SUBMIT BUTTON ICON
  */
 .submit__icon {
   display: none;
-  fill: var(--mineshaft) }
-@media(prefers-color-scheme: dark) {
+  /* fill: var(--mineshaft) */ }
+/* @media(prefers-color-scheme: dark) {
        .submit__icon { fill: var(--iron) }}
-.night .submit__icon { fill: var(--iron) }
+.night .submit__icon { fill: var(--iron) } */
 @media(min-width: 400px) {
 .submit__icon { display: block }}
 
-       .form:invalid .submit__icon { fill: var(--iron-30) }
-@media(prefers-color-scheme: dark) {
-       .form:invalid .submit__icon { fill: var(--iron-30) }}
-.night .form:invalid .submit__icon { fill: var(--iron-30) }
 
 /**
  * $SUBMIT BUTTON LABEL
@@ -2044,10 +2063,10 @@ a:visited.nav-logo        { color: var(--iron) }}
   display: block;
   font-weight: 700;
   line-height: 1;
-  color: var(--mineshaft) }
-@media(prefers-color-scheme: dark) {
+  /* color: var(--mineshaft) */ }
+/* @media(prefers-color-scheme: dark) {
        .submit__label { color: var(--iron) }}
-.night .submit__label { color: var(--iron) }
+.night .submit__label { color: var(--iron) } */
 @media (min-width: 400px) {
 .submit__label {
   border: 0;
@@ -2059,10 +2078,6 @@ a:visited.nav-logo        { color: var(--iron) }}
   position: absolute;
   width: 1px;
   white-space: nowrap }}
-
-.form:invalid .submit__label { color: var(--iron-30) }
-@media(prefers-color-scheme: dark) {
-.form:invalid .submit__label { color: var(--iron-30) }}
 
 
 /**
