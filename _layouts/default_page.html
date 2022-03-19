@@ -15,11 +15,11 @@
     <div class="wrapper">
       {% comment %} if there is no subtitle, do not render {% endcomment %}
       {% if page.subtitle != null %}
-      <h3 class="heading  page-subtitle  no-spacing  t--center">{{ page.subtitle }}</h3>
+      <h3 class="heading page-subtitle no-spacing t--center">{{ page.subtitle }}&nbsp;<a href="#{{ page.subtitle | slugify }}" class="subtitle-link" title="Permalink to this headline">#</a></h3>
       {% endif %}
       {% comment %} if there is no title, do not render {% endcomment %}
       {% if page.title != null %}
-      <h2 class="heading  alpha  page-title">{{ page.title }}</h2>
+      <h2 class="heading alpha page-title">{{ page.title }}</h2>
       {% endif %}
       {{ content }}
     </div>
