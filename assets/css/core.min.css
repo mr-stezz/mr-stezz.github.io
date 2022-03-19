@@ -1227,6 +1227,36 @@ attr[title] {
 
 
 /**
+   * $PERMALINKS
+   */
+  @media (pointer: fine) {
+    .subtitle-link {
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+    .heading:hover .subtitle-link { opacity: 1 }
+  }
+  
+  a.subtitle-link {
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  @media screen and (prefers-reduced-motion: reduce) {
+    .subtitle-link { transition: none !important }
+  }
+  
+  .subtitle-link              { color: var(--iron-30) }
+  .subtitle-link:hover        { color: var(--raven) }
+  @media (prefers-color-scheme: dark) {
+    .subtitle-link            { color: var(--iron-30) }
+    .subtitle-link:hover      { color: var(--raven) }
+  }
+  .night .subtitle-link       { color: var(--iron-30) }
+  .night .subtitle-link:hover { color: var(--raven) }
+
+
+/**
  * $HEADER
  */
 .page-header {
