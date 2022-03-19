@@ -2048,8 +2048,8 @@ a:visited.nav-logo        { color: var(--iron) }}
   background-color: var(--mineshaft);
 }
 .submit:hover:not(:active):not([disabled]) {
-  transform: translate(-1px, -1px);
-  box-shadow: 1px 1px 0px var(--mineshaft);
+  transform: translate(-2px, -2px);
+  box-shadow: 2px 2px 0px var(--mineshaft);
 }
 .submit:focus {
   box-shadow: inset 0 0 0 2px var(--white);
@@ -2059,16 +2059,13 @@ a:visited.nav-logo        { color: var(--iron) }}
 /* INVALID FORM STYLES */
 .form:invalid .submit {
   cursor: not-allowed;
-  /* background: transparent; */
+  background: transparent;
   border-color: var(--iron);
-/* box-shadow: 1px 1px 0px var(--iron) */ }
+  box-shadow: none;
+  transform: translate(0, 0); }
 @media(prefers-color-scheme: dark) {
-.form:invalid .submit {
-  border-color: var(--iron-30);
-  /* box-shadow: 1px 1px 0px var(--iron-30) */ }}
-.night .form:invalid .submit {
-  border-color: var(--iron-30);
-  /* box-shadow: 1px 1px 0px var(--iron-30) */ }
+       .form:invalid .submit { border-color: var(--iron-30); }}
+.night .form:invalid .submit { border-color: var(--iron-30); }
 
 
 /* INVALID FORM BUTTON */
