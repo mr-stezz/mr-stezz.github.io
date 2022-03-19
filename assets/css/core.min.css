@@ -814,9 +814,8 @@ figcaption { color: var(--iron) }}
 .text-col--2,
 .text-col--3,
 .text-col--4 {
-  max-width: 480px;
-  margin-right: auto;
-  margin-left: auto }
+  max-width: 60ch; /* 480px */
+  margin-right: auto;}
 
 .text-col--2,
 .text-col--3,
