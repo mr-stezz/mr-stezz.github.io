@@ -1,13 +1,13 @@
 # Site settings
-title: Michael Stezycki
+title: Michael Stężycki
 tagline: "Designer"
 email: ahoy@stezycki.com
 description: > # this means to ignore newlines until "baseurl:"
-  Apps and websites from London based designer, @Mr_Stezz
+  Apps and websites from London based designer, @m_stez
 keywords: "design, ux, ui, ix, product, business, strategy, web, app, html, css, interaction, photography, london, uk"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://stez.me" # the base hostname & protocol for your site
-twitter_username: mr_stezz
+twitter_username: m_stez
 github_username:  mr-stezz
 repo: "https://github.com/mr-stezz/mr-stezz.github.io"
 
