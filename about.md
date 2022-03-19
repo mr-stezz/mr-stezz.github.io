@@ -35,7 +35,7 @@ group: "navigation"
   Read my <a href="https://codepen.io/mr-stezz/full/PLKGEG" rel="noreferrer" target="_blank" aria-label="Résumé (Opens in new tab)">r&eacute;sum&eacute;</a>.<br><br></p>
 </div>
 <section>
-  <h3 id="workstation-setup" class="heading page-title  t--center">What’s my workstation setup? <a href="#workstation-setup" class="subtitle-link" title="Permalink to this headline">#</a></h3>
+  <h3 id="workstation-setup" class="heading page-title t--center">What’s my workstation setup? <a href="#workstation-setup" class="subtitle-link" title="Permalink to this headline">#</a></h3>
   <figure class="gallery">
     <picture>
       <source
