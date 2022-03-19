@@ -798,8 +798,8 @@ figure > img {
 
 figcaption {
   box-sizing: content-box;
-  padding-right: 24px;
-  padding-left: 24px;
+  /* padding-right: 24px;
+  padding-left: 24px; */
   font-family: var(--font-stack);
   font-size: 87.5%;
   color: var(--mineshaft) }
