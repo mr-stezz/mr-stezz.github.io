@@ -1944,12 +1944,16 @@ a:visited.nav-logo        { color: var(--iron) }}
   height: 44px;
   margin: var(--btn-margin);
   padding: var(--btn-padding);
-  appearance: none;
-  cursor: pointer;
   background: transparent;
   border: 2px solid var(--mineshaft);
   /* box-shadow: 1px 1px 0px var(--mineshaft); */
-  border-radius: var(--btn-radius)
+  border-radius: var(--btn-radius);
+  appearance: none;
+  cursor: pointer;
+  user-select: none;
+  transition: var(--transition);
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: var(--iron-30);
 }
 @media(prefers-color-scheme: dark) {
 .submit {
@@ -1973,13 +1977,13 @@ a:visited.nav-logo        { color: var(--iron) }}
   /* background: transparent; */
   /* border-radius: 5px */ }
 }
-/* Align text inside button to true center */
+/* Align text inside button to true center
 .submit:before {
   content: "";
   display: inline-block;
   height: 1ex;
   vertical-align: middle;
-}
+} */
 /* strip anchor hover styles for buttons */
 .submit:hover { 
   text-decoration: none;
