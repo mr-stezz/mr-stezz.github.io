@@ -1420,7 +1420,7 @@ attr[title] {
   font-size: 15px;
   line-height: 1;
   text-decoration: none; }
-@media (min-width: 400px) {
+@media (max-width: 399px) {
   .nav-logo {
     margin-left: auto;
   }
