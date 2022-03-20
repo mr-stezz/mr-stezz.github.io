@@ -8,23 +8,23 @@ group: "navigation"
     <picture>
       <source
         type="image/webp"
-        srcset="/assets/img/content/mugshot-tadam.webp 1x,
-                /assets/img/content/mugshot-tadam@2x.webp 2x">
+        srcset="/assets/img/content/mugshot.webp 1x,
+                /assets/img/content/mugshot@2x.webp 2x">
       <source
         type="image/jpg"
-        srcset="/assets/img/content/mugshot-tadam.jpg 1x,
-                /assets/img/content/mugshot-tadam@2x.jpg 2x">
+        srcset="/assets/img/content/mugshot.jpg 1x,
+                /assets/img/content/mugshot@2x.jpg 2x">
       <img
-        src="/assets/img/content/mugshot-tadam.jpg"
-        srcset="/assets/img/content/mugshot-tadam.jpg 1x,
-                /assets/img/content/mugshot-tadam@2x.jpg 2x"
+        src="/assets/img/content/mugshot.jpg"
+        srcset="/assets/img/content/mugshot.jpg 1x,
+                /assets/img/content/mugshot@2x.jpg 2x"
         alt="A head and shoulders shot of my face."
         loading="auto"
         class="u--m-bottom"
-        width="480"
-        height="480">
+        width="528"
+        height="528">
     </picture>
-    <figcaption>Portrait by <a href="https://tadam.co.uk" title="Headshots from London based Photographer, Adam Toth.">Adam Toth</a>.</figcaption>
+    <figcaption>Portrait mode from iPhone X.</figcaption>
   </figure>
   <p>
     My name is Michael <dfn title="[ste-zee-key]">St&#281;&middot;&#380;y&middot;cki</dfn> and I design digital product experiences with an interest in storytelling through prototyping, efficiency in design systems and the intersection of business and technology.
