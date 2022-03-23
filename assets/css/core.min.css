@@ -804,6 +804,7 @@ figcaption {
   color: var(--mineshaft) }
 @media(prefers-color-scheme: dark) {
 figcaption { color: var(--iron) }}
+.night figcaption { color: var(--iron) }
 
 
 /**
