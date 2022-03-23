@@ -1463,28 +1463,37 @@ a:visited.nav-logo        { color: var(--iron) }}
     background: var(--linen);
     padding-bottom: env(safe-area-inset-bottom);
   }
-
-  /* If the browser supports blur */
+  /* Blurred background for Safari */
+  @supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
+  .nav-wrap {
+    background: var(--linen-82);
+    -webkit-backdrop-filter: saturate(180%) blur(20px) }}
+    /* Blurred background for Chrome */
   @supports (backdrop-filter: saturate(180%) blur(20px)) {
-    .nav-wrap {
-      background: var(--linen-82);
-      -webkit-backdrop-filter: saturate(180%) blur(20px);
-              backdrop-filter: saturate(180%) blur(20px);
-    }
-  }
-
-  /* If dark mode is active */
-  @media (prefers-color-scheme: dark) {
-    .nav-wrap {
-      background-color: rgb(41, 41, 41);
-    }
-    /* If the browser supports blur */
-    @supports (backdrop-filter: saturate(180%) blur(20px)) {
-      .nav-wrap {
-        background-color: rgba(41, 41, 41, 0.82);
-      }
-    }
-  }
+  .nav-wrap {
+    background: var(--linen-82);
+    backdrop-filter: saturate(180%) blur(20px) }}
+  @media(prefers-color-scheme: dark) {
+  .nav-wrap        { background: var(--mineshaft) }}
+  .night .nav-wrap { background: var(--mineshaft) }
+  /* Darkmode blurred background for Safari */
+  @supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) {
+  @media(prefers-color-scheme: dark) {
+  .nav-wrap {
+    background: rgba(41,41,41,0.82);
+    -webkit-backdrop-filter: saturate(180%) blur(20px) }}
+  .night .nav-wrap {
+    background: rgba(41,41,41,0.82);
+    -webkit-backdrop-filter: saturate(180%) blur(20px) }}
+  /* Darkmode blurred background for Chrome */
+  @supports (backdrop-filter: saturate(180%) blur(20px)) {
+  @media(prefers-color-scheme: dark) {
+  .nav-wrap {
+    background: rgba(41,41,41,0.82);
+    backdrop-filter: saturate(180%) blur(20px) }}
+  .night .nav-wrap {
+    background: rgba(41,41,41,0.82);
+    backdrop-filter: saturate(180%) blur(20px) }}
 
   /* nav-wrap shadow */
   .nav-wrap:after {
@@ -1514,6 +1523,14 @@ a:visited.nav-logo        { color: var(--iron) }}
         rgba(255, 255, 255, 0.16) 35%
       );
     }
+  }
+  .night .nav-wrap:after {
+    background-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 35%,
+      rgba(255, 255, 255, 0.16) 35%
+    );
   }
 
   /* Style the nav-links a bit differently when the viewport is under 399px wide */
