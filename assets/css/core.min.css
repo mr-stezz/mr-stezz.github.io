@@ -2078,7 +2078,8 @@ a:visited.nav-logo        { color: var(--iron) }}
 }
 
 /* INVALID FORM STYLES */
-.form:invalid .submit {
+.form:invalid .submit,
+.form:invalid .submit:hover {
   cursor: not-allowed;
   background: transparent;
   border-color: var(--iron); }
