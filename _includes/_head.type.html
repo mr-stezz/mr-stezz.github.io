@@ -5,29 +5,22 @@
       return;
     }
 
-    var observerNeueHaasUnicaLight = new w.FontFaceObserver( "Neue Haas Unica", {
-      weight: 300
-    });
-    var observerNeueHaasUnicaLightItalic = new w.FontFaceObserver( "Neue Haas Unica", {
-      weight: 300,
-      style: "italic"
-    });
-    var observerNeueHaasUnicaRegular = new w.FontFaceObserver( "Neue Haas Unica", {
+    var observerInterRegular = new w.FontFaceObserver( "Inter", {
       weight: 400
     });
-    var observerNeueHaasUnicaRegularItalic = new w.FontFaceObserver( "Neue Haas Unica", {
+    var observerInterRegularItalic = new w.FontFaceObserver( "Inter", {
       weight: 400,
       style: "italic"
     });
-    var observerNeueHaasUnicaMedium = new w.FontFaceObserver( "Neue Haas Unica", {
-      weight: 500
+    var observerInterBold = new w.FontFaceObserver( "Inter", {
+      weight: 700
     });
-    var observerNeueHaasUnicaMediumItalic = new w.FontFaceObserver( "Neue Haas Unica", {
-      weight: 500,
+    var observerInterBoldItalic = new w.FontFaceObserver( "Inter", {
+      weight: 700,
       style: "italic"
     });
     w.Promise
-      .all([observerNeueHaasUnicaLight.check(), observerNeueHaasUnicaLightItalic.check(), observerNeueHaasUnicaRegular.check(), observerNeueHaasUnicaRegularItalic.check(), observerNeueHaasUnicaMedium.check(), observerNeueHaasUnicaMediumItalic.check()])
+      .all([observerInterRegular.check(), observerInterRegularItalic.check(), observerInterBold.check(), observerInterBoldItalic.check()])
       .then(function(){
         w.document.documentElement.className += " fonts-loaded";
       });

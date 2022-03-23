@@ -3,97 +3,43 @@ layout: default_page
 title: About
 group: "navigation"
 ---
-<div class="text-col">
+<div class="text-col u--m-bottom--huge">
   <figure class="gallery">
     <picture>
       <source
         type="image/webp"
-        srcset="/assets/img/content/mugshot-tadam.webp 1x,
-                /assets/img/content/mugshot-tadam@2x.webp 2x">
+        srcset="/assets/img/content/mugshot.webp 1x,
+                /assets/img/content/mugshot@2x.webp 2x">
       <source
         type="image/jpg"
-        srcset="/assets/img/content/mugshot-tadam.jpg 1x,
-                /assets/img/content/mugshot-tadam@2x.jpg 2x">
+        srcset="/assets/img/content/mugshot.jpg 1x,
+                /assets/img/content/mugshot@2x.jpg 2x">
       <img
-        src="/assets/img/content/mugshot-tadam.jpg"
-        srcset="/assets/img/content/mugshot-tadam.jpg 1x,
-                /assets/img/content/mugshot-tadam@2x.jpg 2x"
+        src="/assets/img/content/mugshot.jpg"
+        srcset="/assets/img/content/mugshot.jpg 1x,
+                /assets/img/content/mugshot@2x.jpg 2x"
         alt="A head and shoulders shot of my face."
         loading="auto"
         class="u--m-bottom"
-        width="480"
-        height="480">
+        width="528"
+        height="528">
     </picture>
-    <figcaption>Portrait by <a href="https://tadam.co.uk" title="Headshots from London based Photographer, Adam Toth.">Adam Toth</a>.</figcaption>
+    <figcaption>Portrait mode from iPhone X.</figcaption>
   </figure>
-  <p>My name is Michael <dfn title="[Ste-zee-key]">Ste&middot;zy&middot;cki</dfn> and I design digital product experiences with an interest in storytelling through prototyping, efficiency in design systems and the intersection of business and technology.</p>
-  <p>Raised in East London and later the West Midlands, I studied Interactive Media at Stratford-upon-Avon College and passed with a distinction, distinction, merit. My childhood love of making crude websites and icons grew into a adulthood love of designing and building simple, well thought-out digital products for people. My fascination with technology hasn't stopped, and I’ve been blown away by what <abbr title="Augmented Reality/Mixed Reality">AR/MR</abbr> can do and how it can change lives for the better as well as learning about tech's uglier effects on society.</p>
-  <p>As well as designing digital products, I also have a shutter bug and love to take photos in new and exotic places. I’m a firm believer of the fact that travel broadens the mind—yes, I stole that from Stephen Merchant and I’m not even sorry.<br><br>
-  Say hello at <label for="toggle-checkbox" class="toggle-label" title="Drop me a line.">ahoy@stezycki.com</label>.<br><br>
-  Browse my code scratchpad on <a href="https://codepen.io/mr-stezz/" title="Have a look at my code scrapbook on Codepen." rel="noreferrer" target="_blank" aria-label="Codepen (Opens in new tab)">Codepen</a>.<br><br>
-  Download my photography on <a href="https://unsplash.com/@stez" title="Download my photography for free on Unsplash." rel="noreferrer" target="_blank" aria-label="Unsplash (Opens in new tab)">Unsplash</a>.<br><br>
-  Read my <a href="https://codepen.io/mr-stezz/full/PLKGEG" rel="noreferrer" target="_blank" aria-label="Résumé (Opens in new tab)">r&eacute;sum&eacute;</a>.<br><br></p>
+  <p>
+    My name is Michael <dfn title="[ste-zee-key]">St&#281;&middot;&#380;y&middot;cki</dfn> and I design digital product experiences with an interest in storytelling through prototyping, efficiency in design systems and the intersection of business and technology.
+  </p>
+  <p>
+    Raised in East London and later the West Midlands, I studied Interactive Media at Stratford-upon-Avon College and passed with a distinction, distinction, merit. My childhood love of making crude websites and icons grew into a adulthood love of designing and building simple, well thought-out digital products for people. My fascination with technology hasn't stopped, and I’ve been blown away by what <abbr title="Augmented Reality/Mixed Reality">AR/MR</abbr> can do and how it can change lives for the better as well as learning about tech's uglier effects on society.
+  </p>
+  <p>
+    As well as designing digital products, I also have a shutter bug and love to take photos in new and exotic places. I’m a firm believer of the fact that travel broadens the mind—yes, I stole that from Stephen Merchant and I’m not even sorry.<br><br>
+    Say hello at <label for="toggle-checkbox" class="visual-link toggle-label" title="Drop me a line.">ahoy@stezycki.com</label>.<br><br>
+    Browse my code scratchpad on <a href="https://codepen.io/mr-stezz/" title="Have a look at my code scrapbook on Codepen." rel="noreferrer" target="_blank" aria-label="Codepen (Opens in new tab)">Codepen</a>.<br><br>
+    Download my photography on <a href="https://unsplash.com/@stez" title="Download my photography for free on Unsplash." rel="noreferrer" target="_blank" aria-label="Unsplash (Opens in new tab)">Unsplash</a>.<br><br>
+    Read my <a href="https://codepen.io/mr-stezz/full/PLKGEG" rel="noreferrer" target="_blank" aria-label="Résumé (Opens in new tab)">r&eacute;sum&eacute;</a>.<br><br>
+  </p>
 </div>
-<section>
-  <h3 id="workstation-setup" class="heading page-title  t--center">What’s my workstation setup? <a href="#workstation-setup" class="subtitle-link" title="Permalink to this headline">#</a></h3>
-  <figure class="gallery">
-    <picture>
-      <source
-        type="image/webp"
-        srcset="/assets/img/content/DeskSetup.webp 1x,
-                /assets/img/content/DeskSetup@2x.webp 2x">
-      <source
-        type="image/jpg"
-        srcset="/assets/img/content/DeskSetup.jpg 1x,
-                /assets/img/content/DeskSetup@2x.jpg 2x">
-      <img
-        src="/assets/img/content/DeskSetup.jpg"
-        srcset="/assets/img/content/DeskSetup.jpg 1x,
-                /assets/img/content/DeskSetup@2x.jpg 2x"
-        alt="A photo of my current desk setup. A 3 draw wooden desk with a laptop, bluetooth speaker, coaster, trackpad, keyboard, magnetic cable tidy, Thunderbolt 3 dock, monitor arm holding up a 25&quot; Ultrasharp and my iPhone X hoisted up on a gooseneck for webcam use."
-        loading="lazy"
-        class="u--m-bottom"
-        width="1086"
-        height="724">
-    </picture>
-    <figcaption class="text-col u--m-bottom--huge">I'm always tinkering with my desk setup, but I think I’ve settled on this setup for a while. My iPhone is used as a webcam with the fantastic <a href="https://reincubate.com/camo/" alt="Use your phone as a webcam to look amazing on video calls.">Camo app from Reincubate</a>.</figcaption>
-    <picture>
-      <source
-        type="image/webp"
-        src="/assets/img/content/MacOSDesktop~light.webp">
-      <source
-        type="image/png"
-        src="/assets/img/content/MacOSDesktop~light.png">
-      <img
-        src="/assets/img/content/MacOSDesktop~light.png"
-        alt="A blank MacOS desktop screenshot showing the menubar at the top and the dock on the left-hand side of the screen"
-        loading="lazy"
-        class="u--m-bottom"
-        width="1086"
-        height="611">
-    </picture>
-    <figcaption class="text-col u--m-bottom--huge">I prefer to keep my desktop free from files and folders, I hide my dock and only keep open applications in it. I also use <a href="https://www.macbartender.com" title="Take control of your menu bar.">Bartender</a> to keep the right side of my menubar clean and focused.</figcaption>
-    <picture>
-      <source
-        type="image/webp"
-        srcset="/assets/img/content/iPhoneHomescreen~dark.webp 1x,
-                /assets/img/content/iPhoneHomescreen~dark@2x.webp 2x">
-      <source
-        type="image/png"
-        srcset="/assets/img/content/iPhoneHomescreen~dark.png 1x,
-                /assets/img/content/iPhoneHomescreen~dark@2x.png 2x">
-      <img
-        src="/assets/img/content/iPhoneHomescreen~dark.png"
-        srcset="/assets/img/content/iPhoneHomescreen~dark.png 1x,
-                /assets/img/content/iPhoneHomescreen~dark@2x.png 2x"
-        alt="A screenshot of my iOS Homescreen layout showcasing a grid of my most used apps."
-        loading="lazy"
-        class="u--m-bottom"
-        width="375"
-        height="812">
-    </picture>
-    <figcaption class="text-col u--m-bottom--huge">Much like my desktop, my phone usually remains simple and distraction free. I keep dopaminergic apps hidden away in the app drawer. Out of sight, out of mind.</figcaption>
-  </figure>
-</section>
+{% include _section.workstation.html %}
 {% include _section.people-id-work-with-again.html %}
 {% include _section.outro.html %}
