@@ -2108,6 +2108,10 @@ a:visited.nav-logo        { color: var(--iron) }}
   color: var(--iron-30);
 }
 
+.night .form:invalid .submit:hover:not(:active):not([disabled]) {
+  box-shadow: none;
+}
+
 
 /**
  * $SUBMIT BUTTON ICON
