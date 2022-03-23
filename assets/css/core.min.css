@@ -1972,7 +1972,8 @@ a:visited.nav-logo        { color: var(--iron) }}
   
 .reciever a { color: var(--bittersweet) }
 @media(prefers-color-scheme: dark) {
-.reciever a { color: var(--electric-violet) }}
+       .reciever a { color: var(--electric-violet) }}
+.night .reciever a { color: var(--electric-violet) }
 @media (min-width: 400px) {
   .reciever a { color: var(--white); }
   @media(prefers-color-scheme: dark) {
