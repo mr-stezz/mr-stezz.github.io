@@ -34,7 +34,7 @@ group: "navigation"
   </p>
   <p>
     As well as designing digital products, I also have a shutter bug and love to take photos in new and exotic places. I’m a firm believer of the fact that travel broadens the mind—yes, I stole that from Stephen Merchant and I’m not even sorry.<br><br>
-    Say hello at <label for="toggle-checkbox" class="toggle-label" title="Drop me a line.">ahoy@stezycki.com</label>.<br><br>
+    Say hello at <label for="toggle-checkbox" class="visual-link toggle-label" title="Drop me a line.">ahoy@stezycki.com</label>.<br><br>
     Browse my code scratchpad on <a href="https://codepen.io/mr-stezz/" title="Have a look at my code scrapbook on Codepen." rel="noreferrer" target="_blank" aria-label="Codepen (Opens in new tab)">Codepen</a>.<br><br>
     Download my photography on <a href="https://unsplash.com/@stez" title="Download my photography for free on Unsplash." rel="noreferrer" target="_blank" aria-label="Unsplash (Opens in new tab)">Unsplash</a>.<br><br>
     Read my <a href="https://codepen.io/mr-stezz/full/PLKGEG" rel="noreferrer" target="_blank" aria-label="Résumé (Opens in new tab)">r&eacute;sum&eacute;</a>.<br><br>
