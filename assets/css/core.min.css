@@ -1604,6 +1604,7 @@ a:visited.nav-logo        { color: var(--iron) }}
  }
 
  .toggle-checkbox:checked {
+   -webkit-appearance: none;
    appearance: none;
    display: block;
    opacity: 1;
