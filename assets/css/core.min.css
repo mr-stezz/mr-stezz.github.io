@@ -2032,6 +2032,7 @@ a:visited.nav-logo        { color: var(--iron) }}
 .submit:active,
 .submit:focus {
   color: var(--white);
+  fill: var(--white);
   background-color: var(--mineshaft);
 }
 .submit:hover:not(:active):not([disabled]) {
