@@ -869,6 +869,8 @@ figcaption { color: var(--iron) }}
   line-height: 1;
   text-align: center;
   pointer-events: none }
+  
+.icon-fill--natural { fill: currentColor; }
 
 .icon-mini     { font-size: 0.5em }
 .icon-small    { font-size: 0.75em }
