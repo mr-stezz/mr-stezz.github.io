@@ -9,6 +9,14 @@
     {{ page.title }} &middot; {{ site.title }}
   {% endif %}
 </title>
+<script language="Javascript">
+  var scrolltitle = "Michael Stężycki · Designer · Looking for work · Digital products · User experience · Interaction design · Product strategy · ";
+  function marquee() {
+    scrolltitle = scrolltitle.substring(1, scrolltitle.length) + scrolltitle.substring(0, 1);
+    document.title = scrolltitle;
+    setTimeout("marquee()", 300);
+  }
+</script>
 <meta name="description" content="{{ site.description }}">
 <meta name="keywords" content="{{ site.keywords }}">
 <meta name="copyright" content="&copy; {{ site.title }} {{ site.time | date: '%Y' }}.">
