@@ -1386,12 +1386,14 @@ attr[title] {
 @media (prefers-reduced-transparency) {
   .page-header {
     background: var(--linen);
+    -webkit-backdrop-filter: saturate(100%) blur(0px);
     backdrop-filter: saturate(100%) blur(0px);
   }
   @media(prefers-color-scheme: dark) {
     .page-header,
     .night .page-header {
       background: var(--mineshaft);
+      -webkit-backdrop-filter: saturate(100%) blur(0px);
       backdrop-filter: saturate(100%) blur(0px);
     }
   }
