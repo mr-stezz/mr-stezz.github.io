@@ -1863,11 +1863,11 @@ figcaption {
 /* If not using finger */
 @media not (pointer: coarse) {
   .toggle-checkbox:checked {
-    -webkit-user-select: none;
+    /* -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    pointer-events: none;
+    pointer-events: none; */
   }
 }
 
