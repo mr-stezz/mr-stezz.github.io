@@ -41,5 +41,4 @@ group: "navigation"
   </p>
 </div>
 {% include _section.workstation.html %}
-{% include _section.people-id-work-with-again.html %}
 {% include _section.outro.html %}
