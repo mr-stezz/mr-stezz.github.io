@@ -643,7 +643,7 @@
     display: block;
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     inset: 0;
     z-index: -1;
     opacity: .66;
