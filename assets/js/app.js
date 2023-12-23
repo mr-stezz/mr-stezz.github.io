@@ -85,27 +85,71 @@
     minwidth: 400,
     maxwidth: 768
   });
+
+// forked from https://codepen.io/desandro
+var canvas = document.querySelector('canvas');
+var ctx = canvas.getContext('2d');
+  
+  
+function Pixel( x, y ) {
+  this.x = x;
+  this.y = y;
+  this.hue = Math.floor( Math.random() * 360 );
+  var direction = Math.random() > 0.5 ? -1 : 1;
+  this.velocity = ( Math.random() * 30 + 20 ) * 0.01 * direction;
+}
+  
+Pixel.prototype.update = function() {
+  this.hue += this.velocity;
+};
+  
+Pixel.prototype.render = function( ctx ) {
+  var hue = Math.round( this.hue );
+  ctx.fillStyle = 'hsl(' + hue + ', 100%, 50% )';
+  ctx.fillRect( this.x, this.y, 1, 1 );
+}
+  
+var pixels = [
+  new Pixel( 0, 0 ),
+  new Pixel( 1, 0 ),
+  new Pixel( 0, 1 ),
+  new Pixel( 1, 1 ),
+];
+  
+function animate() {
+  pixels.forEach( function( pixel ) {
+    pixel.update();
+    pixel.render( ctx );
+  });
+  requestAnimationFrame( animate );
+}
+  
+animate();
+
 // Add day/night class on body based on time
-var currentTime = (new Date).getHours();
-7 <= currentTime && currentTime < 18 ? document.body && (document.body.className = "day") : document.body && (document.body.className = "night");
+// var currentTime = (new Date).getHours();
+// 7 <= currentTime && currentTime < 18 ? document.body && (document.body.className = "day") : document.body && (document.body.className = "night");
+
 // Open contact form on enter keyup on .toggle-label
-document.querySelector(".toggle-label").addEventListener("keyup", (e) => {
-  e.preventDefault();
-  if (event.keyCode === 13) {
-    document.querySelector(".toggle-checkbox").click();
-  }
-});
+// document.querySelector(".toggle-label").addEventListener("keyup", (e) => {
+//   e.preventDefault();
+//   if (event.keyCode === 13) {
+//     document.querySelector(".toggle-checkbox").click();
+//   }
+// });
+
 // Play Toad's 'I'm the besssst' audio snippet when hovering over link
-const imTheBest = new Audio('../assets/sounds/im_the_best.mp3')
+// const imTheBest = new Audio('../assets/sounds/im_the_best.mp3')
+// 
+// document.querySelectorAll('.work-list').forEach(link => {
+//     let audioLink = link.querySelector('.js-audio-clip'),
+//         timer
+// 
+//     audioLink.addEventListener('mouseover', e => {
+//         imTheBest.play()
+//     })
+// })
 
-document.querySelectorAll('.work-list').forEach(link => {
-    let audioLink = link.querySelector('.js-audio-clip'),
-        timer
-
-    audioLink.addEventListener('mouseover', e => {
-        imTheBest.play()
-    })
-})
 // get current year
 new Date().getFullYear();
 document.getElementById("year").innerHTML = new Date().getFullYear();
