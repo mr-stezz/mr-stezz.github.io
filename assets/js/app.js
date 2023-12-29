@@ -87,7 +87,7 @@
   });
 
 // forked from https://codepen.io/desandro
-var canvas = document.querySelector('canvas');
+var canvas = document.getElementById('js-bg');
 var ctx = canvas.getContext('2d');
   
   
