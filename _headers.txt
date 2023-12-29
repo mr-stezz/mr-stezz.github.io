@@ -1,0 +1,8 @@
+# Custom Header tags
+# Read more: https://docs.netlify.com/routing/headers/
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Robots-Tag: noindex
+
