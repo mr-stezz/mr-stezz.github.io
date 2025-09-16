@@ -6,18 +6,8 @@
   {% include _head.type.html %}
   {% include _head.favicon.html %}
   {% include _head.ios.html %}
-  {% include _head.reload.html %}
 </head>
-<body id="js-top-of-page">
-  {% include _tools.skip-links.html %}
-  {% include _tools.svg-symbols.html %}
-  {% include _structure.page-header.html %}
-  <main class="page-content" role="main" id="main">
-    <div class="wrapper">
-      {{ content }}
-    </div>
-  </main>
-  {% include _structure.page-footer.html %}
-  {% include _tools.scripts.html %}
+<body>
+  {{ content }}
 </body>
 </html>
